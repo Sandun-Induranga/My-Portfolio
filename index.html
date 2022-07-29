@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sandun Induranga</title>
-    <link rel="icon" href="assets/about-image.png">
+    <link rel="icon" href="favicon.png">
     <!--<base href="localhost">-->
     <meta name="keywords" content="Sandun, sandun, Sandun Induranga, Software Engineer">
     <meta name="description" content="Full Stack Software Developer In Sri Lanka">
@@ -18,7 +18,9 @@
 <body>
 
 <header>
-    <aside></aside>
+    <aside>
+        <img src="assets/images/logo-dark.png" alt="logo">
+    </aside>
     <nav>
         <ul>
             <li><a href="#home-section">Home</a></li>
@@ -166,9 +168,13 @@
         <aside>
             <form action="" method="post">
                 <fieldset>
-                    <input type="text" name="clientName" placeholder="Name">
-                    <input type="text" name="clientEmail" placeholder="Email">
-                    <input type="text" name="clientTitle" placeholder="Title">
+                    <label for="clientName"></label>
+                    <input type="text" id="clientName" name="clientName" placeholder="Name">
+                    <label for="clientEmail"></label>
+                    <input type="text" id="clientEmail" name="clientEmail" placeholder="Email">
+                    <label for="clientTitle"></label>
+                    <input type="text" id="clientTitle" name="clientTitle" placeholder="Title">
+                    <label for="clientMsg"></label>
                     <textarea name="message" id="clientMsg" cols="100" rows="4" placeholder="Message"></textarea>
                     <button type="button">Send Message</button>
                 </fieldset>
