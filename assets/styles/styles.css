@@ -24,7 +24,7 @@ header {
     margin-bottom: 5px;
 }
 
-.main-image img {
+.main-image>img {
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -50,17 +50,30 @@ header ul {
     font-size: 20px;
 }
 
-.main-description>h1{
+.main-description > h1 {
     font-size: 3em;
     color: #313131;
 }
 
-.main-description>h2{
+.main-description > h2 {
     font-size: 2em;
     color: #3C3C3C;
 }
 
-.main-description>h3{
+.main-description > h3 {
     font-size: 1.5em;
     color: #646464;
+}
+
+.des-image {
+    display: inline-block;
+    position: absolute;
+    right: 160px;
+    top: 212px;
+    margin: auto;
+}
+.des-image img{
+    width: 230px;
+    height: 304px;
+    border-radius: 30px;
 }
