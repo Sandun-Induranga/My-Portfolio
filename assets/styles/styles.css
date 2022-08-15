@@ -1,4 +1,18 @@
-main > section > img {
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top-bar img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.main-image img{
     width: 100vw;
     height: 100vh;
+    left: 0;
+    top: 0;
 }
