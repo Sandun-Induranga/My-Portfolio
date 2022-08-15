@@ -29,14 +29,15 @@ header {
     height: 100vh;
     left: 0;
     top: 0;
+    opacity: 40%;
 }
 
-header>li {
+header li {
     display: inline-block;
     margin-left: 20px;
 }
 
-header>ul {
+header ul {
     position: absolute;
     right: 88px;
     top: 0;
@@ -51,12 +52,15 @@ header>ul {
 
 .main-description>h1{
     font-size: 3em;
+    color: #313131;
 }
 
 .main-description>h2{
     font-size: 2em;
+    color: #3C3C3C;
 }
 
 .main-description>h3{
     font-size: 1.5em;
+    color: #646464;
 }
