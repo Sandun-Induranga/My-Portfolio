@@ -1,257 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Task</title>
-  <style>
-    .part1{
-      background-color: red;
-      position: absolute;
-      width: 50vw;
-      height: 50vh;
-      left: 0;
-      top: 0;
-    }
-    .part2{
-      background-color: green;
-      position: absolute;
-      width: 50vw;
-      height: 50vh;
-      right: 0;
-      top: 0;
-    }
-    .part3{
-      background-color: orange;
-      position: absolute;
-      width: 50vw;
-      height: 50vh;
-      bottom: 0;
-      left: 0;
-    }
-    .part4{
-      background-color: deeppink;
-      position: absolute;
-      width: 50vw;
-      height: 50vh;
-      bottom: 0;
-      right: 0;
-    }
-    .part1>div>div{
-      background-color: white;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .part2>div>div{
-      background-color: white;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .part3>div>div{
-      background-color: white;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .part4>div>div{
-      background-color: white;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .div1{
-      background-color: red;
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .part2 .div1{
-      background-color: green;
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .part2 .div1{
-      background-color: orange;
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .part2 .div1{
-      background-color: deeppink;
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    #c1{
-      background-color: white;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: -100px;
-      top: -100px;
-    }
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <style>
+        .part1 {
+            background-color: red;
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+            left: 0;
+            top: 0;
+        }
 
-    #c2{
-      background-color: white;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position: absolute;
-      right: -100px;
-      top: -100px;
-    }
+        .part2 {
+            background-color: green;
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+            right: 0;
+            top: 0;
+        }
 
-    #c3{
-      background-color: white;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position: absolute;
-      right: -100px;
-      bottom: -100px;
-    }
+        .part3 {
+            background-color: orange;
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+            bottom: 0;
+            left: 0;
+        }
 
-    #c4{
-      background-color: white;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: -100px;
-      bottom: -100px;
-    }
+        .part4 {
+            background-color: deeppink;
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+            bottom: 0;
+            right: 0;
+        }
 
-    .part2 >div:last-child{
-      background-color: white;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: -100px;
-      top: -100px;
-    }
-    .part4 >div:last-child{
-      background-color: white;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: -100px;
-      bottom: -100px;
-    }
-    .circle{
-      background-color: white;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top:0;
-      bottom: 0;
-      margin: auto;
-    }
-    .square{
-      background-color: red;
-      height: 50px;
-      width: 50px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top:0;
-      bottom: 0;
-      margin: auto;
-    }
+        .part1 > div > div {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
 
-  </style>
+        .part2 > div > div {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .part3 > div > div {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .part4 > div > div {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .div1 {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .part2 .div1 {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .part2 .div1 {
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .part2 .div1 {
+            background-color: deeppink;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #c1 {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: -100px;
+            top: -100px;
+        }
+
+        #c2 {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            right: -100px;
+            top: -100px;
+        }
+
+        #c3 {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            right: -100px;
+            bottom: -100px;
+        }
+
+        #c4 {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: -100px;
+            bottom: -100px;
+        }
+
+        .part2 > div:last-child {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: -100px;
+            top: -100px;
+        }
+
+        .part4 > div:last-child {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: -100px;
+            bottom: -100px;
+        }
+
+        .circle {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .square {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    </style>
 </head>
 <body>
 <main>
-  <section class="part1">
-    <div>
-      <div>
-        <div class="div1"></div>
-      </div>
-    </div>
-    <div></div>
-  </section>
-  <section class="part2">
-    <div>
-      <div>
-        <div class="div1"></div>
-      </div>
-    </div>
-    <div></div>
-  </section>
-  <section class="part3">
-    <div>
-      <div>
-        <div class="div1"></div>
-      </div>
-    </div>
-    <div></div>
-  </section>
-  <section class="part4">
-    <div>
-      <div>
-        <div class="div1"></div>
-      </div>
-    </div>
-    <div></div>
-  </section>
-  <div id="c1"></div>
-  <div id="c2"></div>
-  <div id="c3"></div>
-  <div id="c4"></div>
-  <div class="circle"></div>
-  <div class="square"></div>
+    <section class="part1">
+        <div>
+            <div>
+                <div class="div1"></div>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <section class="part2">
+        <div>
+            <div>
+                <div class="div1"></div>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <section class="part3">
+        <div>
+            <div>
+                <div class="div1"></div>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <section class="part4">
+        <div>
+            <div>
+                <div class="div1"></div>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <div id="c1"></div>
+    <div id="c2"></div>
+    <div id="c3"></div>
+    <div id="c4"></div>
+    <div class="circle"></div>
+    <div class="square"></div>
 </main>
 </body>
 </html>
