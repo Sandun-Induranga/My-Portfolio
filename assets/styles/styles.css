@@ -1,18 +1,22 @@
-header{
+header {
     position: relative;
+    background-color: yellow;
     left: 0;
     top: 0;
+    height: 60px;
+    margin: 0;
 }
 
-.top-bar{
+.top-bar {
     position: relative;
     display: inline-block;
     background-color: white;
     height: 60px;
     width: 100vw;
+    padding: 0;
 }
 
-.top-bar img{
+.top-bar img {
     position: absolute;
     left: 10px;
     top: 10px;
@@ -20,20 +24,39 @@ header{
     margin-bottom: 5px;
 }
 
-.main-image img{
+.main-image img {
     width: 100vw;
     height: 100vh;
     left: 0;
     top: 0;
 }
 
-header li{
+header>li {
     display: inline-block;
     margin-left: 20px;
 }
 
-header ul{
+header>ul {
     position: absolute;
-    right: 100px;
+    right: 88px;
     top: 0;
+}
+
+.main-description {
+    position: absolute;
+    top: 196px;
+    left: 216px;
+    font-size: 20px;
+}
+
+.main-description>h1{
+    font-size: 3em;
+}
+
+.main-description>h2{
+    font-size: 2em;
+}
+
+.main-description>h3{
+    font-size: 1.5em;
 }
