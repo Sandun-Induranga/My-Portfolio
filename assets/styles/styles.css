@@ -16,6 +16,8 @@ header{
     position: absolute;
     left: 10px;
     top: 10px;
+    margin-left: 88px;
+    margin-bottom: 5px;
 }
 
 .main-image img{
@@ -27,6 +29,7 @@ header{
 
 header li{
     display: inline-block;
+    margin-left: 20px;
 }
 
 header ul{
