@@ -45,9 +45,9 @@ header ul {
 
 .main-description {
     position: absolute;
-    top: 196px;
-    left: 216px;
-    font-size: 20px;
+    top: 100px;
+    left: 200px;
+    font-size: 30px;
 }
 
 .main-description > h1 {
@@ -76,17 +76,19 @@ header ul {
 }
 
 .des-image img {
-    width: 230px;
-    height: 304px;
+    width: 340px;
+    height: 100%;
     border-radius: 30px;
 }
 
 .social-icons {
     position: absolute;
-    left: 216px;
-    bottom: 90px;
+    left: 200px;
+    bottom: 100px;
 }
 
 .social-icons img {
+    width: 50px;
+    height: 100%;
     margin-right: 38px;
 }
