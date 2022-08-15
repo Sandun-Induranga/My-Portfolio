@@ -24,7 +24,7 @@ header {
     margin-bottom: 5px;
 }
 
-.main-image>img {
+.main-image > img {
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -53,11 +53,13 @@ header ul {
 .main-description > h1 {
     font-size: 3em;
     color: #313131;
+    margin-bottom: 10px;
 }
 
 .main-description > h2 {
     font-size: 2em;
     color: #3C3C3C;
+    margin-bottom: 10px;
 }
 
 .main-description > h3 {
@@ -72,8 +74,19 @@ header ul {
     top: 212px;
     margin: auto;
 }
-.des-image img{
+
+.des-image img {
     width: 230px;
     height: 304px;
     border-radius: 30px;
+}
+
+.social-icons {
+    position: absolute;
+    left: 216px;
+    bottom: 90px;
+}
+
+.social-icons img {
+    margin-right: 38px;
 }
