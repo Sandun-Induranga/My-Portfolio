@@ -115,8 +115,8 @@ header ul {
 
 .about-section > aside {
     position: relative;
-    margin-right: 88px;
-    margin-left: 88px;
+    margin-right: 8.5vw;
+    margin-left: 8.5vw;
     margin-top: 80px;
 }
 
@@ -140,6 +140,10 @@ header ul {
     left: 0;
 }
 
+.info{
+    display: inline-block;
+}
+
 .quiz {
     display: inline-block;
     position: absolute;
@@ -151,12 +155,16 @@ header ul {
 
 .ans{
     display: inline-block;
+    position: absolute;
     width: 325px;
-    margin-bottom: 30px;
+    margin-right: 30px;
+    top: 0;
+    right: 0;
 }
 
 .des{
     display: inline-block;
     width: 590px;
     height: 168px;
+    top: 0;
 }
