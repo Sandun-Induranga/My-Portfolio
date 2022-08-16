@@ -187,3 +187,18 @@ header ul {
     color: white;
     margin-left: 158px;
 }
+
+.edu{
+    display: inline-block;
+    width: 100vw;
+    /*padding-left: 88px;*/
+    /*padding-right: 88px;*/
+    background-color: #3A86FF;
+}
+
+.edu > h2{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: #313131;
+}
