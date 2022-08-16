@@ -28,7 +28,7 @@ header {
     margin-bottom: 5px;
 }
 
-.main-image{
+.main-image {
     background-color: #c9c9c9;
 }
 
@@ -113,24 +113,50 @@ header ul {
     margin-top: 100px;
 }
 
-.about-section>aside{
+.about-section > aside {
     position: relative;
     margin-right: 88px;
     margin-left: 88px;
     margin-top: 80px;
 }
 
-.intro-image{
+.intro-image {
+    display: inline-block;
     position: relative;
     left: 0;
     top: 0;
+    margin-right: 82px;
 }
-.intro-image> img{
+
+.intro-image > img {
     width: 413px;
     height: 100%;
 }
 
-.about-section .intro{
+.about-section .intro {
+    display: inline-block;
     position: relative;
-    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.quiz {
+    display: inline-block;
+    position: absolute;
+    font-size: 1em;
+    width: 175px;
+    top: 0;
+    font-weight: bold;
+}
+
+.ans{
+    display: inline-block;
+    width: 325px;
+    margin-bottom: 30px;
+}
+
+.des{
+    display: inline-block;
+    width: 590px;
+    height: 168px;
 }
