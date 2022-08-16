@@ -144,27 +144,23 @@ header ul {
     display: inline-block;
 }
 
-.quiz {
+.info {
     display: inline-block;
     position: absolute;
     font-size: 1em;
-    width: 175px;
+    width: 500px;
     top: 0;
     font-weight: bold;
 }
 
-.ans{
-    display: inline-block;
-    position: absolute;
-    width: 325px;
-    margin-right: 30px;
-    top: 0;
-    right: 0;
-}
-
 .des{
     display: inline-block;
+    position: absolute;
     width: 590px;
     height: 168px;
-    top: 0;
+    top: 335px;
+}
+
+.info span{
+    font-weight: normal;
 }
