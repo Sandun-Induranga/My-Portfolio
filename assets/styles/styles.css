@@ -200,9 +200,14 @@ header ul {
     text-align: center;
     font-size: 2em;
     color: #313131;
+    margin-bottom: 80px;
 }
 
 .line{
+    display: inline-block;
+    position: absolute;
     border-left: 6px solid #3A86FF;
     height: 500px;
+    width: 50vw;
+    right: 0;
 }
