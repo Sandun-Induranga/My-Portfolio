@@ -102,15 +102,12 @@ header ul {
     margin-right: 38px;
 }
 
-.about-section {
-    display: inline-block;
-}
-
 .about-section > h1 {
     font-size: 3em;
     position: relative;
     text-align: center;
     margin-top: 100px;
+    color: #313131;
 }
 
 .about-section > aside {
@@ -131,6 +128,7 @@ header ul {
 .intro-image > img {
     width: 413px;
     height: 100%;
+    border-radius: 10px;
 }
 
 .about-section .intro {
@@ -140,10 +138,6 @@ header ul {
     left: 0;
 }
 
-.info{
-    display: inline-block;
-}
-
 .info {
     display: inline-block;
     position: absolute;
@@ -151,6 +145,7 @@ header ul {
     width: 500px;
     top: 0;
     font-weight: bold;
+    color: #313131;
 }
 
 .des{
@@ -163,4 +158,20 @@ header ul {
 
 .info span{
     font-weight: normal;
+    color: #646464;
+}
+
+.des{
+    color: #646464;
+    margin-bottom: 100px;
+}
+
+.about-section button{
+    position: relative;
+    background-color: #3A86FF;
+    width: 196px;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    color: white;
 }
