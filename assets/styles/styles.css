@@ -193,7 +193,6 @@ header ul {
     width: 100vw;
     /*padding-left: 88px;*/
     /*padding-right: 88px;*/
-    background-color: #3A86FF;
 }
 
 .edu > h2{
@@ -201,4 +200,9 @@ header ul {
     text-align: center;
     font-size: 2em;
     color: #313131;
+}
+
+.line{
+    border-left: 6px solid #3A86FF;
+    height: 500px;
 }
