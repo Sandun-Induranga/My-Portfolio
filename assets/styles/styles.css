@@ -28,6 +28,10 @@ header {
     margin-bottom: 5px;
 }
 
+.main-image{
+    background-color: #c9c9c9;
+}
+
 .main-image > img {
     width: 100vw;
     height: 100vh;
@@ -107,4 +111,26 @@ header ul {
     position: relative;
     text-align: center;
     margin-top: 100px;
+}
+
+.about-section>aside{
+    position: relative;
+    margin-right: 88px;
+    margin-left: 88px;
+    margin-top: 80px;
+}
+
+.intro-image{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.intro-image> img{
+    width: 413px;
+    height: 100%;
+}
+
+.about-section .intro{
+    position: relative;
+    right: 0;
 }
