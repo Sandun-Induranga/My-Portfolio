@@ -102,6 +102,11 @@ header ul {
     margin-right: 38px;
 }
 
+.about-section{
+    display: inline-block;
+    width: 100vw;
+}
+
 .about-section > h1 {
     font-size: 3em;
     position: relative;
@@ -110,11 +115,10 @@ header ul {
     color: #313131;
 }
 
-.about-section > aside {
+.about-content {
     position: relative;
-    margin-right: 8.5vw;
-    margin-left: 8.5vw;
-    margin-top: 80px;
+    margin: 80px 8.5vw;
+    align-content: center;
 }
 
 .intro-image {
@@ -123,12 +127,17 @@ header ul {
     left: 0;
     top: 0;
     margin-right: 82px;
+    margin-left: 172px;
 }
 
 .intro-image > img {
     width: 413px;
     height: 100%;
     border-radius: 10px;
+}
+
+.about-section{
+    display: inline-block;
 }
 
 .about-section .intro {
@@ -142,8 +151,9 @@ header ul {
     display: inline-block;
     position: absolute;
     font-size: 1em;
-    width: 500px;
+    width: 590px;
     top: 0;
+    right: 172px;
     font-weight: bold;
     color: #313131;
 }
@@ -153,6 +163,7 @@ header ul {
     position: absolute;
     width: 590px;
     height: 168px;
+    right: 172px;
     top: 335px;
 }
 
@@ -174,4 +185,5 @@ header ul {
     border: none;
     border-radius: 10px;
     color: white;
+    margin-left: 158px;
 }
