@@ -214,7 +214,7 @@ header ul {
 
 .edu-details {
     position: absolute;
-    background-color: #3A86FF;
+    background-color: green;
     display: inline-block;
     width: 304px;
     height: 115px;
@@ -223,3 +223,5 @@ header ul {
 .edu-details > p {
     margin: 8px;
 }
+
+
