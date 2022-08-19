@@ -1,10 +1,29 @@
-section:first-child{
+main {
+    position: relative;
+    height: 100vh;
+    width: 98.5vw;
+}
+
+main > section:first-child {
     height: 250px;
     width: 250px;
     background-color: transparent;
     border: 10px solid chocolate;
     border-radius: 100%;
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+main > section:nth-child(2) {
+    height: 215px;
+    width: 215px;
+    background-color: transparent;
+    border: 15px solid red;
+    border-radius: 100%;
     position: fixed;
     top: 0;
     right: 0;
