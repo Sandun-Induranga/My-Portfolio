@@ -46,7 +46,7 @@ main:nth-child(2) > div {
     margin: auto;
 }
 
-div>p{
+div > p {
     display: inline-block;
     width: 100%;
     height: 50px;
@@ -60,4 +60,18 @@ div>p{
     text-align: center;
     color: white;
     font-weight: bold;
+}
+
+main:nth-child(3) > div {
+    position: absolute;
+    z-index: -1;
+    height: 284px;
+    width: 284px;
+    background-color: cadetblue;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
