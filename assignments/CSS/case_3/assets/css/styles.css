@@ -1,10 +1,19 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
+
 main {
     position: relative;
     height: 100vh;
-    width: 98.5vw;
+    width: 99.5vw;
+}
+
+::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #3A86FF;
 }
 
 main > section:first-child {
@@ -93,6 +102,6 @@ main:last-child > div {
     margin: auto;
 }
 
-main:last-child > div>p{
+main:last-child > div > p {
     height: 100px;
 }
