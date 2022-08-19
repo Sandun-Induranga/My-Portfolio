@@ -5,10 +5,10 @@ main {
 }
 
 main > section:first-child {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     background-color: transparent;
-    border: 10px solid chocolate;
+    border: 15px solid #d29865;
     border-radius: 100%;
     position: fixed;
     top: 0;
@@ -19,12 +19,26 @@ main > section:first-child {
 }
 
 main > section:nth-child(2) {
-    height: 215px;
-    width: 215px;
+    height: 280px;
+    width: 280px;
     background-color: transparent;
-    border: 15px solid red;
+    border: 15px solid #fd3d61;
     border-radius: 100%;
     position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+main:nth-child(2) > div {
+    position: absolute;
+    z-index: -1;
+    height: 284px;
+    width: 284px;
+    background-color: purple;
+    border-radius: 100%;
     top: 0;
     right: 0;
     bottom: 0;
