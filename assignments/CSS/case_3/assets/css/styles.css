@@ -1,3 +1,6 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
 main {
     position: relative;
     height: 100vh;
@@ -49,14 +52,14 @@ main:nth-child(2) > div {
 div > p {
     display: inline-block;
     width: 100%;
-    height: 50px;
+    height: 30px;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -74,4 +77,22 @@ main:nth-child(3) > div {
     bottom: 0;
     left: 0;
     margin: auto;
+}
+
+main:last-child > div {
+    position: absolute;
+    z-index: -1;
+    height: 284px;
+    width: 284px;
+    background-color: red;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+main:last-child > div>p{
+    height: 100px;
 }
