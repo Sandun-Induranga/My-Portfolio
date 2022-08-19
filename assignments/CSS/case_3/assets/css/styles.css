@@ -1,0 +1,14 @@
+section:first-child{
+    height: 250px;
+    width: 250px;
+    background-color: transparent;
+    border: 10px solid chocolate;
+    border-radius: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
