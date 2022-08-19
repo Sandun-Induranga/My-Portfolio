@@ -2,11 +2,11 @@
     font-size: 20px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0.5vw;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: #3A86FF;
 }
 
@@ -17,6 +17,7 @@
     height: 60px;
     width: 99.5vw;
     padding: 0;
+    box-shadow: 4px 4px 4px 4px #3A86FF;
 }
 
 .top-bar img {
