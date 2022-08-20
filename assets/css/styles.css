@@ -198,8 +198,10 @@ header ul {
 /* Education */
 
 .edu {
-    display: inline-block;
+    position: relative;
+    /*display: inline-block;*/
     width: 99.5vw;
+    height: 100vh;
 }
 
 .edu > h2 {
@@ -219,13 +221,30 @@ header ul {
     right: 0;
 }
 
-/*.edu-details {*/
-/*    position: absolute;*/
-/*    background-color: green;*/
-/*    display: inline-block;*/
-/*    width: 304px;*/
-/*    height: 115px;*/
-/*}*/
+.edu-details {
+    position: absolute;
+    background-color: green;
+    display: inline-block;
+    width: 304px;
+    height: 200px;
+}
+
+.edu>div:nth-child(3){
+    left: 20vw;
+    top: 120px;
+}
+.edu>div:nth-child(4){
+    right: 20vw;
+    top: 242px;
+}
+.edu>div:nth-child(5){
+    left: 20vw;
+    top: 390px;
+}
+.edu>div:nth-child(6){
+    right: 20vw;
+    top: 540px;
+}
 
 /*.edu-details > p {*/
 /*    margin: 8px;*/
