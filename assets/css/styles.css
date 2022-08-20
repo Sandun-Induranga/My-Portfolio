@@ -11,6 +11,8 @@
     background-color: #3A86FF;
 }
 
+
+/* Top bar */
 .top-bar {
     position: fixed;
     z-index: 2;
@@ -55,6 +57,8 @@ header ul {
     top: 0;
 }
 
+
+/* Home */
 .main-description {
     position: absolute;
     top: 200px;
@@ -107,9 +111,12 @@ header ul {
     margin-right: 38px;
 }
 
+
+/* About */
 .about-section {
     display: inline-block;
     width: 99.5vw;
+    margin-bottom: 80px;
 }
 
 .about-section > h1 {
@@ -131,8 +138,6 @@ header ul {
     position: relative;
     left: 0;
     top: 0;
-    /*margin-right: 82px;*/
-    /*margin-left: 172px;*/
 }
 
 .intro-image > img {
@@ -140,10 +145,6 @@ header ul {
     height: 100%;
     border-radius: 10px;
 }
-
-/*.about-section {*/
-/*    display: inline-block;*/
-/*}*/
 
 .about-section .intro {
     display: inline-block;
@@ -193,29 +194,30 @@ header ul {
     margin-right: 30vw;
 }
 
-/*.edu {*/
-/*    display: inline-block;*/
-/*    width: 100vw;*/
-/*    !*padding-left: 88px;*!*/
-/*    !*padding-right: 88px;*!*/
-/*}*/
 
-/*.edu > h2 {*/
-/*    display: block;*/
-/*    text-align: center;*/
-/*    font-size: 2em;*/
-/*    color: #313131;*/
-/*    margin-bottom: 80px;*/
-/*}*/
+/* Education */
 
-/*.line {*/
-/*    display: inline-block;*/
-/*    position: absolute;*/
-/*    border-left: 6px solid #3A86FF;*/
-/*    height: 500px;*/
-/*    width: 50vw;*/
-/*    right: 0;*/
-/*}*/
+.edu {
+    display: inline-block;
+    width: 99.5vw;
+}
+
+.edu > h2 {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: #313131;
+    margin-bottom: 80px;
+}
+
+.line {
+    display: inline-block;
+    position: absolute;
+    border-left: 2px solid #3A86FF;
+    height: 500px;
+    width: 50vw;
+    right: 0;
+}
 
 /*.edu-details {*/
 /*    position: absolute;*/
