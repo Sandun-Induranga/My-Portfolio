@@ -1,6 +1,6 @@
 * {
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -201,7 +201,7 @@ header ul {
     position: relative;
     /*display: inline-block;*/
     width: 99.5vw;
-    height: 100vh;
+    height: 750px;
 }
 
 .edu > h2 {
@@ -215,7 +215,7 @@ header ul {
 .line {
     display: inline-block;
     position: absolute;
-    border-left: 2px solid #3A86FF;
+    border-left: 1px solid #3A86FF;
     height: 500px;
     width: 50vw;
     right: 0;
@@ -223,33 +223,48 @@ header ul {
 
 .edu-details {
     position: absolute;
-    background-color: green;
     display: inline-block;
     width: 304px;
     height: 200px;
 }
 
-.edu>div:nth-child(3){
-    left: 20vw;
-    top: 120px;
-}
-.edu>div:nth-child(4){
-    right: 20vw;
-    top: 242px;
-}
-.edu>div:nth-child(5){
-    left: 20vw;
-    top: 390px;
-}
-.edu>div:nth-child(6){
-    right: 20vw;
-    top: 540px;
+.edu > div:nth-child(3) {
+    left: 30vw;
+    top: 110px;
 }
 
-/*.edu-details > p {*/
-/*    margin: 8px;*/
-/*}*/
+.edu > div:nth-child(4) {
+    right: 30vw;
+    top: 270px;
+}
 
-/*form{*/
-/*    width: 80vw;*/
-/*}*/
+.edu > div:nth-child(5) {
+    left: 30vw;
+    top: 420px;
+}
+
+.edu > div:nth-child(6) {
+    right: 30vw;
+    top: 560px;
+}
+
+.edu-details > p:first-child {
+    color: #282828;
+    font-size: 1em;
+}
+
+.edu-details a {
+    text-decoration: none;
+    color: #313131;
+    font-size: 16px;
+}
+
+.edu-details > p:nth-child(3) {
+    color: #BBBBBB;
+    font-size: 16px;
+}
+
+.edu-details > p:nth-child(4) {
+    color: #3A86FF;
+    font-size: 16px;
+}
