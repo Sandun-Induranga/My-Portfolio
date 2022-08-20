@@ -217,8 +217,11 @@ header ul {
     position: absolute;
     border-left: 1px solid #3A86FF;
     height: 500px;
-    width: 50vw;
+    width: 0;
+    left: 0;
     right: 0;
+    top: 130px;
+    margin: auto;
 }
 
 .edu-details {
@@ -240,12 +243,12 @@ header ul {
 
 .edu > div:nth-child(5) {
     left: 30vw;
-    top: 420px;
+    top: 440px;
 }
 
 .edu > div:nth-child(6) {
     right: 30vw;
-    top: 560px;
+    top: 600px;
 }
 
 .edu-details > p:first-child {
@@ -267,4 +270,52 @@ header ul {
 .edu-details > p:nth-child(4) {
     color: #3A86FF;
     font-size: 16px;
+}
+
+.edu > div:nth-child(7) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 130px;
+    margin: auto;
+}
+
+.edu > div:nth-child(8) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 295px;
+    margin: auto;
+}
+
+.edu > div:nth-child(9) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 460px;
+    margin: auto;
+}
+
+.edu > div:nth-child(10) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 625px;
+    margin: auto;
 }
