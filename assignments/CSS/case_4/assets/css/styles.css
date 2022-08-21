@@ -1,0 +1,29 @@
+main{
+    position: relative;
+    width: 99.5vw;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #8e8e8e;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    padding: 10px;
+    background-color: red;
+}
+
+header >p{
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
