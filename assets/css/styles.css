@@ -417,13 +417,14 @@ header ul {
 }
 
 
+
 /* Services */
 
 .services {
     position: relative;
     display: inline-block;
     width: 99.5vw;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .services > h1 {
@@ -436,7 +437,7 @@ header ul {
 .services > div {
     display: inline-block;
     position: relative;
-    width: 99.5vw;
+    width: 90vw;
     padding-left: 88px;
 }
 
