@@ -12,7 +12,9 @@
 }
 
 
+
 /* Top bar */
+
 .top-bar {
     position: fixed;
     z-index: 2;
@@ -114,6 +116,7 @@ header ul {
 }
 
 
+
 /* About */
 .about-section {
     display: inline-block;
@@ -195,6 +198,7 @@ header ul {
     color: white;
     margin-right: 30vw;
 }
+
 
 
 /* Education */
@@ -323,6 +327,7 @@ header ul {
 }
 
 
+
 /*  Skills */
 
 .skills {
@@ -411,6 +416,9 @@ header ul {
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
 }
 
+
+/* Services */
+
 .services {
     position: relative;
     display: inline-block;
@@ -425,7 +433,20 @@ header ul {
     color: #313131;
 }
 
-.services>div{
+.services > div {
+    display: inline-block;
+    position: relative;
+    width: 99.5vw;
+    padding-left: 88px;
+}
+
+.services > div > div {
+    position: relative;
+    display: inline-block;
+    margin-left: 88px;
+    margin-bottom: 80px;
     height: 300px;
-    width: 350px;
+    width: 400px;
+    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+    border-radius: 10px;
 }
