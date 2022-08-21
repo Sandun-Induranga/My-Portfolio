@@ -31,12 +31,24 @@ main:nth-child(2) > header {
     background-color: navy;
 }
 
+main:nth-child(2) {
+    background-color: #73a0f5;
+}
+
 main:nth-child(3) > header {
     background-color: #313131;
 }
 
+main:nth-child(3) {
+    background-color: gray;
+}
+
 main:nth-child(4) > header {
     background-color: maroon;
+}
+
+main:nth-child(4) {
+    background-color: red;
 }
 
 header > p {
@@ -51,6 +63,7 @@ main > p {
     position: absolute;
     font-size: 60px;
     font-weight: bold;
+    text-align: center;
     height: 10vh;
     width: 10vw;
     top: 0;
