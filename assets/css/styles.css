@@ -390,3 +390,22 @@ header ul {
     color: #313131;
     margin-bottom: 80px;
 }
+
+.skills div{
+    position: relative;
+    height: 306px;
+    padding-left: 100px;
+}
+.skills img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 414px;
+    height: 306px;
+    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+}
+
+.services{
+    position: relative;
+}
