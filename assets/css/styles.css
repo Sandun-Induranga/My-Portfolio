@@ -3,6 +3,8 @@
     font-family: 'Inter', sans-serif;
 }
 
+
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 0.5vw;
 }
@@ -10,7 +12,6 @@
 ::-webkit-scrollbar-thumb {
     background-color: #3A86FF;
 }
-
 
 
 /* Top bar */
@@ -62,6 +63,7 @@ header ul {
 
 
 /* Home */
+
 .main-description {
     position: absolute;
     top: 200px;
@@ -114,7 +116,6 @@ header ul {
     height: 100%;
     margin-right: 38px;
 }
-
 
 
 /* About */
@@ -198,7 +199,6 @@ header ul {
     color: white;
     margin-right: 30vw;
 }
-
 
 
 /* Education */
@@ -327,7 +327,6 @@ header ul {
 }
 
 
-
 /*  Skills */
 
 .skills {
@@ -417,7 +416,6 @@ header ul {
 }
 
 
-
 /* Services */
 
 .services {
@@ -452,11 +450,14 @@ header ul {
     border-radius: 10px;
 }
 
-.project{
+.project {
     position: relative;
 }
 
-.project > h1{
+
+/* Projects */
+
+.project > h1 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 80px;
@@ -464,13 +465,13 @@ header ul {
     color: #313131;
 }
 
-.project>aside{
+.project > aside {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project>aside>div{
+.project > aside > div {
     width: 780px;
     height: 450px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
