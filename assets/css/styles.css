@@ -329,6 +329,7 @@ header ul {
     position: relative;
     display: inline-block;
     width: 99.5vw;
+    height: 1530px;
     margin-bottom: 80px;
 }
 
@@ -415,4 +416,16 @@ header ul {
     display: inline-block;
     width: 99.5vw;
     margin-bottom: 80px;
+}
+
+.services > h1 {
+    margin: 0 0 80px;
+    text-align: center;
+    font-size: 3em;
+    color: #313131;
+}
+
+.services>div{
+    height: 300px;
+    width: 350px;
 }
