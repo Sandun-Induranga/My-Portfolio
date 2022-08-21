@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 main {
     position: relative;
     width: 99.5vw;
