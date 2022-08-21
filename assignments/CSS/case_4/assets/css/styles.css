@@ -21,6 +21,7 @@ header {
     top: 0;
     height: 5vh;
     padding: 10px;
+    z-index: 2;
 }
 
 main:first-child > header {

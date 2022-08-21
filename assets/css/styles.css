@@ -319,3 +319,20 @@ header ul {
     top: 625px;
     margin: auto;
 }
+
+
+/*  Skills */
+
+.skills {
+    display: inline-block;
+    width: 99.5vw;
+    margin-bottom: 80px;
+}
+
+.skills > h1 {
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    color: #313131;
+}
