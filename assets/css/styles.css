@@ -21,7 +21,7 @@
     height: 60px;
     width: 99.5vw;
     padding: 0;
-    box-shadow: 4px 0 76px 10px #3A86FF;
+    box-shadow: 4px 0 30px 10px #3A86FF;
 }
 
 .top-bar img {
@@ -55,6 +55,7 @@ header ul {
     position: absolute;
     right: 88px;
     top: 0;
+    list-style: none;
 }
 
 
@@ -342,10 +343,10 @@ header ul {
 
 .skills > section > aside:nth-child(1) {
     position: absolute;
-    width: 766px;
-    height: 766px;
+    width: 628px;
+    height: 628px;
     border-radius: 100%;
-    top: 300px;
+    top: 150px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -355,22 +356,37 @@ header ul {
 
 .skills > section > aside:nth-child(1) > img {
     position: absolute;
+    height: 578px;
+    width: 578px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     border-radius: 100%;
-    box-shadow: 4px 0 30px 10px rgba(184, 184, 184, 1);
+    box-shadow: 4px 0 30px 10px #B8B8B8;
 }
 
-.skills > section > aside:nth-child(1) > img:nth-child(2){
+.skills > section > aside:nth-child(1) > img:nth-child(2) {
     box-shadow: 4px 0 76px 10px #3A86FF;
     border: 1px solid #3A86FF;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
 }
 
 .skills > section > aside:nth-child(2) {
     position: relative;
+}
+
+.skills > section > aside:nth-child(2){
+    position: relative;
+    height: 100vh;
+    top: 760px;
+}
+
+.skills h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #313131;
+    margin-bottom: 80px;
 }
