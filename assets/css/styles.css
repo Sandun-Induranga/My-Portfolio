@@ -329,7 +329,6 @@ header ul {
     position: relative;
     display: inline-block;
     width: 99.5vw;
-    height: 1000px;
     margin-bottom: 80px;
 }
 
@@ -338,7 +337,12 @@ header ul {
     position: relative;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 80px;
     color: #313131;
+}
+
+.skills > section {
+    position: relative;
 }
 
 .skills > section > aside:nth-child(1) {
@@ -346,8 +350,7 @@ header ul {
     width: 628px;
     height: 628px;
     border-radius: 100%;
-    top: 150px;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
     margin: auto;
@@ -378,7 +381,7 @@ header ul {
     position: relative;
 }
 
-.skills > section > aside:nth-child(2){
+.skills > section > aside:nth-child(2) {
     position: relative;
     height: 100vh;
     top: 760px;
@@ -391,21 +394,25 @@ header ul {
     margin-bottom: 80px;
 }
 
-.skills div{
+.skills div {
     position: relative;
     height: 306px;
     padding-left: 100px;
 }
-.skills img{
+
+.skills div > img {
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    width: 414px;
+    width: 450px;
     height: 306px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
 }
 
-.services{
+.services {
     position: relative;
+    display: inline-block;
+    width: 99.5vw;
+    margin-bottom: 80px;
 }
