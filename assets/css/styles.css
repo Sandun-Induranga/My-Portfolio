@@ -451,3 +451,28 @@ header ul {
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
 }
+
+.project{
+    position: relative;
+}
+
+.project > h1{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-size: 3em;
+    color: #313131;
+}
+
+.project>aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project>aside>div{
+    width: 780px;
+    height: 450px;
+    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+    border-radius: 10px;
+}
