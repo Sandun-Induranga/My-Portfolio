@@ -21,7 +21,7 @@
     height: 60px;
     width: 99.5vw;
     padding: 0;
-    box-shadow: 4px 4px 4px 4px #3A86FF;
+    box-shadow: 4px 0 76px 10px #3A86FF;
 }
 
 .top-bar img {
@@ -65,6 +65,7 @@ header ul {
     left: 200px;
     font-size: 30px;
     align-content: center;
+    text-shadow: 0 4px 30px #3A86FF;
 }
 
 .main-description > h1 {
@@ -96,7 +97,7 @@ header ul {
     width: 340px;
     height: 100%;
     border-radius: 30px;
-    box-shadow: 10px 4px 4px 4px #3A86FF;
+    box-shadow: 4px 0 76px 10px #3A86FF;
 }
 
 .social-icons {
@@ -324,8 +325,10 @@ header ul {
 /*  Skills */
 
 .skills {
+    position: relative;
     display: inline-block;
     width: 99.5vw;
+    height: 1000px;
     margin-bottom: 80px;
 }
 
@@ -335,4 +338,21 @@ header ul {
     text-align: center;
     margin-top: 100px;
     color: #313131;
+}
+
+.skills>section>aside:nth-child(1){
+    position: absolute;
+    width: 766px;
+    height: 766px;
+    border-radius: 100%;
+    top: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 4px 0 76px 10px rgba(184,184,184,1);
+}
+
+.skills>section>aside:nth-child(2){
+    position: relative;
 }
