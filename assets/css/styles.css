@@ -434,16 +434,18 @@ header ul {
 }
 
 .services > div {
-    display: inline-block;
+    display: flex;
     position: relative;
-    width: 90vw;
     padding-left: 88px;
+    align-content: center;
+    justify-content: center;
 }
 
 .services > div > div {
     position: relative;
     display: inline-block;
-    margin-left: 88px;
+    margin-left: 44px;
+    margin-right: 44px;
     margin-bottom: 80px;
     height: 300px;
     width: 400px;
