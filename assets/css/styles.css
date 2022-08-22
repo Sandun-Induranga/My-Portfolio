@@ -206,8 +206,18 @@ header ul {
 
 .edu {
     position: relative;
-    width: 99.5vw;
-    height: 750px;
+}
+
+.edu > aside {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.edu > aside > section {
+    position: relative;
+    width: 700px;
+    height: 600px;
 }
 
 .edu > h2 {
@@ -218,10 +228,6 @@ header ul {
     margin-bottom: 80px;
 }
 
-.edu>section{
-    display: flex;
-}
-
 .line {
     display: inline-block;
     position: absolute;
@@ -230,7 +236,7 @@ header ul {
     width: 0;
     left: 0;
     right: 0;
-    top: 130px;
+    top: 0;
     margin: auto;
 }
 
@@ -241,29 +247,30 @@ header ul {
     height: 200px;
 }
 
-.edu >section> div:nth-child(2) {
-    left: 250px;
-    top: 110px;
+.edu section > div:nth-child(2) {
+    left: 0;
+    top: 0;
 }
 
-.edu >section> div:nth-child(3) {
-    left: 750px;
-    top: 270px;
+.edu section > div:nth-child(3) {
+    right: 0;
+    top: 166px;
 }
 
-.edu >section> div:nth-child(4) {
-    left: 250px;
-    top: 440px;
+.edu section > div:nth-child(4) {
+    left: 0;
+    top: 332px;
 }
 
-.edu >section> div:nth-child(5) {
-    left: 750px;
-    top: 600px;
+.edu section > div:nth-child(5) {
+    right: 0;
+    top: 498px;
 }
 
 .edu-details > p:first-child {
     color: #282828;
     font-size: 1em;
+    margin-top: 0;
 }
 
 .edu-details a {
@@ -282,53 +289,53 @@ header ul {
     font-size: 16px;
 }
 
-/*.edu > div:nth-child(3) {*/
-/*    position: absolute;*/
-/*    background-color: #3A86FF;*/
-/*    height: 12px;*/
-/*    width: 12px;*/
-/*    border-radius: 100%;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: 130px;*/
-/*    margin: auto;*/
-/*}*/
+.edu section > div:nth-child(6) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
 
-/*.edu > div:nth-child(4) {*/
-/*    position: absolute;*/
-/*    background-color: #3A86FF;*/
-/*    height: 12px;*/
-/*    width: 12px;*/
-/*    border-radius: 100%;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: 295px;*/
-/*    margin: auto;*/
-/*}*/
+.edu section > div:nth-child(7) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 166px;
+    margin: auto;
+}
 
-/*.edu > div:nth-child(6) {*/
-/*    position: absolute;*/
-/*    background-color: #3A86FF;*/
-/*    height: 12px;*/
-/*    width: 12px;*/
-/*    border-radius: 100%;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: 460px;*/
-/*    margin: auto;*/
-/*}*/
+.edu section > div:nth-child(8) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 332px;
+    margin: auto;
+}
 
-/*.edu > div:nth-child(10) {*/
-/*    position: absolute;*/
-/*    background-color: #3A86FF;*/
-/*    height: 12px;*/
-/*    width: 12px;*/
-/*    border-radius: 100%;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: 625px;*/
-/*    margin: auto;*/
-/*}*/
+.edu section > div:nth-child(9) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 498px;
+    margin: auto;
+}
 
 
 /*  Skills */
