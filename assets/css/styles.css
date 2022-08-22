@@ -58,7 +58,11 @@ header ul {
     position: absolute;
     right: 88px;
     top: 0;
-    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #313131;
 }
 
 
@@ -134,15 +138,21 @@ header ul {
     color: #313131;
 }
 
-.about-content {
+.about-section>aside:nth-child(3) {
     position: relative;
-    margin: 10vw;
+    display: flex;
     align-content: center;
+    justify-content: center;
+}
+
+.about-section>aside:nth-child(3)>section{
+    position: relative;
+    height: 650px;
+    width: 1300px;
 }
 
 .intro-image {
-    display: inline-block;
-    position: relative;
+    position: absolute;
     left: 0;
     top: 0;
 }
@@ -151,14 +161,15 @@ header ul {
     width: 413px;
     height: 100%;
     border-radius: 10px;
+    margin-left: 88px;
 }
 
-.about-section .intro {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    left: 0;
-}
+/*.about-section .intro {*/
+/*    display: inline-block;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
 
 .info {
     display: inline-block;
@@ -166,7 +177,7 @@ header ul {
     font-size: 1em;
     width: 590px;
     top: 0;
-    right: 10vw;
+    right: 0;
     font-weight: bold;
     color: #313131;
 }
@@ -176,7 +187,7 @@ header ul {
     position: absolute;
     width: 590px;
     height: 168px;
-    right: 172px;
+    right: 0;
     top: 335px;
 }
 
