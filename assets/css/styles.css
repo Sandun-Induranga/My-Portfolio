@@ -648,20 +648,38 @@ footer {
     background-color: #3A86FF;
 }
 
-footer > aside > section > img{
+footer > aside > section:first-child{
+    position: relative;
+    display: inline-block;
+    width: 420px;
+    height: 100px;
+    left: 175px;
+    top: 34px;
+}
+
+footer > aside > section:first-child > img{
+    position: absolute;
     width: 100px;
     height: 100px;
     border-radius: 100%;
 }
 
-footer > aside > section > h2 {
+footer > aside > section:first-child > h2 {
+    position: absolute;
     display: inline-block;
     font-size: 1.5em;
     color: white;
+    margin: 0;
+    top: 15px;
+    left: 150px;
 }
 
-footer > aside > section > h3 {
+footer > aside > section:first-child > h3 {
+    position: absolute;
     display: inline-block;
     font-size: 1em;
     color: white;
+    left: 150px;
+    bottom: 15px;
+    margin: 0;
 }
