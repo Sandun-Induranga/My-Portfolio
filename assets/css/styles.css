@@ -35,9 +35,18 @@
     margin-bottom: 5px;
 }
 
+main>section:first-child{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 .main-image {
     background-color: #c9c9c9;
     position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     z-index: -1;
 }
 
@@ -95,7 +104,6 @@ a{
 }
 
 .des-image {
-    display: inline-block;
     position: absolute;
     right: 160px;
     top: 212px;
@@ -163,13 +171,6 @@ a{
     border-radius: 10px;
     margin-left: 88px;
 }
-
-/*.about-section .intro {*/
-/*    display: inline-block;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*}*/
 
 .info {
     display: inline-block;
