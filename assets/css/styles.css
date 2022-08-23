@@ -612,16 +612,23 @@ a {
 .contact form {
     position: relative;
     display: inline-block;
-    border: none;
 }
 
 .contact form > fieldset > input {
-    /*display: inline-block;*/
     width: 650px;
     height: 60px;
+    border: none;
     margin-bottom: 40px;
+    border-radius: 10px;
+    background: #ECF3FF;
 }
 
 .contact form > fieldset > textarea{
+    padding: 4px;
     width: 650px;
+    height: 170px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #ECF3FF;
 }
