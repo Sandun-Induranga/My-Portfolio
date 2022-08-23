@@ -553,13 +553,25 @@ a {
     color: #313131;
 }
 
-.contact > aside:nth-child(3) > div {
+.contact>aside{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact > aside>aside:first-child > div {
     position: relative;
-    margin: 88px;
+    margin: 44px 88px 88px;
     height: 60px;
 }
 
-.contact > aside:nth-child(3) > div > h4 {
+.contact > aside>aside:first-child{
+    position: relative;
+    display: inline-block;
+    width: 500px;
+}
+
+.contact > aside>aside:first-child > div > h4 {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -568,7 +580,8 @@ a {
     color: #282828;
     margin: 0;
 }
-.contact > aside:nth-child(3) > div > p {
+
+.contact > aside>aside:first-child > div > p {
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -578,7 +591,7 @@ a {
     margin: 0;
 }
 
-.contact > aside:nth-child(3) > div > i{
+.contact > aside>aside:first-child > div > i {
     display: inline-block;
     position: absolute;
     top: 10px;
@@ -586,7 +599,29 @@ a {
     font-size: 2em;
 }
 
-.contact > aside:nth-child(3) > div:nth-child(2) {
+.contact > aside>aside:first-child > div:nth-child(2) {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.contact > aside>aside:last-child {
+    display: inline-block;
+    width: 700px;
+}
+
+.contact form {
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+
+.contact form > fieldset > input {
+    /*display: inline-block;*/
+    width: 650px;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.contact form > fieldset > textarea{
+    width: 650px;
 }
