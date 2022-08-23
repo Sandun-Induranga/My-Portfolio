@@ -24,7 +24,7 @@
     height: 60px;
     width: 99.5vw;
     padding: 0;
-    box-shadow: 4px 0 30px 10px #3A86FF;
+    box-shadow: 2px 0 5px 5px #3A86FF;
 }
 
 .top-bar img {
@@ -646,18 +646,23 @@ a {
 footer {
     height: 300px;
     background-color: #3A86FF;
+    position: relative;
 }
 
-footer > aside > section:first-child{
+footer > aside:first-child {
+    position: relative;
+}
+
+footer > aside > section:first-child {
     position: relative;
     display: inline-block;
     width: 420px;
     height: 100px;
     left: 175px;
-    top: 34px;
+    top: 40px;
 }
 
-footer > aside > section:first-child > img{
+footer > aside > section:first-child > img {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -682,4 +687,24 @@ footer > aside > section:first-child > h3 {
     left: 150px;
     bottom: 15px;
     margin: 0;
+}
+
+footer > aside > img {
+    position: absolute;
+    top: 40px;
+    right: 88px;
+}
+
+footer > aside:last-child {
+    position: absolute;
+    display: flex;
+    width: 99.5vw;
+    align-content: center;
+    justify-content: center;
+    bottom: 5px;
+}
+
+footer > aside:last-child > p,footer > aside:last-child > p>i {
+    font-size: 0.6em;
+    color: white;
 }
