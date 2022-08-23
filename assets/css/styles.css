@@ -553,45 +553,45 @@ a {
     color: #313131;
 }
 
-.contact>aside{
+.contact > aside {
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.contact > aside>aside:first-child > div {
+.contact > aside > aside:first-child > div {
     position: relative;
     margin: 44px 88px 88px;
     height: 60px;
 }
 
-.contact > aside>aside:first-child{
+.contact > aside > aside:first-child {
     position: relative;
     display: inline-block;
     width: 500px;
 }
 
-.contact > aside>aside:first-child > div > h4 {
+.contact > aside > aside:first-child > div > h4 {
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 60px;
     font-size: 24px;
     color: #282828;
     margin: 0;
 }
 
-.contact > aside>aside:first-child > div > p {
+.contact > aside > aside:first-child > div > p {
     display: inline-block;
     position: absolute;
     bottom: 0;
-    left: 50px;
+    left: 60px;
     font-size: 1em;
     color: #646464;
     margin: 0;
 }
 
-.contact > aside>aside:first-child > div > i {
+.contact > aside > aside:first-child > div > i {
     display: inline-block;
     position: absolute;
     top: 10px;
@@ -599,12 +599,12 @@ a {
     font-size: 2em;
 }
 
-.contact > aside>aside:first-child > div:nth-child(2) {
+.contact > aside > aside:first-child > div:nth-child(2) {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.contact > aside>aside:last-child {
+.contact > aside > aside:last-child {
     display: inline-block;
     width: 700px;
 }
@@ -612,6 +612,7 @@ a {
 .contact form {
     position: relative;
     display: inline-block;
+    margin-bottom: 80px;
 }
 
 .contact form > fieldset > input {
@@ -620,10 +621,11 @@ a {
     border: none;
     margin-bottom: 40px;
     border-radius: 10px;
+    padding-left: 4px;
     background: #ECF3FF;
 }
 
-.contact form > fieldset > textarea{
+.contact form > fieldset > textarea {
     padding: 4px;
     width: 650px;
     height: 170px;
@@ -631,4 +633,12 @@ a {
     border-radius: 10px;
     border: none;
     background: #ECF3FF;
+}
+
+.contact form > fieldset > button{
+    height: 60px;
+    color: white;
+    border-radius: 8px;
+    background-color: #3A86FF;
+    border: none;
 }
