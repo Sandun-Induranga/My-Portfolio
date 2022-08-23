@@ -107,13 +107,13 @@ a {
 .des-image {
     position: absolute;
     right: 160px;
-    top: 212px;
+    top: 280px;
     margin: auto;
 }
 
 .des-image img {
-    width: 340px;
-    height: 100%;
+    width: 228px;
+    height: 304px;
     border-radius: 30px;
     box-shadow: 4px 0 76px 10px #3A86FF;
 }
@@ -505,6 +505,9 @@ a {
     border-radius: 10px;
 }
 
+
+/* Gallery */
+
 .gallery > h1 {
     margin-top: 100px;
     margin-bottom: 80px;
@@ -527,6 +530,24 @@ a {
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 100px;
     border-radius: 10px;
+}
+
+
+/* Contact */
+
+.contact {
+    position: relative;
+}
+
+.contact > h1 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 3em;
+    color: #313131;
+}
+
+.contact > aside:first-child {
+    display: flex;
 }
