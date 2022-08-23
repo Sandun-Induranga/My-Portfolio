@@ -458,7 +458,7 @@ a{
 .services > div {
     display: flex;
     position: relative;
-    padding-left: 88px;
+    /*padding-left: 200px;*/
     align-content: center;
     justify-content: center;
 }
@@ -477,6 +477,7 @@ a{
 
 .project {
     position: relative;
+    margin-bottom: 80px;
 }
 
 
@@ -501,4 +502,28 @@ a{
     height: 450px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
+}
+
+.gallery>h1{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 3em;
+    color: #313131;
+}
+
+.gallery>section{
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.gallery>section>div{
+    height: 300px;
+    width: 200px;
+    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
