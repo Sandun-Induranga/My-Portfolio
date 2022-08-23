@@ -130,7 +130,7 @@ a {
     margin-right: 38px;
 }
 
-.social-icons img:hover{
+.social-icons img:hover {
     box-shadow: 4px 0 76px 10px #3A86FF;
     cursor: pointer;
 }
@@ -555,4 +555,18 @@ a {
 
 .contact > aside:first-child {
     display: flex;
+}
+
+.contact i {
+    display: inline-block;
+    color: #3A86FF;
+    font-size: 2em;
+}
+
+.contact h4 {
+    display: inline-block;
+}
+
+.contact p {
+    display: inline-block;
 }
