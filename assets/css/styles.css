@@ -553,20 +553,40 @@ a {
     color: #313131;
 }
 
-.contact > aside:first-child {
-    display: flex;
+.contact > aside:nth-child(3) > div {
+    position: relative;
+    margin: 88px;
+    height: 60px;
 }
 
-.contact i {
+.contact > aside:nth-child(3) > div > h4 {
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    font-size: 24px;
+    color: #282828;
+    margin: 0;
+}
+.contact > aside:nth-child(3) > div > p {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    font-size: 1em;
+    color: #646464;
+    margin: 0;
+}
+
+.contact > aside:nth-child(3) > div > i{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
     color: #3A86FF;
     font-size: 2em;
 }
 
-.contact h4 {
-    display: inline-block;
-}
-
-.contact p {
-    display: inline-block;
+.contact > aside:nth-child(3) > div:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
