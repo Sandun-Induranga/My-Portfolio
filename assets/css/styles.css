@@ -20,11 +20,11 @@
     position: fixed;
     z-index: 2;
     display: inline-block;
-    background-color: white;
     height: 60px;
     width: 99.5vw;
     padding: 0;
     box-shadow: 2px 0 5px 5px #3A86FF;
+    background-color: #dfe7fd;
 }
 
 .top-bar img {
@@ -75,6 +75,10 @@ a {
     color: #313131;
 }
 
+body{
+    background-color: #dfe7fd;
+}
+
 
 /* Home */
 
@@ -122,6 +126,7 @@ a {
     position: absolute;
     left: 200px;
     bottom: 100px;
+    z-index: 1.5;
 }
 
 .social-icons img {
