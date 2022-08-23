@@ -130,6 +130,11 @@ a {
     margin-right: 38px;
 }
 
+.social-icons img:hover{
+    box-shadow: 4px 0 76px 10px #3A86FF;
+    cursor: pointer;
+}
+
 
 /* About */
 
