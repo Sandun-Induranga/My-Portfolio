@@ -70,7 +70,7 @@ header ul {
     top: 0;
 }
 
-header ul li:hover a{
+header ul li:hover a {
     color: #3A86FF;
 }
 
@@ -83,7 +83,7 @@ a {
 /* Home */
 
 .main-description {
-    z-index:2;
+    z-index: 2;
     position: absolute;
     top: 200px;
     left: 200px;
@@ -95,6 +95,12 @@ a {
 .main-description > h1 {
     font-size: 3em;
     color: #313131;
+    margin-bottom: 10px;
+}
+
+.main-description > h1 > i {
+    font-size: 1em;
+    color: #3A86FF;
     margin-bottom: 10px;
 }
 
@@ -136,11 +142,10 @@ a {
     margin-right: 38px;
 }
 
-.social-icons img:hover{
-    background-color: #3A86FF;
-    box-shadow: 4px 0 76px 10px #3A86FF;
+.social-icons img:hover {
     cursor: pointer;
-    opacity: 0.5;
+    transition: all 1.5s;
+    transform: rotateY(360deg);
 }
 
 
@@ -165,6 +170,11 @@ a {
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-bottom: 80px;
+}
+
+.about-section > aside>section{
+    display: flex;
 }
 
 .about-section > aside:nth-child(3) > section {
@@ -173,10 +183,13 @@ a {
     width: 1300px;
 }
 
+.about-section > aside>section>aside:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
 .intro-image {
-    position: absolute;
-    left: 0;
-    top: 0;
+    margin-right: 80px;
 }
 
 .intro-image > img {
@@ -187,23 +200,11 @@ a {
 }
 
 .info {
-    display: inline-block;
-    position: absolute;
     font-size: 1em;
-    width: 590px;
-    top: 0;
-    right: 0;
     font-weight: bold;
     color: #313131;
-}
-
-.des {
-    display: inline-block;
-    position: absolute;
-    width: 590px;
-    height: 168px;
-    right: 0;
-    top: 335px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .info span {
@@ -213,18 +214,16 @@ a {
 
 .des {
     color: #646464;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .about-section button {
-    position: relative;
     background-color: #3A86FF;
     width: 196px;
     height: 56px;
     border: none;
     border-radius: 10px;
     color: white;
-    margin-right: 30vw;
 }
 
 
@@ -478,8 +477,7 @@ a {
 }
 
 .services > div > div {
-    position: relative;
-    display: inline-block;
+    display: flex;
     margin-left: 44px;
     margin-right: 44px;
     margin-bottom: 80px;
@@ -489,13 +487,19 @@ a {
     border-radius: 10px;
 }
 
-.project {
-    position: relative;
-    margin-bottom: 80px;
+.services > div > div>div{
+    height: calc(100%/3);
+    flex-direction: column;
+    border: #282828;//
 }
 
 
 /* Projects */
+
+.project {
+    position: relative;
+    margin-bottom: 80px;
+}
 
 .project > h1 {
     text-align: center;
@@ -617,6 +621,10 @@ a {
     width: 700px;
 }
 
+fieldset{
+    border: none;
+}
+
 .contact form {
     position: relative;
     display: inline-block;
@@ -629,12 +637,12 @@ a {
     border: none;
     margin-bottom: 40px;
     border-radius: 10px;
-    padding-left: 4px;
+    padding-left: 10px;
     background: #ECF3FF;
 }
 
 .contact form > fieldset > textarea {
-    padding: 4px;
+    padding: 10px;
     width: 650px;
     height: 170px;
     margin-bottom: 70px;
@@ -650,6 +658,9 @@ a {
     background-color: #3A86FF;
     border: none;
 }
+
+
+/* Footer */
 
 footer {
     height: 300px;
@@ -717,7 +728,9 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     color: white;
 }
 
-button:hover,#button:hover{
+button:hover, #button:hover {
+    cursor: pointer;
     background-color: white;
     color: #3A86FF;
+    border: 1px solid #3A86FF;
 }
