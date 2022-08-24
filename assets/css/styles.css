@@ -18,13 +18,13 @@
 
 .top-bar {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     display: inline-block;
     height: 60px;
     width: 99.5vw;
     padding: 0;
     box-shadow: 2px 0 5px 5px #3A86FF;
-    background-color: #dfe7fd;
+    background-color: white;
 }
 
 .top-bar img {
@@ -48,7 +48,7 @@ main > section:first-child {
     display: flex;
     align-content: center;
     justify-content: center;
-    z-index: -1;
+    z-index: 1;
 }
 
 .main-image > img {
@@ -70,19 +70,20 @@ header ul {
     top: 0;
 }
 
+header ul li:hover a{
+    color: #3A86FF;
+}
+
 a {
     text-decoration: none;
     color: #313131;
-}
-
-body{
-    background-color: #dfe7fd;
 }
 
 
 /* Home */
 
 .main-description {
+    z-index:2;
     position: absolute;
     top: 200px;
     left: 200px;
@@ -126,7 +127,7 @@ body{
     position: absolute;
     left: 200px;
     bottom: 100px;
-    z-index: 1.5;
+    z-index: 5;
 }
 
 .social-icons img {
@@ -135,9 +136,11 @@ body{
     margin-right: 38px;
 }
 
-.social-icons img:hover {
+.social-icons img:hover{
+    background-color: #3A86FF;
     box-shadow: 4px 0 76px 10px #3A86FF;
     cursor: pointer;
+    opacity: 0.5;
 }
 
 
@@ -709,7 +712,12 @@ footer > aside:last-child {
     bottom: 5px;
 }
 
-footer > aside:last-child > p,footer > aside:last-child > p>i {
+footer > aside:last-child > p, footer > aside:last-child > p > i {
     font-size: 0.6em;
     color: white;
+}
+
+button:hover,#button:hover{
+    background-color: white;
+    color: #3A86FF;
 }
