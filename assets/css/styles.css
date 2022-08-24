@@ -488,6 +488,10 @@ a {
     flex-direction: column;
 }
 
+.services > div > div:hover {
+    cursor: pointer;
+}
+
 .services > div > div > div {
     display: flex;
     width: 100%;
@@ -510,6 +514,11 @@ a {
     font-size: 3em;
 }
 
+.services > div > div > div:first-child > i:hover {
+    cursor: pointer;
+    font-size: 4em;
+}
+
 .services > div > div > div:nth-child(2) {
     align-items: center;
     justify-content: center;
@@ -530,6 +539,13 @@ a {
     font-size: 1em;
     background: none;
     border: none;
+}
+
+.services > div > div > div:nth-child(3) > button:hover {
+    background-color: #3A86FF;
+    color: white;
+    opacity: 0.2;
+    box-shadow: 4px 0 76px 10px #3A86FF;
 }
 
 
