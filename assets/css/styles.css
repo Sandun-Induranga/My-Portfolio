@@ -489,9 +489,47 @@ a {
 }
 
 .services > div > div > div {
+    display: flex;
     width: 100%;
-    height: calc(100% / 3);
-    border: 1px solid #282828;
+    height: calc(100% / 4);
+}
+
+.services > div > div > div:first-child {
+    display: flex;
+    width: 100%;
+    height: calc(100%/2);
+}
+
+.services > div > div > div:first-child {
+    align-items: end;
+    justify-content: center;
+}
+
+.services > div > div > div:first-child > i {
+    color: #3A86FF;
+    font-size: 3em;
+}
+
+.services > div > div > div:nth-child(2) {
+    align-items: center;
+    justify-content: center;
+}
+
+.services > div > div > div:nth-child(2) > p {
+    color: #2B2B2B;
+    font-size: 1em;
+}
+
+.services > div > div > div:nth-child(3) {
+    align-items: center;
+    justify-content: center;
+}
+
+.services > div > div > div:nth-child(3) > button {
+    color: #3A86FF;
+    font-size: 1em;
+    background: none;
+    border: none;
 }
 
 
