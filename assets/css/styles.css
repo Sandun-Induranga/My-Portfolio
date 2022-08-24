@@ -173,7 +173,7 @@ a {
     margin-bottom: 80px;
 }
 
-.about-section > aside>section{
+.about-section > aside > section {
     display: flex;
 }
 
@@ -183,7 +183,7 @@ a {
     width: 1300px;
 }
 
-.about-section > aside>section>aside:last-child{
+.about-section > aside > section > aside:last-child {
     display: flex;
     flex-direction: column;
 }
@@ -242,11 +242,10 @@ a {
 .edu > aside > section {
     position: relative;
     width: 700px;
-    height: 600px;
+    height: 550px;
 }
 
 .edu > h2 {
-    display: block;
     text-align: center;
     font-size: 2em;
     color: #313131;
@@ -435,13 +434,13 @@ a {
     margin-bottom: 80px;
 }
 
-.skills div {
+.skills > section > aside:last-child div {
     position: relative;
     height: 306px;
     padding-left: 100px;
 }
 
-.skills div > img {
+.skills > section > aside:last-child div > img {
     position: absolute;
     left: 0;
     right: 0;
@@ -477,6 +476,7 @@ a {
 }
 
 .services > div > div {
+    position: relative;
     display: flex;
     margin-left: 44px;
     margin-right: 44px;
@@ -485,12 +485,13 @@ a {
     width: 400px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
+    flex-direction: column;
 }
 
-.services > div > div>div{
-    height: calc(100%/3);
-    flex-direction: column;
-    border: #282828;//
+.services > div > div > div {
+    width: 100%;
+    height: calc(100% / 3);
+    border: 1px solid #282828;
 }
 
 
@@ -621,7 +622,7 @@ a {
     width: 700px;
 }
 
-fieldset{
+fieldset {
     border: none;
 }
 
