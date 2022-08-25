@@ -582,7 +582,6 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid #3A86FF;
 }
 
 .project > aside > section > div:first-child {
@@ -594,8 +593,45 @@ a {
     flex-direction: column;
 }
 
-.project > aside > section > div:nth-child(2)>h3{
+.project > aside > section > div:nth-child(2) > h3 {
+    margin-top: 75px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-size: 1em;
+    color: #2B2B2B;
+    font-weight: normal;
+}
 
+.project > aside > section > div:nth-child(2) > h4 {
+    margin-top: 0;
+    margin-left: 90px;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: #646464;
+    font-weight: normal;
+}
+
+.project > aside > section > div:nth-child(2) > ul {
+    list-style: none;
+    margin-left: 90px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.project > aside > section > div:nth-child(2) > ul>li {
+    padding: 0;
+    color: #B8B8B8;
+    font-size: 16px;
+}
+
+.project > aside > section > div:nth-child(2)>button{
+    width: 196px;
+    height: 56px;
+    margin-left: 90px;
+    border-radius: 8px;
+    background-color: #3A86FF;
+    color: white;
+    border: none;
 }
 
 
