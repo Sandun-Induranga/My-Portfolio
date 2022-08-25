@@ -619,7 +619,7 @@ a {
 }
 
 .project > aside > section > div:nth-child(2) > ul>li {
-    padding: 0;
+    padding: 0 0 2px;
     color: #B8B8B8;
     font-size: 16px;
 }
