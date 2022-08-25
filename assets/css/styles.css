@@ -568,11 +568,20 @@ a {
     justify-content: center;
 }
 
-.project > aside > div {
+.project > aside > section {
+    display: flex;
     width: 780px;
     height: 450px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
+    justify-content: center;
+}
+
+.project > aside > section>div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #3A86FF;
 }
 
 
