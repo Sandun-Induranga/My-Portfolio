@@ -590,6 +590,14 @@ a {
     justify-content: center;
 }
 
+.project > aside > section > div:nth-child(2) {
+    flex-direction: column;
+}
+
+.project > aside > section > div:nth-child(2)>h3{
+
+}
+
 
 /* Gallery */
 
