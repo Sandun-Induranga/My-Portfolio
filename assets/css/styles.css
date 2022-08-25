@@ -429,16 +429,55 @@ a, header ul li {
     top: 760px;
 }
 
-.skills > section > aside:nth-child(1)>section{
+.skills > section > aside:nth-child(1) > section {
     z-index: 1;
     display: flex;
     flex-direction: row;
     width: 578px;
     height: 578px;
 }
-.skills > section > aside:nth-child(1)>section>div{
-    width: calc(100%/5);
-    border: 1px solid #3A86FF;
+
+.skills > section > aside:nth-child(1) > section > div {
+    position: relative;
+    width: calc(100% / 5);
+}
+
+.skills > section > aside:nth-child(1) > section > div > img:first-child {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.skills > section > aside:nth-child(1) > section > div > img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.skills > section > aside:nth-child(1) > section > div:first-child > img:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > img:first-child {
+    top: 184px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:first-child > img:nth-child(2), .skills > section > aside:nth-child(1) > section > div:last-child > img:nth-child(2) {
+    bottom: 184px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > img:first-child, .skills > section > aside:nth-child(1) > section > div:nth-child(4) > img:first-child {
+    top: 70px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > img:nth-child(2), .skills > section > aside:nth-child(1) > section > div:nth-child(4) > img:nth-child(2) {
+    bottom: 70px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(3) > img:first-child {
+    top: 17px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(3) > img:nth-child(2) {
+    bottom: 17px;
 }
 
 .skills h2 {
