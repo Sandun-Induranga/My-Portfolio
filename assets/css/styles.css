@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3A86FF;
+    background-color: #a5a5a5;
 }
 
 
@@ -28,11 +28,9 @@
 }
 
 .top-bar img {
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    position: relative;
     margin-left: 88px;
-    margin-bottom: 5px;
+    margin-top: 4px;
 }
 
 main > section:first-child {
