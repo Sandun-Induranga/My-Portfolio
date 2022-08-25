@@ -2,123 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case 2</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Basic Web Layout</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="assets/fonts/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        main > section > section:first-child > div:nth-child(1) {
+            background: url("assets/img/gif.gif");
+            left: 0;
+        }
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+        main > section > section:first-child > div:nth-child(2) {
+            background: url("assets/img/gif.gif");
+            left: calc(100%/3);
+        }
 
+        main > section > section:first-child > div:nth-child(3) {
+            background: url("assets/img/gif.gif");
+            right: 0;
+        }
+    </style>
 </head>
 <body>
+
 <header>
-    <img src="assets/img/img.png" alt="logo">
-    <ul>
-        <li>Home</li>
-        <li>Service</li>
-        <li>Contact</li>
-        <li>About Us</li>
-    </ul>
-</header>
-<main>
-
+    <img alt="Logo" src="assets/img/favicon.png">
     <nav>
-        <section>
-            <ul>
-                <li><i class="fa-solid fa-house"></i> Home</li>
-                <li><i class="fa-solid fa-list-check"></i> Service</li>
-                <li><i class="fa-solid fa-address-card"></i> Contact</li>
-                <li><i class="fa-solid fa-network-wired"></i> About Us</li>
-            </ul>
-        </section>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
+            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+        </ul>
     </nav>
+</header>
 
+<main>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
+            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
     <section>
-        <div>
-            <img src="assets/img/gif.gif" alt="">
-            <img src="assets/img/gif.gif" alt="">
-            <img src="assets/img/gif.gif" alt="">
-        </div>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Alias asperiores at, autem blanditiis commodi culpa cupiditate, doloribus expedita facere fugit hic id
+                itaque maiores minima minus nesciunt praesentium quasi, suscipit veritatis vitae? Deleniti dicta et
+                officia possimus vero?</p>
+            <p>Ad beatae consequatur dicta distinctio dolor dolorem, dolorum ea exercitationem explicabo harum labore
+                laudantium libero magni mollitia, perspiciatis, quae quam quisquam reiciendis totam ullam ut veritatis
+                voluptatum? Eveniet, laudantium voluptas.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>Amet aspernatur, at dicta doloremque eligendi expedita explicabo nesciunt optio reiciendis tempora! Ad
+                consectetur magnam maiores non odio recusandae saepe voluptatum. Architecto dignissimos excepturi in
+                laboriosam nam nemo, nostrum quidem.</p>
+            <p>Ad consequatur esse odio provident qui quisquam velit. Asperiores consequatur corporis, deleniti deserunt
+                doloremque doloribus iusto laudantium natus nobis non pariatur praesentium provident quaerat quia quos
+                reprehenderit repudiandae sequi unde.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Consequatur, fuga inventore magnam minus provident quas qui quis quos reiciendis reprehenderit, rerum
+                saepe ut veritatis! Architecto, aut consequatur delectus doloribus earum fugit natus possimus qui sed ut
+                velit voluptatum.</p>
+            <p>Aliquid commodi consectetur consequuntur corporis cupiditate debitis, dicta dolor dolore dolorum ducimus
+                eaque, eum harum in iure mollitia non numquam omnis provident qui saepe sint suscipit ullam veniam vitae
+                voluptates.</p>
+        </section>
     </section>
-
-    <section class="para">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illum, laboriosam minus nostrum quas qui
-            reiciendis! Accusamus, aspernatur atque aut distinctio dolores eum explicabo incidunt laboriosam nemo non
-            nostrum reiciendis.</p>
-        <p>Aliquid dignissimos dolorum iusto nemo optio pariatur perferendis quaerat ratione rerum suscipit! Culpa et
-            harum impedit, iste magnam quia repellat similique sunt voluptatem? Consequuntur error ex, id optio soluta
-            voluptate.</p>
-        <p>A dolorem doloribus explicabo in ipsam laborum magni, nesciunt omnis perspiciatis possimus quaerat quam quasi
-            ratione reiciendis repudiandae. Commodi corporis ducimus, eaque esse laboriosam molestiae mollitia officiis
-            quibusdam rerum tenetur.</p>
-        <p>Adipisci aliquam, assumenda at commodi consequatur, debitis est id iure nobis placeat provident quod rem
-            totam ut voluptatum! Ad hic itaque laudantium maiores numquam omnis quas quia soluta temporibus
-            voluptatem.</p>
-        <p>Accusamus accusantium alias asperiores aspernatur autem consequuntur debitis dolorem doloribus dolorum
-            exercitationem facilis id inventore ipsam ipsum nesciunt nobis nostrum obcaecati quod rem repudiandae sit
-            sunt temporibus, tenetur vero voluptatem.</p>
-        <p>Atque dolorem magnam molestias officiis. Ad autem consequatur, eveniet facere iste nobis officia similique
-            unde? Alias aut corporis dolore dolorum esse eveniet fuga id iste libero, magnam maxime sit, vitae!</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-        <p>Facilis natus optio quas. Accusantium cum fugiat maiores reprehenderit! Consectetur cupiditate dolor
-            doloribus hic maiores mollitia nesciunt quam quis ut? Alias cum debitis eum minima suscipit ut, velit vitae
-            voluptatum.</p>
-    </section>
-
 </main>
 
 <footer>
-    <p>Developed by IJSE</p>
+    <h4>Developed By IJSE @ 2022</h4>
 </footer>
 
 </body>
