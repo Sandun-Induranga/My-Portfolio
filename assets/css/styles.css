@@ -68,11 +68,12 @@ header ul {
     top: 0;
 }
 
-header ul li:hover a {
+header ul li:hover a, header ul li:hover {
+    cursor: pointer;
     color: #3A86FF;
 }
 
-a {
+a, header ul li {
     text-decoration: none;
     color: #313131;
 }
@@ -384,6 +385,9 @@ a {
 }
 
 .skills > section > aside:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 628px;
     height: 628px;
@@ -423,6 +427,18 @@ a {
     position: relative;
     height: 100vh;
     top: 760px;
+}
+
+.skills > section > aside:nth-child(1)>section{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 578px;
+    height: 578px;
+}
+.skills > section > aside:nth-child(1)>section>div{
+    width: calc(100%/5);
+    border: 1px solid #3A86FF;
 }
 
 .skills h2 {
@@ -568,6 +584,11 @@ a {
     justify-content: center;
 }
 
+.project > aside > section > div > img:hover {
+    transition: all 0.6s;
+    transform: rotateY(360deg);
+}
+
 .project > aside > section {
     display: flex;
     width: 780px;
@@ -618,13 +639,13 @@ a {
     margin-bottom: 50px;
 }
 
-.project > aside > section > div:nth-child(2) > ul>li {
+.project > aside > section > div:nth-child(2) > ul > li {
     padding: 0 0 2px;
     color: #B8B8B8;
     font-size: 16px;
 }
 
-.project > aside > section > div:nth-child(2)>button{
+.project > aside > section > div:nth-child(2) > button {
     width: 196px;
     height: 56px;
     margin-left: 90px;
