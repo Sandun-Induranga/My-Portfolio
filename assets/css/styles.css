@@ -442,45 +442,47 @@ a, header ul li {
     width: calc(100% / 5);
 }
 
-.skills > section > aside:nth-child(1) > section > div > img:first-child {
+.skills > section > aside:nth-child(1) > section > div > div:first-child, .skills > section > aside:nth-child(1) > section > div > div:nth-child(2) {
+    display: flex;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    box-shadow: 4px 0 76px 10px #3A86FF;
+    /*box-shadow: 4px 0 76px 10px #3A86FF;*/
     border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.skills > section > aside:nth-child(1) > section > div > img:nth-child(2) {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    box-shadow: 4px 0 76px 10px #3A86FF;
-    border-radius: 10px;
+.skills > section > aside:nth-child(1) > section > div p {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    color: white;
 }
 
-.skills > section > aside:nth-child(1) > section > div:first-child > img:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > img:first-child {
+.skills > section > aside:nth-child(1) > section > div:first-child > div:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > div:first-child {
     top: 184px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:first-child > img:nth-child(2), .skills > section > aside:nth-child(1) > section > div:last-child > img:nth-child(2) {
+.skills > section > aside:nth-child(1) > section > div:first-child > div:nth-child(2), .skills > section > aside:nth-child(1) > section > div:last-child > div:nth-child(2) {
     bottom: 184px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > img:first-child, .skills > section > aside:nth-child(1) > section > div:nth-child(4) > img:first-child {
-    top: 70px;
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child, .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child {
+    top: 60px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > img:nth-child(2), .skills > section > aside:nth-child(1) > section > div:nth-child(4) > img:nth-child(2) {
-    bottom: 70px;
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2), .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2) {
+    bottom: 60px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(3) > img:first-child {
+.skills > section > aside:nth-child(1) > section > div:nth-child(3) > div:first-child {
     top: 17px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(3) > img:nth-child(2) {
+.skills > section > aside:nth-child(1) > section > div:nth-child(3) > div:nth-child(2) {
     bottom: 17px;
 }
 
