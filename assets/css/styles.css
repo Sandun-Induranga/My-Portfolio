@@ -447,8 +447,9 @@ a, header ul li {
     position: absolute;
     left: 0;
     right: 0;
+    width: 60px;
     margin: auto;
-    /*box-shadow: 4px 0 76px 10px #3A86FF;*/
+    box-shadow: 4px 0 76px 10px #3A86FF;
     border-radius: 10px;
     flex-direction: column;
     align-items: center;
@@ -462,6 +463,9 @@ a, header ul li {
     color: white;
 }
 
+
+/* Languages */
+
 .skills > section > aside:nth-child(1) > section > div:first-child > div:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > div:first-child {
     top: 184px;
 }
@@ -472,6 +476,22 @@ a, header ul li {
 
 .skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child, .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child {
     top: 60px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child{
+    margin-right: 40px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2){
+    margin-left: 40px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child{
+    margin-left: 40px;
+}
+
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2){
+    margin-right: 40px;
 }
 
 .skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2), .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2) {
