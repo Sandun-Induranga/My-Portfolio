@@ -478,19 +478,19 @@ a, header ul li {
     top: 60px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child{
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child {
     margin-right: 40px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2){
+.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2) {
     margin-left: 40px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child{
+.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child {
     margin-left: 40px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2){
+.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2) {
     margin-right: 40px;
 }
 
@@ -731,22 +731,40 @@ a, header ul li {
     color: #313131;
 }
 
-.gallery > section {
+.gallery>aside{
     display: flex;
-    position: relative;
-    align-content: center;
     justify-content: center;
+    align-items: center;
+}
+.gallery > aside>section {
+    display: grid;
+    width: 1000px;
+    height: 1050px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.gallery > section > img {
-    position: relative;
-    height: fit-content;
-    width: fit-content;
-    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 10px;
+.gallery > aside>section>div{
+    background-color: #3A86FF;
 }
+
+/*.gallery > section {*/
+/*    display: flex;*/
+/*    position: relative;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.gallery > section > img {*/
+/*    position: relative;*/
+/*    height: fit-content;*/
+/*    width: fit-content;*/
+/*    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);*/
+/*    margin-left: 40px;*/
+/*    margin-right: 40px;*/
+/*    border-radius: 10px;*/
+/*}*/
 
 
 /* Contact */
