@@ -531,7 +531,7 @@ a, header ul li {
     display: flex;
     /*flex-direction: column;*/
     width: 900px;
-    height: 500px;
+    height: 420px;
     /*align-items: center;*/
     justify-content: center;
 }
@@ -552,12 +552,31 @@ a, header ul li {
     justify-content: center;
 }
 
-.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(2){
-    width: 420px;
-    height: 306px;
-    background: url("../images/certificate-1.png");
+.skills > section > aside:last-child> section>div:nth-child(2)>div{
+    background-image: url("../images/certificate-1.png");
     background-size: cover;
     background-position: center;
+        box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+}
+.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(1){
+    width: 360px;
+    height: 250px;
+    margin-right: -230px;
+}
+.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(2){
+    width: 550px;
+    height: 420px;
+}
+
+.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(3){
+    z-index: -1;
+    width: 360px;
+    height: 250px;
+    margin-left: -230px;
+}
+
+.skills > section>button{
+
 }
 
 /*.skills > section > aside:last-child div > img {*/
@@ -567,7 +586,7 @@ a, header ul li {
 /*    margin: auto;*/
 /*    width: 450px;*/
 /*    height: 306px;*/
-/*    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);*/
+
 /*}*/
 
 
