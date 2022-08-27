@@ -543,7 +543,7 @@ a, header ul li {
     /*padding-left: 100px;*/
     /*background: url("../images/certificate-1.png");*/
     /*background-size: cover;*/
-    border: 1px solid #8e8e8e;
+    /*border: 1px solid #8e8e8e;*/
 }
 
 .skills > section > aside:last-child> section>div{
@@ -552,6 +552,13 @@ a, header ul li {
 }
 .skills > section > aside:last-child> section>div>button{
     margin: 55px;
+    background: none;
+    border: none;
+}
+
+.skills > section > aside:last-child> section>div>button>i{
+    font-size: 3em;
+    color: #3A86FF;
 }
 
 .skills > section > aside> section>div:nth-child(2){
