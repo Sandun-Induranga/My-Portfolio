@@ -367,7 +367,7 @@ a, header ul li {
     position: relative;
     display: inline-block;
     width: 99.5vw;
-    height: 1530px;
+    height: 1500px;
     margin-bottom: 80px;
 }
 
@@ -420,14 +420,18 @@ a, header ul li {
     opacity: 0.5;
 }
 
+.skills > section > aside:nth-child(1) > img:nth-child(1) {
+    /*opacity: 0.9;*/
+}
+
 .skills > section > aside:nth-child(2) {
     position: relative;
 }
 
 .skills > section > aside:nth-child(2) {
     position: relative;
-    height: 100vh;
-    top: 760px;
+    /*height: 980px;*/
+    top: 680px;
 }
 
 .skills > section > aside:nth-child(1) > section {
@@ -507,28 +511,64 @@ a, header ul li {
     bottom: 17px;
 }
 
+
+/* Certificate */
+
 .skills h2 {
     font-size: 2em;
     text-align: center;
     color: #313131;
     margin-bottom: 80px;
 }
-
-.skills > section > aside:last-child div {
+.skills > section > aside:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills > section > aside:last-child>section{
     position: relative;
-    height: 306px;
-    padding-left: 100px;
+    display: flex;
+    /*flex-direction: column;*/
+    width: 900px;
+    height: 500px;
+    /*align-items: center;*/
+    justify-content: center;
 }
 
-.skills > section > aside:last-child div > img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 450px;
-    height: 306px;
-    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+.skills > section > aside:last-child> section>div {
+    /*position: relative;*/
+    /*width: 450px;*/
+    /*height: 306px;*/
+    /*padding-left: 100px;*/
+    /*background: url("../images/certificate-1.png");*/
+    /*background-size: cover;*/
+    border: 1px solid #8e8e8e;
 }
+
+.skills > section > aside> section>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(2){
+    width: 420px;
+    height: 306px;
+    background: url("../images/certificate-1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*.skills > section > aside:last-child div > img {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    width: 450px;*/
+/*    height: 306px;*/
+/*    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);*/
+/*}*/
 
 
 /* Services */
