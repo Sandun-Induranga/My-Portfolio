@@ -749,10 +749,12 @@ a, header ul li {
 .project > aside > section > div:nth-child(2) {
     flex-direction: column;
 }
-.project > aside > section > div:nth-child(1) >img{
+
+.project > aside > section > div:nth-child(1) > img {
     width: 350px;
     height: 220px;
 }
+
 .project > aside > section > div:nth-child(2) > h3 {
     margin-top: 75px;
     margin-left: 20px;
@@ -1053,12 +1055,12 @@ button:hover, #button:hover {
     border: 1px solid #3A86FF;
 }
 
-.social-icons-white{
+.social-icons-white {
     position: absolute;
     top: 160px;
     left: 325px;
 }
 
-.social-icons-white>img{
+.social-icons-white > img {
     margin-right: 25px;
 }
