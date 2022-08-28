@@ -1052,3 +1052,13 @@ button:hover, #button:hover {
     color: #3A86FF;
     border: 1px solid #3A86FF;
 }
+
+.social-icons-white{
+    position: absolute;
+    top: 160px;
+    left: 325px;
+}
+
+.social-icons-white>img{
+    margin-right: 25px;
+}
