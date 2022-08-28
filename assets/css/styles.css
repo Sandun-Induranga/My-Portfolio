@@ -847,7 +847,7 @@ a, header ul li {
 }
 
 .gallery > aside > section > div:nth-child(5) {
-    background: url("../images/gallery2.svg");
+    background: url("../images/gallery-9.jpg");
 }
 
 .gallery > aside > section > div:nth-child(6) {
@@ -855,7 +855,8 @@ a, header ul li {
 }
 
 .gallery > aside > section > div:nth-child(7) {
-    background: url("../images/gallery4.svg");
+    background: url("../images/gallery-5.jpeg");
+    background-position: top !important;
 }
 
 .gallery > aside > section > div:nth-child(8) {
@@ -865,7 +866,7 @@ a, header ul li {
 }
 
 .gallery > aside > section > div:nth-child(9) {
-    background: url("../images/gallery3.svg");
+    background: url("../images/gallery-5.jpeg");
     grid-column: 4/6;
     grid-row: 3/4;
 }
