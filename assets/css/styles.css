@@ -834,7 +834,7 @@ a, header ul li {
 }
 
 .gallery > aside > section > div:nth-child(2) {
-    background: url("../images/gallery2.svg");
+    background: url("../images/gallery-2.jpg");
     grid-column: 3/6;
 }
 
@@ -843,7 +843,7 @@ a, header ul li {
 }
 
 .gallery > aside > section > div:nth-child(4) {
-    background: url("../images/gallery5.svg");
+    background: url("../images/gallery-4.jpg");
 }
 
 .gallery > aside > section > div:nth-child(5) {
