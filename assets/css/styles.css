@@ -706,16 +706,16 @@ a, header ul li {
     justify-content: center;
 }
 
-.project > aside>div{
+.project > aside > div {
     margin: 55px;
 }
 
-.project > aside>div>button{
+.project > aside > div > button {
     background: none;
     border: none;
 }
 
-.project > aside>div>button>i{
+.project > aside > div > button > i {
     font-size: 3em;
     color: #3A86FF;
 }
@@ -749,14 +749,16 @@ a, header ul li {
 .project > aside > section > div:nth-child(2) {
     flex-direction: column;
 }
-
+.project > aside > section > div:nth-child(1) >img{
+    width: 350px;
+    height: 220px;
+}
 .project > aside > section > div:nth-child(2) > h3 {
     margin-top: 75px;
     margin-left: 20px;
     margin-bottom: 50px;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #2B2B2B;
-    font-weight: normal;
 }
 
 .project > aside > section > div:nth-child(2) > h4 {
