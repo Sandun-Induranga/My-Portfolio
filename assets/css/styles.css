@@ -520,13 +520,15 @@ a, header ul li {
     color: #313131;
     margin-bottom: 80px;
 }
-.skills > section > aside:last-child{
+
+.skills > section > aside:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.skills > section > aside:last-child>section{
+
+.skills > section > aside:last-child > section {
     position: relative;
     display: flex;
     /*flex-direction: column;*/
@@ -536,69 +538,52 @@ a, header ul li {
     justify-content: center;
 }
 
-.skills > section > aside:last-child> section>div {
-    /*position: relative;*/
-    /*width: 450px;*/
-    /*height: 306px;*/
-    /*padding-left: 100px;*/
-    /*background: url("../images/certificate-1.png");*/
-    /*background-size: cover;*/
-    /*border: 1px solid #8e8e8e;*/
-}
-
-.skills > section > aside:last-child> section>div{
+.skills > section > aside:last-child > section > div {
     display: flex;
     align-items: center;
 }
-.skills > section > aside:last-child> section>div>button{
+
+.skills > section > aside:last-child > section > div > button {
     margin: 55px;
     background: none;
     border: none;
 }
 
-.skills > section > aside:last-child> section>div>button>i{
+.skills > section > aside:last-child > section > div > button > i {
     font-size: 3em;
     color: #3A86FF;
 }
 
-.skills > section > aside> section>div:nth-child(2){
+.skills > section > aside > section > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.skills > section > aside:last-child> section>div:nth-child(2)>div{
+.skills > section > aside:last-child > section > div:nth-child(2) > div {
     background-image: url("../images/certificate-1.png");
     background-size: cover;
     background-position: center;
-        box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
 }
-.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(1){
+
+.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(1) {
     width: 360px;
     height: 250px;
     margin-right: -230px;
 }
-.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(2){
+
+.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2) {
     width: 550px;
     height: 420px;
 }
 
-.skills > section > aside:last-child> section>div:nth-child(2)>div:nth-child(3){
+.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(3) {
     z-index: -1;
     width: 360px;
     height: 250px;
     margin-left: -230px;
 }
-
-/*.skills > section > aside:last-child div > img {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    width: 450px;*/
-/*    height: 306px;*/
-
-/*}*/
 
 
 /* Services */
@@ -646,6 +631,7 @@ a, header ul li {
     display: flex;
     width: 100%;
     height: calc(100% / 4);
+    flex-wrap: wrap;
 }
 
 .services > div > div > div:first-child {
@@ -718,6 +704,20 @@ a, header ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.project > aside>div{
+    margin: 55px;
+}
+
+.project > aside>div>button{
+    background: none;
+    border: none;
+}
+
+.project > aside>div>button>i{
+    font-size: 3em;
+    color: #3A86FF;
 }
 
 .project > aside > section > div > img:hover {
