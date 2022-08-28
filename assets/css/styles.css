@@ -829,7 +829,7 @@ a, header ul li {
 }
 
 .gallery > aside > section > div:first-child {
-    background: url("../images/gallery1.svg");
+    background: url("../images/gallery-1.jpeg");
     grid-column: 1/3;
 }
 
@@ -860,13 +860,13 @@ a, header ul li {
 }
 
 .gallery > aside > section > div:nth-child(8) {
-    background: url("../images/gallery4.svg");
+    background: url("../images/gallery-3.jpeg");
     grid-column: 1/4;
     grid-row: 3/4;
 }
 
 .gallery > aside > section > div:nth-child(9) {
-    background: url("../images/gallery-5.jpeg");
+    background: url("../images/gallery-8.jpg");
     grid-column: 4/6;
     grid-row: 3/4;
 }
