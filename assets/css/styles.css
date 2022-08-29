@@ -1067,17 +1067,22 @@ button:hover, #button:hover {
 }
 
 
-
 /*                                        Responsive for small phone                                    */
 
-@media all and (max-width: 375px){
-    .top-bar > nav{
+@media all and (max-width: 375px) {
+
+    * {
+        font-size: 15px;
+    }
+
+    /* Top bar */
+
+    .top-bar > nav {
         display: none;
     }
 
-    main{
-        display: none;
-    }
+
+    /* Home content */
 
     .des-image {
         left: 0;
@@ -1107,11 +1112,11 @@ button:hover, #button:hover {
         align-items: center;
     }
 
-    .main-description>h1,h2,h3{
+    .main-description > h1, h2, h3 {
         width: max-content;
     }
 
-    .social-icons{
+    .social-icons {
         left: 0;
         right: 0;
         bottom: 100px;
@@ -1120,10 +1125,30 @@ button:hover, #button:hover {
         width: max-content;
     }
 
-    .social-icons>img{
+    .social-icons > img {
         width: 25px;
         height: 25px;
         margin-right: 20px;
+    }
+
+
+    /* About Content */
+
+    .about-section > aside:nth-child(3) > section {
+        width: max-content;
+        height: max-content;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-image {
+        width: max-content;
+        margin: 0;
+    }
+
+    .intro-image > img {
+        width: 200px;
+        margin: 0;
     }
 
 }
