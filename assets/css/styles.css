@@ -1114,7 +1114,7 @@ button:hover, #button:hover {
         align-items: center;
     }
 
-    .main-description > h1, h2, h3 {
+    .main-description > h1,.main-description > h2,.main-description > h3 {
         width: max-content;
     }
 
@@ -1186,6 +1186,40 @@ button:hover, #button:hover {
         width: 160px;
         height: 46px;
         margin-left: 80px;
+    }
+
+    .edu>h2{
+        text-align: center;
+    }
+
+    .edu > aside > section {
+        width: 280px;
+        height: 550px;
+    }
+
+    .edu-details {
+        width: 100px;
+        height: max-content;
+    }
+
+    .edu-details a {
+        font-size: 12px;
+    }
+
+    .edu-details > p:nth-child(3) {
+        font-size: 10px;
+    }
+
+    .edu-details > p:nth-child(4) {
+        font-size: 10px;
+    }
+
+    .edu-details > p:first-child {
+        margin-bottom: 8px;
+    }
+
+    .edu-details > p:nth-child(2){
+        margin: 0;
     }
 
 }
