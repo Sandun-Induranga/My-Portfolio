@@ -211,6 +211,10 @@ a, header ul li {
     color: #646464;
 }
 
+.responsive-info{
+    display: none;
+}
+
 .des {
     color: #646464;
     margin-bottom: 80px;
@@ -1076,14 +1080,12 @@ button:hover, #button:hover {
     }
 
     /* Top bar */
-
     .top-bar > nav {
         display: none;
     }
 
 
     /* Home content */
-
     .des-image {
         left: 0;
         right: 0;
@@ -1133,7 +1135,6 @@ button:hover, #button:hover {
 
 
     /* About Content */
-
     .about-section > aside:nth-child(3) > section {
         width: max-content;
         height: max-content;
@@ -1151,7 +1152,7 @@ button:hover, #button:hover {
         margin: 0;
     }
 
-    .info{
+    .info {
         display: none;
     }
 
@@ -1166,7 +1167,7 @@ button:hover, #button:hover {
         margin-bottom: 30px;
     }
 
-    .responsive-info>p{
+    .responsive-info > p {
         text-align: center;
         width: max-content;
     }
@@ -1176,13 +1177,15 @@ button:hover, #button:hover {
         color: #646464;
     }
 
-    .des{
+    .des {
         text-align: center;
         margin-bottom: 30px;
     }
 
-    .about-section button{
-        margin-left: 60px;
+    .about-section button {
+        width: 160px;
+        height: 46px;
+        margin-left: 80px;
     }
 
 }
