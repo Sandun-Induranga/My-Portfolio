@@ -211,7 +211,7 @@ a, header ul li {
     color: #646464;
 }
 
-.responsive-info{
+.responsive-info {
     display: none;
 }
 
@@ -1112,7 +1112,7 @@ button:hover, #button:hover {
         align-items: center;
     }
 
-    .main-description > h1,.main-description > h2,.main-description > h3 {
+    .main-description > h1, .main-description > h2, .main-description > h3 {
         width: max-content;
     }
 
@@ -1187,9 +1187,7 @@ button:hover, #button:hover {
     }
 
 
-
     /* Education */
-
     .edu > aside > section {
         width: 280px;
         height: 550px;
@@ -1216,40 +1214,43 @@ button:hover, #button:hover {
         margin-bottom: 8px;
     }
 
-    .edu-details > p:nth-child(2){
+    .edu-details > p:nth-child(2) {
         margin: 0;
     }
 
 
     /* Skills */
-
     .skills {
-        width: max-content;
-        height: max-content;
+        width: 99.5vw;
+        height: 880px;
+    }
+
+    .skills > h1, .skills h2 {
+        margin-bottom: 60px;
     }
 
     .skills > section > aside:nth-child(1) {
-        width: 314px;
-        height: 314px;
+        width: 300px;
+        height: 300px;
     }
 
     .skills > section > aside:nth-child(1) > img {
         position: absolute;
-        height: 289px;
-        width: 289px;
+        height: 280px;
+        width: 280px;
     }
 
     .skills > section > aside:nth-child(1) > img:nth-child(2) {
-        height: 175px;
-        width: 175px;
+        height: 165px;
+        width: 165px;
     }
 
     .skills > section > aside:nth-child(1) > section {
         z-index: 1;
         display: flex;
         flex-direction: row;
-        width: 289px;
-        height: 289px;
+        width: 280px;
+        height: 280px;
     }
 
     .skills > section > aside:nth-child(1) > section > div {
@@ -1263,7 +1264,7 @@ button:hover, #button:hover {
         border-radius: 10px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div img{
+    .skills > section > aside:nth-child(1) > section > div img {
         width: 30px;
         height: 30px;
     }
@@ -1274,7 +1275,6 @@ button:hover, #button:hover {
 
 
     /* Languages */
-
     .skills > section > aside:nth-child(1) > section > div:first-child > div:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > div:first-child {
         top: 165px;
     }
@@ -1316,7 +1316,38 @@ button:hover, #button:hover {
     }
 
     /* Certificates */
+    .skills > section > aside:last-child > section {
+        width: 375px;
+        height: 210px;
+    }
 
+    .skills > section > aside:last-child > section > div > button {
+        margin: 10px;
+    }
 
+    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(1) {
+        width: 160px;
+        height: 115px;
+        margin-right: -130px;
+    }
+
+    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2) {
+        width: 170px;
+        height: 160px;
+    }
+
+    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(3) {
+        width: 160px;
+        height: 115px;
+        margin-left: -130px;
+    }
+
+    .skills > section > aside:last-child > section > div > button > i {
+        font-size: 2em;
+    }
+
+    .skills > section > aside:nth-child(2) {
+        top: 340px;
+    }
 
 }
