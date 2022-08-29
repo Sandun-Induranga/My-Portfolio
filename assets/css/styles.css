@@ -1065,3 +1065,12 @@ button:hover, #button:hover {
 .social-icons-white > img {
     margin-right: 25px;
 }
+
+
+
+/*                                        Responsive for small phone                                    */
+
+.top-bar > nav{
+    display: none;
+}
+
