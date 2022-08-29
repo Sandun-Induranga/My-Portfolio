@@ -1315,10 +1315,11 @@ button:hover, #button:hover {
         bottom: 8px;
     }
 
+
     /* Certificates */
     .skills > section > aside:last-child > section {
         width: 375px;
-        height: 210px;
+        height: 200px;
     }
 
     .skills > section > aside:last-child > section > div > button {
@@ -1348,6 +1349,21 @@ button:hover, #button:hover {
 
     .skills > section > aside:nth-child(2) {
         top: 340px;
+    }
+
+
+    /* Services */
+
+    .services > div {
+        flex-direction: column;
+        width: 99.5vw;
+        align-items: center;
+    }
+
+    .services > div > div {
+        margin: 0 0 40px;
+        height: 220px;
+        width: 275px;
     }
 
 }
