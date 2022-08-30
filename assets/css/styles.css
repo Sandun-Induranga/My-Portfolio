@@ -1607,5 +1607,22 @@ button:hover, #button:hover {
         margin-right: 28px;
     }
 
+    /* About */
+    .intro-image > img {
+        width: 320px;
+        margin-left: 68px;
+    }
+
+    .info {
+        margin-bottom: 40px;
+    }
+
+    .intro-image {
+        margin-right: 60px;
+    }
+
+    .des {
+        margin-bottom: 60px;
+    }
 
 }
