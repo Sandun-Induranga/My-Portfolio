@@ -1077,7 +1077,7 @@ button:hover, #button:hover {
 
 /*                                        Media Queries                                    */
 
-@media all and (max-width: 1240px) {
+@media all and (max-width: 768px) {
 
     * {
         font-size: 15px;
@@ -1574,5 +1574,38 @@ button:hover, #button:hover {
         left: 0;
         margin: auto;
     }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+
+
+    /* Home */
+    .main-description {
+        top: 250px;
+        left: 100px;
+        font-size: 20px;
+    }
+
+    .des-image img {
+        width: 180px;
+        height: 250px;
+    }
+
+    .des-image {
+        top: 300px;
+        right: 140px;
+    }
+
+    .social-icons {
+        left: 100px;
+        bottom: 260px;
+    }
+
+    .social-icons img {
+        width: 30px;
+        margin-right: 28px;
+    }
+
 
 }
