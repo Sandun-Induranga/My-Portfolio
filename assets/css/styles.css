@@ -1427,4 +1427,36 @@ button:hover, #button:hover {
         margin: 0;
     }
 
+
+    /* Gallery */
+
+    .gallery > aside > section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .gallery > aside > section > div:first-child {
+        grid-column: 1/4;
+    }
+
+    .gallery > aside > section > div:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .gallery > aside > section > div:nth-child(2) {
+        background: url(../images/gallery-2.jpg);
+        grid-column: 2/4;
+    }
+
+    .gallery > aside > section > div:nth-child(9) {
+        background: url(../images/gallery-8.jpg);
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+
+    .gallery > aside > section {
+        width: 320px;
+    }
+
 }
