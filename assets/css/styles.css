@@ -1625,8 +1625,8 @@ button:hover, #button:hover {
         margin-bottom: 60px;
     }
 
-    /* Certificates */
 
+    /* Certificates */
     .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2) {
         width: 450px;
         height: 320px;
@@ -1642,7 +1642,6 @@ button:hover, #button:hover {
         height: 220px;
     }
 
-
     .skills > section > aside:last-child > section {
         width: max-content;
         height: 420px;
@@ -1651,6 +1650,20 @@ button:hover, #button:hover {
 
     .skills > section > aside:last-child > section > div > button {
         margin: 35px;
+    }
+
+    /* Services */
+    .services > div > div > div:nth-child(2) > p {
+        text-align: center;
+    }
+
+    .project > aside > section > div:nth-child(1) > img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .gallery > aside > section {
+        width: 90vw;
     }
 
 }
