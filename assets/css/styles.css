@@ -1318,7 +1318,7 @@ button:hover, #button:hover {
 
     /* Certificates */
     .skills > section > aside:last-child > section {
-        width: 375px;
+        width: 99.5vw;
         height: 200px;
     }
 
@@ -1457,6 +1457,9 @@ button:hover, #button:hover {
         width: 320px;
     }
 
+
+    /* Contact */
+
     .contact > aside {
         flex-direction: column;
     }
@@ -1470,7 +1473,7 @@ button:hover, #button:hover {
     .contact > aside > aside:first-child {
         flex-direction: column;
         display: flex;
-        width: 100%;
+        width: 310;
     }
 
     .contact > aside > aside:first-child > div {
@@ -1502,6 +1505,44 @@ button:hover, #button:hover {
     .contact form > fieldset > button {
         width: 160px;
         height: 46px;
+    }
+
+    footer > aside > section:first-child {
+        width: 300px;
+        left: 10px;
+        top: 40px;
+    }
+
+    footer > aside > section:first-child > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer > aside > section:first-child > h2 {
+        top: 5px;
+        left: 80px;
+    }
+
+    footer > aside > section:first-child > h3 {
+        left: 80px;
+        bottom: 45px;
+    }
+
+    .social-icons-white {
+        top: 120px;
+        left: 90px;
+    }
+
+    .social-icons-white > img {
+        width: 20px;
+        margin-right: 25px;
+    }
+
+    footer > aside > img {
+        top: 180px;
+        right: 0;
+        left: 0;
+        margin: auto;
     }
 
 }
