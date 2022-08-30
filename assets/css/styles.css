@@ -1082,6 +1082,12 @@ button:hover, #button:hover {
         display: none;
     }
 
+    .top-bar img {
+        width: 100px;
+        margin-left: 44px;
+        margin-top: 14px;
+    }
+
 
     /* Home content */
     .des-image {
@@ -1178,6 +1184,7 @@ button:hover, #button:hover {
     .des {
         text-align: center;
         margin-bottom: 30px;
+        width: 90vw;
     }
 
     .about-section button {
@@ -1318,7 +1325,7 @@ button:hover, #button:hover {
 
     /* Certificates */
     .skills > section > aside:last-child > section {
-        width: 99.5vw;
+        width: 90vw;
         height: 200px;
     }
 
@@ -1454,7 +1461,7 @@ button:hover, #button:hover {
     }
 
     .gallery > aside > section {
-        width: 320px;
+        width: 90vw;
     }
 
 
@@ -1473,7 +1480,7 @@ button:hover, #button:hover {
     .contact > aside > aside:first-child {
         flex-direction: column;
         display: flex;
-        width: 310;
+        width: 100%;
     }
 
     .contact > aside > aside:first-child > div {
