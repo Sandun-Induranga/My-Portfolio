@@ -1071,7 +1071,7 @@ button:hover, #button:hover {
 
 /*                                        Responsive for small phone                                    */
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 768px) {
 
     * {
         font-size: 15px;
