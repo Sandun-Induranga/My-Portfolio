@@ -1368,7 +1368,6 @@ button:hover, #button:hover {
 
 
     /* Projects */
-
     .project > aside > section {
         width: 90vw;
         height: 480px;
@@ -1429,7 +1428,6 @@ button:hover, #button:hover {
 
 
     /* Gallery */
-
     .gallery > aside > section {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -1457,6 +1455,53 @@ button:hover, #button:hover {
 
     .gallery > aside > section {
         width: 320px;
+    }
+
+    .contact > aside {
+        flex-direction: column;
+    }
+
+    .contact > aside > aside:last-child {
+        width: 99.5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact > aside > aside:first-child {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+
+    .contact > aside > aside:first-child > div {
+        margin: 0 0 0 40px;
+    }
+
+    .contact > aside > aside:first-child > div:last-child {
+        margin: 0 0 60px 40px;
+    }
+
+
+    .contact form >fieldset>input,.contact form >fieldset>textarea{
+        width: 90vw;
+    }
+
+    .contact form >fieldset>textarea{
+        height: 200px;
+        margin-bottom: 35px;
+    }
+
+    .contact form >fieldset{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .contact form > fieldset > button {
+        width: 160px;
+        height: 46px;
     }
 
 }
