@@ -1625,4 +1625,32 @@ button:hover, #button:hover {
         margin-bottom: 60px;
     }
 
+    /* Certificates */
+
+    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2) {
+        width: 450px;
+        height: 320px;
+    }
+
+    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(1) {
+        width: 320px;
+        height: 220px;
+    }
+
+    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(3) {
+        width: 320px;
+        height: 220px;
+    }
+
+
+    .skills > section > aside:last-child > section {
+        width: max-content;
+        height: 420px;
+        justify-content: center;
+    }
+
+    .skills > section > aside:last-child > section > div > button {
+        margin: 35px;
+    }
+
 }
