@@ -33,6 +33,10 @@
     margin-top: 4px;
 }
 
+.top-bar button {
+    display: none;
+}
+
 main > section:first-child {
     position: relative;
     display: flex;
@@ -47,6 +51,8 @@ main > section:first-child {
     align-content: center;
     justify-content: center;
     z-index: 1;
+    width: 99.4vw;
+    height: 100vh;
 }
 
 .main-image > img {
@@ -1077,6 +1083,12 @@ button:hover, #button:hover {
         font-size: 15px;
     }
 
+    .top-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     /* Top bar */
     .top-bar > nav {
         display: none;
@@ -1084,8 +1096,19 @@ button:hover, #button:hover {
 
     .top-bar img {
         width: 100px;
-        margin-left: 44px;
-        margin-top: 14px;
+        margin: 0 0 0 44px;
+    }
+
+    .top-bar button{
+        display: inline-block;
+        margin-right: 44px;
+        background: none;
+        border: none;
+    }
+
+    .top-bar button i {
+        font-size: 1.5em;
+        color: #3A86FF;
     }
 
 
