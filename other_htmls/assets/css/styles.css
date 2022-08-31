@@ -66,6 +66,7 @@ main {
 
 main > section {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 100px;
     width: 1110px;
@@ -77,6 +78,7 @@ main > section {
 main > section > aside:first-child > div:nth-child(2) {
     display: flex;
     align-items: center;
+    width: max-content;
 }
 
 main > section > aside:first-child > div:nth-child(2) > button {
