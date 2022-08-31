@@ -64,11 +64,17 @@ main {
     align-items: center;
 }
 
+main > h1 {
+    margin-top: 100px;
+    color: #313131;
+    font-size: 3em;
+}
+
 main > section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-bottom: 100px;
     width: 1110px;
     height: 410px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
@@ -92,7 +98,7 @@ main > section > aside:first-child > div:nth-child(2) > button > i {
     font-size: 2em;
 }
 
-main > section > aside:first-child > h2{
+main > section > aside:first-child > h2 {
     color: #2B2B2B;
     margin-top: 40px;
     margin-left: 60px;
