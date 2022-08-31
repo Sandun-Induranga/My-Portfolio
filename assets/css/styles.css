@@ -51,12 +51,12 @@ main > section:first-child {
     align-content: center;
     justify-content: center;
     z-index: 1;
-    width: 99.4vw;
+    width: 99.5vw;
     height: 100vh;
 }
 
 .main-image > img {
-    width: 99.4vw;
+    width: 99.5vw;
     height: 100vh;
     left: 0;
     top: 0;
@@ -1083,13 +1083,19 @@ button:hover, #button:hover {
         font-size: 15px;
     }
 
-    .top-bar{
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* Top bar */
+    .top-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    /* Top bar */
     .top-bar > nav {
         display: none;
     }
@@ -1099,7 +1105,7 @@ button:hover, #button:hover {
         margin: 0 0 0 44px;
     }
 
-    .top-bar button{
+    .top-bar button {
         display: inline-block;
         margin-right: 44px;
         background: none;
@@ -1489,7 +1495,6 @@ button:hover, #button:hover {
 
 
     /* Contact */
-
     .contact > aside {
         flex-direction: column;
     }
@@ -1518,16 +1523,16 @@ button:hover, #button:hover {
         margin: 0 0 60px 40px;
     }
 
-    .contact form >fieldset>input,.contact form >fieldset>textarea{
+    .contact form > fieldset > input, .contact form > fieldset > textarea {
         width: 90vw;
     }
 
-    .contact form >fieldset>textarea{
+    .contact form > fieldset > textarea {
         height: 200px;
         margin-bottom: 35px;
     }
 
-    .contact form >fieldset{
+    .contact form > fieldset {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1580,7 +1585,7 @@ button:hover, #button:hover {
 
 }
 
-@media all and (min-width: 989px) and (max-width: 1214px){
+@media all and (min-width: 989px) and (max-width: 1214px) {
 
 
     /* Home */
