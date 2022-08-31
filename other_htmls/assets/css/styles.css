@@ -1,4 +1,4 @@
-*{
+* {
     font-size: 20px;
     font-family: 'Inter', sans-serif;
 }
@@ -74,10 +74,25 @@ main > section {
     border-radius: 10px;
 }
 
-main > section > aside:first-child>p{
-
+main > section > aside:first-child > div:nth-child(2) {
+    display: flex;
+    align-items: center;
 }
 
-main > section > aside:first-child>div:nth-child(2) {
+main > section > aside:first-child > div:nth-child(2) > button {
+    background: none;
+    border: none;
+    margin: 30px;
+}
 
+main > section > aside:first-child > div:nth-child(2) > button > i {
+    color: #3A86FF;
+    font-size: 2em;
+}
+
+main > section > aside:first-child > h2{
+    color: #2B2B2B;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 88px;
 }
