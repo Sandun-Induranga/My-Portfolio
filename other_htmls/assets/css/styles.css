@@ -1,5 +1,6 @@
 *{
     font-size: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Scrollbar */
@@ -55,6 +56,8 @@ a, header ul li {
     color: #313131;
 }
 
+
+/* Main Content */
 main {
     display: flex;
     flex-direction: column;
