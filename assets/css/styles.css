@@ -1077,7 +1077,7 @@ button:hover, #button:hover {
 
 /*                                        Media Queries                                    */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 988px) {
 
     * {
         font-size: 15px;
@@ -1506,6 +1506,10 @@ button:hover, #button:hover {
         width: 100%;
     }
 
+    .contact > aside > aside:first-child > div:nth-child(2) > p {
+        font-size: 0.7em;
+    }
+
     .contact > aside > aside:first-child > div {
         margin: 0 0 0 40px;
     }
@@ -1513,7 +1517,6 @@ button:hover, #button:hover {
     .contact > aside > aside:first-child > div:last-child {
         margin: 0 0 60px 40px;
     }
-
 
     .contact form >fieldset>input,.contact form >fieldset>textarea{
         width: 90vw;
@@ -1565,7 +1568,7 @@ button:hover, #button:hover {
 
     .social-icons-white > img {
         width: 20px;
-        margin-right: 25px;
+        margin-right: 20px;
     }
 
     footer > aside > img {
@@ -1577,7 +1580,7 @@ button:hover, #button:hover {
 
 }
 
-@media all and (min-width: 769px) and (max-width: 1024px){
+@media all and (min-width: 989px) and (max-width: 1214px){
 
 
     /* Home */
@@ -1664,6 +1667,11 @@ button:hover, #button:hover {
 
     .gallery > aside > section {
         width: 90vw;
+    }
+
+    .contact > aside {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
