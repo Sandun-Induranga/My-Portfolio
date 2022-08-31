@@ -1,3 +1,60 @@
+*{
+    font-size: 20px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a5a5a5;
+}
+
+/* Top bar */
+
+.top-bar {
+    position: fixed;
+    z-index: 3;
+    display: inline-block;
+    height: 60px;
+    width: 99.5vw;
+    padding: 0;
+    box-shadow: 2px 0 5px 5px #3A86FF;
+    background-color: white;
+}
+
+.top-bar img {
+    position: relative;
+    margin-left: 88px;
+    margin-top: 4px;
+}
+
+.top-bar button {
+    display: none;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header ul {
+    position: absolute;
+    right: 88px;
+    top: 0;
+}
+
+header ul li:hover a, header ul li:hover {
+    cursor: pointer;
+    color: #3A86FF;
+}
+
+a, header ul li {
+    text-decoration: none;
+    color: #313131;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -5,9 +62,19 @@ main {
 }
 
 main > section {
+    display: flex;
+    justify-content: space-between;
     margin-top: 100px;
     width: 1110px;
     height: 410px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
+}
+
+main > section > aside:first-child>p{
+
+}
+
+main > section > aside:first-child>div:nth-child(2) {
+
 }
