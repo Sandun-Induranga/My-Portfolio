@@ -1511,10 +1511,6 @@ button:hover, #button:hover {
         width: 100%;
     }
 
-    .contact > aside > aside:first-child > div:nth-child(2) > p {
-        font-size: 0.7em;
-    }
-
     .contact > aside > aside:first-child > div {
         margin: 0 0 0 40px;
     }
@@ -1587,6 +1583,10 @@ button:hover, #button:hover {
 
 @media all and (min-width: 989px) and (max-width: 1214px) {
 
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
     /* Home */
     .main-description {
