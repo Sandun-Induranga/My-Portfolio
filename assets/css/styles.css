@@ -271,6 +271,10 @@ a, header ul li {
     right: 0;
     top: 0;
     margin: auto;
+    animation-name: line-animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .edu-details {
@@ -802,7 +806,7 @@ a, header ul li {
     border: none;
 }
 
-.project > aside > section > div:nth-child(2) > button> a{
+.project > aside > section > div:nth-child(2) > button > a {
     color: white;
 }
 
@@ -1682,5 +1686,24 @@ button:hover, #button:hover {
         flex-direction: column;
         align-items: center;
     }
+}
 
+/* Animations */
+
+@keyframes line-animate {
+    from {
+        height: 0;
+    }
+    to {
+        height: 500px;
+    }
+}
+
+@keyframes size-animate {
+    from {
+        width: 120%;
+    }
+    to {
+        height: 120%;
+    }
 }
