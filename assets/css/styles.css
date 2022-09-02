@@ -495,7 +495,8 @@ a, header ul li {
     position: absolute;
     left: 0;
     right: 0;
-    width: 60px;
+    width: 70px;
+    height: 70px;
     margin: auto;
     box-shadow: 4px 0 32px 10px #3A86FF;
     border-radius: 10px;
