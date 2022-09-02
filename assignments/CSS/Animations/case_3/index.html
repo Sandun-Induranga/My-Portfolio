@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border-radius: 30px;
+            top: 20px;
+            left: 20px;
+            background-color: blue;
+            animation-name: my-animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes my-animation {
+            0% {
+                background-color: pink;
+                transform: rotate(90deg);
+                margin-left: 30px;
+            }
+            25% {
+                background-color: yellow;
+                transform: rotate(180deg);
+                margin-top: 30px;
+                margin-left: 1000px;
+            }
+            50% {
+                background-color: green;
+                transform: rotate(270deg);
+                margin-left: 1000px;
+                margin-top: 700px;
+            }
+            75% {
+                background-color: purple;
+                transform: rotate(360deg);
+                margin-left: 30px;
+                margin-top: 700px;
+            }
+            100% {
+                background-color: pink;
+                transform: rotate(90deg);
+                margin-left: 30px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>
