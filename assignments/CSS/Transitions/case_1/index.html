@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Case 1</title>
+    <link rel="stylesheet" href="../../../../assets/fonts/css/all.min.css">
+    <style>
+        section {
+            position: relative;
+            top: 100px;
+            height: 500px;
+        }
+
+        div {
+            width: 200px;
+            position: relative;
+            height: 50px;
+            margin-bottom: 50px;
+            background-color: purple;
+            margin-left: -150px;
+            transition-property: all;
+            transition-duration: 2s;
+            border-radius: 10px;
+        }
+
+        h1 {
+            position: relative;
+            display: inline-block;
+            bottom: 10px;
+            color: white;
+        }
+
+
+        div:hover {
+            cursor: pointer;
+            background: blueviolet;
+            transition-property: all;
+            transition-duration: 2s;
+            margin-left: 0;
+        }
+
+        i {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            color: white;
+        }
+    </style>
+
 </head>
 <body>
-
+<section>
+    <div>
+        <h1>Menu One</h1>
+        <i class="fa-solid fa-user"></i>
+    </div>
+    <div>
+        <h1>Menu Two</h1>
+        <i class="fa-solid fa-van-shuttle"></i>
+    </div>
+    <div>
+        <h1>Menu Three</h1>
+        <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div>
+        <h1>Menu Four</h1>
+        <i class="fa-solid fa-user"></i>
+    </div>
+    <div>
+        <h1>Menu Five</h1>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+</section>
 </body>
 </html>
