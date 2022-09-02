@@ -457,7 +457,7 @@ a, header ul li {
 }
 
 .skills > section > aside:nth-child(1) > img:nth-child(1) {
-    /*opacity: 0.9;*/
+    /*opacity: 0.7;*/
 }
 
 .skills > section > aside:nth-child(2) {
@@ -497,18 +497,19 @@ a, header ul li {
     right: 0;
     width: 60px;
     margin: auto;
-    /*box-shadow: 4px 0 76px 10px #3A86FF;*/
+    box-shadow: 4px 0 32px 10px #3A86FF;
     border-radius: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: white;
 }
 
 .skills > section > aside:nth-child(1) > section > div p {
     display: inline-block;
     font-size: 16px;
     margin: 0;
-    color: white;
+    color: #282828;
 }
 
 
@@ -1719,6 +1720,8 @@ button:hover, #button:hover {
     }
 }
 
+/* Animations */
+
 
 @keyframes line-animate {
     from {
@@ -1730,15 +1733,16 @@ button:hover, #button:hover {
 }
 
 @keyframes skills-animate {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        opacity: 0;
-        transform: rotate(15deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(-15deg);
-    }
+    /*0% {*/
+    /*    transform: rotate(15deg);*/
+    /*    opacity: 0;*/
+    /*    width: ;*/
+    /*}*/
+    /*50% {*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*100% {*/
+    /*    opacity: 0;*/
+    /*    transform: rotate(-15deg);*/
+    /*}*/
 }
