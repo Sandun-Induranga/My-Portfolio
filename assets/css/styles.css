@@ -413,6 +413,26 @@ a, header ul li {
     right: 0;
     margin: auto;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+    cursor: pointer;
+}
+
+.skills > section > aside:nth-child(1)::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+    border: 15px solid white;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.skills > section > aside:nth-child(1):hover::before{
+    border-top: 15px solid crimson;
+    transform: rotate(360deg);
+    transition: all 2s;
 }
 
 .skills > section > aside:nth-child(1) > img {
@@ -461,6 +481,13 @@ a, header ul li {
 .skills > section > aside:nth-child(1) > section > div {
     position: relative;
     width: calc(100% / 5);
+}
+
+.skills > section > aside:nth-child(1) > section > div > div > img {
+    animation-name: skills-animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .skills > section > aside:nth-child(1) > section > div > div:first-child, .skills > section > aside:nth-child(1) > section > div > div:nth-child(2) {
@@ -1191,6 +1218,7 @@ button:hover, #button:hover {
 
     .intro-image > img {
         width: 200px;
+        height: 280px;
         margin: 0;
     }
 
@@ -1628,6 +1656,7 @@ button:hover, #button:hover {
     /* About */
     .intro-image > img {
         width: 320px;
+        height: 480px;
         margin-left: 68px;
     }
 
@@ -1690,14 +1719,6 @@ button:hover, #button:hover {
     }
 }
 
-/* Animations */
-
-.skills > section > aside:nth-child(1) > section > div>div>img{
-    animation-name: skills-animate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 
 @keyframes line-animate {
     from {
@@ -1709,14 +1730,14 @@ button:hover, #button:hover {
 }
 
 @keyframes skills-animate {
-    0%{
+    0% {
         transform: rotate(0);
     }
-    50%{
-        opacity: 1;
+    50% {
+        opacity: 0;
         transform: rotate(15deg);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: rotate(-15deg);
     }
