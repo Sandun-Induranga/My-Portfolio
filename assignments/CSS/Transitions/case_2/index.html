@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Two</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0c39bf;
+            height: 95vh;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            background-color: gray;
+            border: 20px solid white;
+            border-top: 20px solid red;
+        }
+
+        div > p {
+            font-size: 40px;
+            color: white;
+        }
+
+        div:hover{
+            transform:rotate(360deg);
+            cursor: pointer;
+            transition: 3s all;
+        }
+
+        div:hover p{
+            transform:rotate(-360deg);
+            cursor: pointer;
+            transition: 3s all;
+        }
+
+        div:hover::after p{
+            transform:rotate(-360deg);
+            cursor: pointer;
+            transition: 3s all;
+        }
+
+        div:hover::after{
+            transform:rotate(-360deg);
+            cursor: pointer;
+            transition: 3s all;
+        }
+    </style>
+
+</head>
+<body>
+
+<div>
+    <p>RWAD</p>
+</div>
+
+<section></section>
+
+</body>
+</html>
