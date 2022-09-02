@@ -799,8 +799,11 @@ a, header ul li {
     margin-left: 90px;
     border-radius: 8px;
     background-color: #3A86FF;
-    color: white;
     border: none;
+}
+
+.project > aside > section > div:nth-child(2) > button> a{
+    color: white;
 }
 
 
