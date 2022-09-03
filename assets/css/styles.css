@@ -416,7 +416,7 @@ a, header ul li {
     cursor: pointer;
 }
 
-.skills > section > aside:nth-child(1)::before{
+.skills > section > aside:nth-child(1)::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -429,7 +429,7 @@ a, header ul li {
     cursor: pointer;
 }
 
-.skills > section > aside:nth-child(1):hover::before{
+.skills > section > aside:nth-child(1):hover::before {
     border-top: 15px solid crimson;
     transform: rotate(360deg);
     transition: all 2s;
@@ -483,34 +483,25 @@ a, header ul li {
     width: calc(100% / 5);
 }
 
-.skills > section > aside:nth-child(1) > section > div > div > img {
-    animation-name: skills-animate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 .skills > section > aside:nth-child(1) > section > div > div:first-child, .skills > section > aside:nth-child(1) > section > div > div:nth-child(2) {
     display: flex;
     position: absolute;
     left: 0;
     right: 0;
     width: 70px;
-    height: 70px;
     margin: auto;
-    box-shadow: 4px 0 32px 10px #3A86FF;
     border-radius: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
 }
 
 .skills > section > aside:nth-child(1) > section > div p {
     display: inline-block;
     font-size: 16px;
     margin: 0;
-    color: #282828;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -1722,7 +1713,11 @@ button:hover, #button:hover {
 }
 
 /* Animations */
-
+.edu-details > p:nth-child(1) {
+    animation-name: edu-animate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
 
 @keyframes line-animate {
     from {
@@ -1733,17 +1728,11 @@ button:hover, #button:hover {
     }
 }
 
-@keyframes skills-animate {
-    /*0% {*/
-    /*    transform: rotate(15deg);*/
-    /*    opacity: 0;*/
-    /*    width: ;*/
-    /*}*/
-    /*50% {*/
-    /*    opacity: 1;*/
-    /*}*/
-    /*100% {*/
-    /*    opacity: 0;*/
-    /*    transform: rotate(-15deg);*/
-    /*}*/
+@keyframes edu-animate {
+    from {
+        font-weight: normal;
+    }
+    to {
+        font-weight: bold;
+    }
 }
