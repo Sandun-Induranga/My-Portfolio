@@ -13,6 +13,100 @@
     background-color: #a5a5a5;
 }
 
+/* Background */
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #3A86FF;
+    opacity: 0.7;
+    animation: animate 19s linear infinite;
+}
+
+.background li:nth-child(0) {
+    left: 6%;
+    width: 128px;
+    height: 128px;
+    bottom: -128px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 48%;
+    width: 142px;
+    height: 142px;
+    bottom: -142px;
+    animation-delay: 2s;
+}
+.background li:nth-child(2) {
+    left: 28%;
+    width: 179px;
+    height: 179px;
+    bottom: -179px;
+    animation-delay: 4s;
+}
+.background li:nth-child(3) {
+    left: 2%;
+    width: 146px;
+    height: 146px;
+    bottom: -146px;
+    animation-delay: 3s;
+}
+.background li:nth-child(4) {
+    left: 62%;
+    width: 167px;
+    height: 167px;
+    bottom: -167px;
+    animation-delay: 6s;
+}
+.background li:nth-child(5) {
+    left: 5%;
+    width: 197px;
+    height: 197px;
+    bottom: -197px;
+    animation-delay: 21s;
+}
+.background li:nth-child(6) {
+    left: 21%;
+    width: 172px;
+    height: 172px;
+    bottom: -172px;
+    animation-delay: 29s;
+}
+.background li:nth-child(7) {
+    left: 61%;
+    width: 127px;
+    height: 127px;
+    bottom: -127px;
+    animation-delay: 6s;
+}
+.background li:nth-child(8) {
+    left: 18%;
+    width: 157px;
+    height: 157px;
+    bottom: -157px;
+    animation-delay: 25s;
+}
+.background li:nth-child(9) {
+    left: 21%;
+    width: 110px;
+    height: 110px;
+    bottom: -110px;
+    animation-delay: 33s;
+}
+
 
 /* Top bar */
 
@@ -592,6 +686,11 @@ a, header ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.skills > section > aside > section > div:nth-child(2):hover .skills > section > aside > section > div:nth-child(2)>div:first-child>img{
+    height: 1000px;
 }
 
 .skills > section > aside:last-child > section > div:nth-child(2) > div {
@@ -1115,6 +1214,63 @@ button:hover, #button:hover {
     html, body {
         max-width: 100%;
         overflow-x: hidden;
+    }
+
+    /* Background */
+    .background li {
+        width: 10px;
+        height: 10px;
+    }
+
+    .background li:nth-child(0) {
+        width: 64px;
+        height: 64px;
+        bottom: -64px;
+    }
+    .background li:nth-child(1) {
+        width: 71px;
+        height: 71px;
+        bottom: -71px;
+    }
+    .background li:nth-child(2) {
+        width: 8888px;
+        height: 88px;
+        bottom: -88px;
+    }
+    .background li:nth-child(3) {
+        width: 73px;
+        height: 73px;
+        bottom: -73px;
+    }
+    .background li:nth-child(4) {
+        width: 83px;
+        height: 83px;
+        bottom: -83px;
+    }
+    .background li:nth-child(5) {
+        width: 98px;
+        height: 98px;
+        bottom: -98px;
+    }
+    .background li:nth-child(6) {
+        width: 86px;
+        height: 86px;
+        bottom: -86px;
+    }
+    .background li:nth-child(7) {
+        width: 63px;
+        height: 63px;
+        bottom: -63px;
+    }
+    .background li:nth-child(8) {
+        width: 78px;
+        height: 78px;
+        bottom: -78px;
+    }
+    .background li:nth-child(9) {
+        width: 55px;
+        height: 55px;
+        bottom: -55px;
     }
 
 
@@ -1734,5 +1890,18 @@ button:hover, #button:hover {
     }
     to {
         font-weight: bold;
+    }
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
 }
