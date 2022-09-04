@@ -304,17 +304,23 @@ a, header ul li {
     color: #313131;
 }
 
-.about-section > h1::after {
-    content: "";
-    height: 0.1em;
-    width: 100px;
-    background: linear-gradient(to left, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 5px;
+.about-section > h1:first-letter{
+    background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    border-radius: 5px 5px 5px 50%;
+    padding-left: 10px;
 }
+
+/*.about-section > h1::after {*/
+/*    content: "";*/
+/*    height: 0.1em;*/
+/*    width: 100px;*/
+/*    background: linear-gradient(to left, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%);*/
+/*    border-radius: 5px;*/
+/*}*/
 
 .about-section > aside:nth-child(3) {
     position: relative;
@@ -1297,7 +1303,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         overflow-x: hidden;
     }
 
-    /* Background */
+     Background
     .background li {
         width: 10px;
         height: 10px;
@@ -1316,7 +1322,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     }
 
     .background li:nth-child(2) {
-        width: 8888px;
+        width: 88px;
         height: 88px;
         bottom: -88px;
     }
