@@ -14,109 +14,118 @@
 }
 
 /* Background */
-.background {
-    position: fixed;
-    width: 100vw;
+.background{
+    width: 99.5vw;
     height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    overflow: hidden;
-    z-index: -1;
+    position: fixed;
+    background: url("../images/background-image.jpg");
+    bottom: 0;
+    z-index: -5;
+    background-size: cover;
 }
+/*.background {*/
+/*    position: fixed;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background: transparent;*/
+/*    overflow: hidden;*/
+/*    z-index: -1;*/
+/*}*/
 
-.background li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: #3A86FF;
-    opacity: 0.7;
-    animation: animate 19s linear infinite;
-}
+/*.background li {*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    list-style: none;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background: #3A86FF;*/
+/*    opacity: 0.7;*/
+/*    animation: animate 19s linear infinite;*/
+/*}*/
 
-.background li:nth-child(0) {
-    left: 6%;
-    width: 128px;
-    height: 128px;
-    bottom: -128px;
-    animation-delay: 1s;
-}
+/*.background li:nth-child(0) {*/
+/*    left: 6%;*/
+/*    width: 128px;*/
+/*    height: 128px;*/
+/*    bottom: -128px;*/
+/*    animation-delay: 1s;*/
+/*}*/
 
-.background li:nth-child(1) {
-    left: 48%;
-    width: 142px;
-    height: 142px;
-    bottom: -142px;
-    animation-delay: 2s;
-}
+/*.background li:nth-child(1) {*/
+/*    left: 48%;*/
+/*    width: 142px;*/
+/*    height: 142px;*/
+/*    bottom: -142px;*/
+/*    animation-delay: 2s;*/
+/*}*/
 
-.background li:nth-child(2) {
-    left: 28%;
-    width: 179px;
-    height: 179px;
-    bottom: -179px;
-    animation-delay: 4s;
-}
+/*.background li:nth-child(2) {*/
+/*    left: 28%;*/
+/*    width: 179px;*/
+/*    height: 179px;*/
+/*    bottom: -179px;*/
+/*    animation-delay: 4s;*/
+/*}*/
 
-.background li:nth-child(3) {
-    left: 2%;
-    width: 146px;
-    height: 146px;
-    bottom: -146px;
-    animation-delay: 3s;
-}
+/*.background li:nth-child(3) {*/
+/*    left: 2%;*/
+/*    width: 146px;*/
+/*    height: 146px;*/
+/*    bottom: -146px;*/
+/*    animation-delay: 3s;*/
+/*}*/
 
-.background li:nth-child(4) {
-    left: 62%;
-    width: 167px;
-    height: 167px;
-    bottom: -167px;
-    animation-delay: 6s;
-}
+/*.background li:nth-child(4) {*/
+/*    left: 62%;*/
+/*    width: 167px;*/
+/*    height: 167px;*/
+/*    bottom: -167px;*/
+/*    animation-delay: 6s;*/
+/*}*/
 
-.background li:nth-child(5) {
-    left: 5%;
-    width: 197px;
-    height: 197px;
-    bottom: -197px;
-    animation-delay: 21s;
-}
+/*.background li:nth-child(5) {*/
+/*    left: 5%;*/
+/*    width: 197px;*/
+/*    height: 197px;*/
+/*    bottom: -197px;*/
+/*    animation-delay: 21s;*/
+/*}*/
 
-.background li:nth-child(6) {
-    left: 21%;
-    width: 172px;
-    height: 172px;
-    bottom: -172px;
-    animation-delay: 29s;
-}
+/*.background li:nth-child(6) {*/
+/*    left: 21%;*/
+/*    width: 172px;*/
+/*    height: 172px;*/
+/*    bottom: -172px;*/
+/*    animation-delay: 29s;*/
+/*}*/
 
-.background li:nth-child(7) {
-    left: 61%;
-    width: 127px;
-    height: 127px;
-    bottom: -127px;
-    animation-delay: 6s;
-}
+/*.background li:nth-child(7) {*/
+/*    left: 61%;*/
+/*    width: 127px;*/
+/*    height: 127px;*/
+/*    bottom: -127px;*/
+/*    animation-delay: 6s;*/
+/*}*/
 
-.background li:nth-child(8) {
-    left: 18%;
-    width: 157px;
-    height: 157px;
-    bottom: -157px;
-    animation-delay: 25s;
-}
+/*.background li:nth-child(8) {*/
+/*    left: 18%;*/
+/*    width: 157px;*/
+/*    height: 157px;*/
+/*    bottom: -157px;*/
+/*    animation-delay: 25s;*/
+/*}*/
 
-.background li:nth-child(9) {
-    left: 21%;
-    width: 110px;
-    height: 110px;
-    bottom: -110px;
-    animation-delay: 33s;
-}
+/*.background li:nth-child(9) {*/
+/*    left: 21%;*/
+/*    width: 110px;*/
+/*    height: 110px;*/
+/*    bottom: -110px;*/
+/*    animation-delay: 33s;*/
+/*}*/
 
 
 /* Top bar */
@@ -183,22 +192,37 @@ header ul {
 header ul li:hover a, header ul li:hover {
     cursor: pointer;
     color: #3A86FF;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 header li::before{
+    position: absolute;
     content: " ";
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    border: 2px solid #8338ec;
+    display: none;
+    bottom: -5px;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 header ul li:hover::before{
-    border: 1px solid red;
-    background-color: #3A86FF;
+    display: flex;
+    border: 2px solid #8338ec;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+header ul li:last-child:hover::before{
+    display: none;
 }
 
 a, header ul li {
     text-decoration: none;
     color: #313131;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 
@@ -266,12 +290,13 @@ a, header ul li {
 .social-icons > div {
     display: inline-block;
     padding: 10px;
-    background-color: white;
+    background-color: #e1e5f2;
     margin-right: 38px;
     border-radius: 20px;
     box-shadow: 4px 0 76px 10px #3A86FF;
     transition-property: all;
     transition-duration: 2s;
+    /*box-shadow: 0px 1px 30px #3A86FF inset;*/
 }
 
 .social-icons > div:nth-child(1):hover{
@@ -296,7 +321,7 @@ a, header ul li {
 
 .social-icons > div:nth-child(5):hover{
     cursor: pointer;
-    background-color: lightpink;
+    background-color: #ff477e;
 }
 
 
@@ -598,6 +623,7 @@ a, header ul li {
     left: 0;
     border-radius: 100%;
     border: 15px solid white;
+    background: white;
     transition: all 2s;
     cursor: pointer;
 }
@@ -841,6 +867,7 @@ a, header ul li {
 .services > div > div {
     border: 1px solid transparent;
     transition: all 1s;
+    background: #dee2ff;
 }
 
 .services > div > div:hover {
@@ -974,6 +1001,7 @@ a, header ul li {
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
     justify-content: center;
+    background: #dee2ff;
 }
 
 .project > aside > section > div {
