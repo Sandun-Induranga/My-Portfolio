@@ -21,7 +21,7 @@
     height: 60px;
     width: 99.5vw;
     padding: 0;
-    box-shadow: 2px 0 5px 5px #3A86FF;
+    border-bottom: 2px solid #3A86FF;
     background-color: white;
 }
 

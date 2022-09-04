@@ -249,7 +249,15 @@ a, header ul li {
 .social-icons img {
     width: 40px;
     height: 100%;
+}
+
+.social-icons > div {
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
     margin-right: 38px;
+    border-radius: 20px;
+    box-shadow: 4px 0 76px 10px #3A86FF;
 }
 
 .social-icons img:hover {
@@ -966,7 +974,7 @@ a, header ul li {
     transition-duration: 2s;
 }
 
-.project > aside > section > div:nth-child(2) > button:hover,.project > aside > section > div:nth-child(2) > button > a:hover {
+.project > aside > section > div:nth-child(2) > button:hover, .project > aside > section > div:nth-child(2) > button > a:hover {
     background-color: white;
     color: #3A86FF;
     border: 1px solid #3A86FF;
@@ -1394,9 +1402,14 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         width: max-content;
     }
 
-    .social-icons > img {
+    .social-icons img {
         width: 25px;
         height: 25px;
+    }
+
+    .social-icons>div{
+        border-radius: 15px;
+        padding: 5px;
         margin-right: 20px;
     }
 
@@ -1843,11 +1856,14 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
 
     .social-icons {
         left: 100px;
-        bottom: 260px;
+        top: 550px;
     }
 
     .social-icons img {
         width: 30px;
+    }
+
+    .social-icons>div{
         margin-right: 28px;
     }
 
@@ -1956,16 +1972,16 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
 }
 
 @keyframes button-animate {
-    0%{
+    0% {
         border-left: 1px solid #3A86FF;
     }
-    25%{
+    25% {
         border-top: 1px solid #3A86FF;
     }
-    25%{
+    25% {
         border-right: 1px solid #3A86FF;
     }
-    25%{
+    25% {
         border-bottom: 1px solid #3A86FF;
     }
 }
