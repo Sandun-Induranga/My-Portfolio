@@ -308,19 +308,9 @@ a, header ul li {
     background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
     border-radius: 5px 5px 5px 50%;
     padding-left: 10px;
+    color: white;
+    padding-right: 5px;
 }
-
-/*.about-section > h1::after {*/
-/*    content: "";*/
-/*    height: 0.1em;*/
-/*    width: 100px;*/
-/*    background: linear-gradient(to left, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%);*/
-/*    border-radius: 5px;*/
-/*}*/
 
 .about-section > aside:nth-child(3) {
     position: relative;
@@ -557,6 +547,14 @@ a, header ul li {
     margin-top: 100px;
     margin-bottom: 80px;
     color: #313131;
+}
+
+.skills > h1:first-letter{
+    background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    border-radius: 5px 5px 5px 50%;
+    padding-left: 10px;
+    color: white;
+    padding-right: 5px;
 }
 
 .skills > section {
@@ -813,6 +811,14 @@ a, header ul li {
     color: #313131;
 }
 
+.services > h1:first-letter {
+    background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    border-radius: 5px 5px 5px 50%;
+    padding-left: 10px;
+    color: white;
+    padding-right: 5px;
+}
+
 .services > div {
     display: flex;
     position: relative;
@@ -915,6 +921,14 @@ a, header ul li {
     margin-bottom: 80px;
     font-size: 3em;
     color: #313131;
+}
+
+.project > h1:first-letter {
+    background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    border-radius: 5px 5px 5px 50%;
+    padding-left: 10px;
+    color: white;
+    padding-right: 5px;
 }
 
 .project > aside {
@@ -1036,6 +1050,14 @@ a, header ul li {
     color: #313131;
 }
 
+.gallery > h1:first-letter {
+    background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    border-radius: 5px 5px 5px 50%;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: white;
+}
+
 .gallery > aside {
     display: flex;
     justify-content: center;
@@ -1114,6 +1136,14 @@ a, header ul li {
     text-align: center;
     font-size: 3em;
     color: #313131;
+}
+
+.contact > h1:first-letter {
+    background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    border-radius: 5px 5px 5px 50%;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: white;
 }
 
 .contact > aside {
