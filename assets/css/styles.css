@@ -24,6 +24,7 @@
     padding: 0;
     background: transparent;
     overflow: hidden;
+    z-index: -1;
 }
 
 .background li {
@@ -182,6 +183,17 @@ header ul {
 header ul li:hover a, header ul li:hover {
     cursor: pointer;
     color: #3A86FF;
+}
+
+header li::before{
+    content: " ";
+    width: 20px;
+    height: 20px;
+}
+
+header ul li:hover::before{
+    border: 1px solid red;
+    background-color: #3A86FF;
 }
 
 a, header ul li {
@@ -822,7 +834,6 @@ a, header ul li {
 .services > div {
     display: flex;
     position: relative;
-    /*padding-left: 200px;*/
     align-content: center;
     justify-content: center;
 }
@@ -984,6 +995,7 @@ a, header ul li {
 .project > aside > section > div:nth-child(1) > img {
     width: 350px;
     height: 220px;
+    box-shadow: -4px 0 76px -10px rgba(184, 184, 184, 1);
 }
 
 .project > aside > section > div:nth-child(2) > h3 {
