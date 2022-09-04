@@ -340,6 +340,17 @@ a, header ul li {
     border: none;
     border-radius: 10px;
     color: white;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.about-section button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #3A86FF;
+    border: 1px solid #3A86FF;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
 
@@ -734,6 +745,10 @@ a, header ul li {
     margin-left: -230px;
 }
 
+.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2):hover {
+    background-color: #3A86FF; /* ------------------------------------------------------------------------------------------ */
+}
+
 
 /* Services */
 
@@ -760,6 +775,21 @@ a, header ul li {
 }
 
 .services > div > div {
+    border: 1px solid transparent;
+    transition: all 1s;
+}
+
+.services > div > div:hover {
+    cursor: pointer;
+    border: 6px solid transparent;
+    transition: all 1s;
+}
+
+.services > div > div:hover .services > div > div > div:first-child > i {
+    font-size: 4em;
+}
+
+.services > div > div {
     position: relative;
     display: flex;
     margin-left: 44px;
@@ -770,10 +800,6 @@ a, header ul li {
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
     flex-direction: column;
-}
-
-.services > div > div:hover {
-    cursor: pointer;
 }
 
 .services > div > div > div {
@@ -797,11 +823,6 @@ a, header ul li {
 .services > div > div > div:first-child > i {
     color: #3A86FF;
     font-size: 3em;
-}
-
-.services > div > div > div:first-child > i:hover {
-    cursor: pointer;
-    font-size: 4em;
 }
 
 .services > div > div > div:nth-child(2) {
@@ -941,6 +962,16 @@ a, header ul li {
     border-radius: 8px;
     background-color: #3A86FF;
     border: none;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.project > aside > section > div:nth-child(2) > button:hover,.project > aside > section > div:nth-child(2) > button > a:hover {
+    background-color: white;
+    color: #3A86FF;
+    border: 1px solid #3A86FF;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
 .project > aside > section > div:nth-child(2) > button > a {
@@ -1199,13 +1230,6 @@ footer > aside:last-child {
 footer > aside:last-child > p, footer > aside:last-child > p > i {
     font-size: 0.6em;
     color: white;
-}
-
-button:hover, #button:hover {
-    cursor: pointer;
-    background-color: white;
-    color: #3A86FF;
-    border: 1px solid #3A86FF;
 }
 
 .social-icons-white {
@@ -1928,5 +1952,20 @@ button:hover, #button:hover {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
+    }
+}
+
+@keyframes button-animate {
+    0%{
+        border-left: 1px solid #3A86FF;
+    }
+    25%{
+        border-top: 1px solid #3A86FF;
+    }
+    25%{
+        border-right: 1px solid #3A86FF;
+    }
+    25%{
+        border-bottom: 1px solid #3A86FF;
     }
 }
