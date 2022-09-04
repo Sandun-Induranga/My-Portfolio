@@ -258,12 +258,39 @@ a, header ul li {
     margin-right: 38px;
     border-radius: 20px;
     box-shadow: 4px 0 76px 10px #3A86FF;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
-.social-icons img:hover {
+/*.social-icons img:hover {*/
+/*    cursor: pointer;*/
+/*    transition: all 1.5s;*/
+/*    transform: rotateY(360deg);*/
+/*}*/
+
+.social-icons > div:nth-child(1):hover{
     cursor: pointer;
-    transition: all 1.5s;
-    transform: rotateY(360deg);
+    background-color: skyblue;
+}
+
+.social-icons > div:nth-child(2):hover{
+    cursor: pointer;
+    background-color: deepskyblue;
+}
+
+.social-icons > div:nth-child(3):hover{
+    cursor: pointer;
+    background-color: #50555e;
+}
+
+.social-icons > div:nth-child(4):hover{
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.social-icons > div:nth-child(5):hover{
+    cursor: pointer;
+    background-color: lightpink;
 }
 
 
