@@ -104,3 +104,17 @@ main > section > aside:first-child > h2 {
     margin-left: 60px;
     margin-bottom: 88px;
 }
+
+h3{
+    color: #646464;
+    font-size: 1em;
+}
+
+p{
+    color: #B8B8B8;
+    font-size: 1em;
+}
+
+span{
+    color: #3A86FF;
+}
