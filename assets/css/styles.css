@@ -25,6 +25,7 @@
     background: transparent;
     overflow: hidden;
 }
+
 .background li {
     position: absolute;
     display: block;
@@ -43,6 +44,7 @@
     bottom: -128px;
     animation-delay: 1s;
 }
+
 .background li:nth-child(1) {
     left: 48%;
     width: 142px;
@@ -50,6 +52,7 @@
     bottom: -142px;
     animation-delay: 2s;
 }
+
 .background li:nth-child(2) {
     left: 28%;
     width: 179px;
@@ -57,6 +60,7 @@
     bottom: -179px;
     animation-delay: 4s;
 }
+
 .background li:nth-child(3) {
     left: 2%;
     width: 146px;
@@ -64,6 +68,7 @@
     bottom: -146px;
     animation-delay: 3s;
 }
+
 .background li:nth-child(4) {
     left: 62%;
     width: 167px;
@@ -71,6 +76,7 @@
     bottom: -167px;
     animation-delay: 6s;
 }
+
 .background li:nth-child(5) {
     left: 5%;
     width: 197px;
@@ -78,6 +84,7 @@
     bottom: -197px;
     animation-delay: 21s;
 }
+
 .background li:nth-child(6) {
     left: 21%;
     width: 172px;
@@ -85,6 +92,7 @@
     bottom: -172px;
     animation-delay: 29s;
 }
+
 .background li:nth-child(7) {
     left: 61%;
     width: 127px;
@@ -92,6 +100,7 @@
     bottom: -127px;
     animation-delay: 6s;
 }
+
 .background li:nth-child(8) {
     left: 18%;
     width: 157px;
@@ -99,6 +108,7 @@
     bottom: -157px;
     animation-delay: 25s;
 }
+
 .background li:nth-child(9) {
     left: 21%;
     width: 110px;
@@ -117,7 +127,8 @@
     height: 60px;
     width: 99.5vw;
     padding: 0;
-    box-shadow: 2px 0 5px 5px #3A86FF;
+    border-bottom: 2px solid #3A86FF;
+    /*box-shadow: 2px 0 5px 5px #3A86FF;*/
     background-color: white;
 }
 
@@ -304,8 +315,8 @@ a, header ul li {
     font-size: 1em;
     font-weight: bold;
     color: #313131;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .info span {
@@ -319,7 +330,7 @@ a, header ul li {
 
 .des {
     color: #646464;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .about-section button {
@@ -577,6 +588,11 @@ a, header ul li {
     width: calc(100% / 5);
 }
 
+.skills > section > aside:nth-child(1) > section > div > div:hover {
+    background-color: #282828;
+    transition: all 2s;
+}
+
 .skills > section > aside:nth-child(1) > section > div > div:first-child, .skills > section > aside:nth-child(1) > section > div > div:nth-child(2) {
     display: flex;
     position: absolute;
@@ -689,7 +705,7 @@ a, header ul li {
     cursor: pointer;
 }
 
-.skills > section > aside > section > div:nth-child(2):hover .skills > section > aside > section > div:nth-child(2)>div:first-child>img{
+.skills > section > aside > section > div:nth-child(2):hover .skills > section > aside > section > div:nth-child(2) > div:first-child > img {
     height: 1000px;
 }
 
@@ -1227,46 +1243,55 @@ button:hover, #button:hover {
         height: 64px;
         bottom: -64px;
     }
+
     .background li:nth-child(1) {
         width: 71px;
         height: 71px;
         bottom: -71px;
     }
+
     .background li:nth-child(2) {
         width: 8888px;
         height: 88px;
         bottom: -88px;
     }
+
     .background li:nth-child(3) {
         width: 73px;
         height: 73px;
         bottom: -73px;
     }
+
     .background li:nth-child(4) {
         width: 83px;
         height: 83px;
         bottom: -83px;
     }
+
     .background li:nth-child(5) {
         width: 98px;
         height: 98px;
         bottom: -98px;
     }
+
     .background li:nth-child(6) {
         width: 86px;
         height: 86px;
         bottom: -86px;
     }
+
     .background li:nth-child(7) {
         width: 63px;
         height: 63px;
         bottom: -63px;
     }
+
     .background li:nth-child(8) {
         width: 78px;
         height: 78px;
         bottom: -78px;
     }
+
     .background li:nth-child(9) {
         width: 55px;
         height: 55px;
@@ -1894,12 +1919,12 @@ button:hover, #button:hover {
 }
 
 @keyframes animate {
-    0%{
+    0% {
         transform: translateY(0) rotate(0deg);
-        opacity: 1;
+        opacity: 0.7;
         border-radius: 0;
     }
-    100%{
+    100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
