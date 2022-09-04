@@ -14,7 +14,7 @@
 }
 
 /* Background */
-.background{
+.background {
     width: 99.5vw;
     height: 100vh;
     position: fixed;
@@ -23,6 +23,7 @@
     z-index: -5;
     background-size: cover;
 }
+
 /*.background {*/
 /*    position: fixed;*/
 /*    width: 100vw;*/
@@ -196,7 +197,7 @@ header ul li:hover a, header ul li:hover {
     transition-duration: 1s;
 }
 
-header li::before{
+header li::before {
     position: absolute;
     content: " ";
     width: 50px;
@@ -207,14 +208,14 @@ header li::before{
     transition-duration: 1s;
 }
 
-header ul li:hover::before{
+header ul li:hover::before {
     display: flex;
     border: 2px solid #8338ec;
     transition-property: all;
     transition-duration: 1s;
 }
 
-header ul li:last-child:hover::before{
+header ul li:last-child:hover::before {
     display: none;
 }
 
@@ -299,27 +300,27 @@ a, header ul li {
     /*box-shadow: 0px 1px 30px #3A86FF inset;*/
 }
 
-.social-icons > div:nth-child(1):hover{
+.social-icons > div:nth-child(1):hover {
     cursor: pointer;
     background-color: skyblue;
 }
 
-.social-icons > div:nth-child(2):hover{
+.social-icons > div:nth-child(2):hover {
     cursor: pointer;
     background-color: deepskyblue;
 }
 
-.social-icons > div:nth-child(3):hover{
+.social-icons > div:nth-child(3):hover {
     cursor: pointer;
     background-color: #50555e;
 }
 
-.social-icons > div:nth-child(4):hover{
+.social-icons > div:nth-child(4):hover {
     cursor: pointer;
     background-color: lightblue;
 }
 
-.social-icons > div:nth-child(5):hover{
+.social-icons > div:nth-child(5):hover {
     cursor: pointer;
     background-color: #ff477e;
 }
@@ -341,7 +342,7 @@ a, header ul li {
     color: #313131;
 }
 
-.about-section > h1:first-letter{
+.about-section > h1:first-letter {
     background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
     border-radius: 5px 5px 5px 50%;
     padding-left: 10px;
@@ -586,7 +587,7 @@ a, header ul li {
     color: #313131;
 }
 
-.skills > h1:first-letter{
+.skills > h1:first-letter {
     background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
     border-radius: 5px 5px 5px 50%;
     padding-left: 10px;
@@ -867,7 +868,7 @@ a, header ul li {
 .services > div > div {
     border: 1px solid transparent;
     transition: all 1s;
-    background: #dee2ff;
+    background-color: #e1e5f2;
 }
 
 .services > div > div:hover {
@@ -1001,7 +1002,7 @@ a, header ul li {
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
     justify-content: center;
-    background: #dee2ff;
+    background-color: #e1e5f2;
 }
 
 .project > aside > section > div {
@@ -1373,7 +1374,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         overflow-x: hidden;
     }
 
-     Background
+    Background
     .background li {
         width: 10px;
         height: 10px;
@@ -1516,7 +1517,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         height: 25px;
     }
 
-    .social-icons>div{
+    .social-icons > div {
         border-radius: 15px;
         padding: 5px;
         margin-right: 20px;
@@ -1524,7 +1525,6 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
 
 
     /* About Content */
-
     .about-section > aside:nth-child(3) > section {
         width: max-content;
         height: max-content;
@@ -1973,7 +1973,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         width: 30px;
     }
 
-    .social-icons>div{
+    .social-icons > div {
         margin-right: 28px;
     }
 
