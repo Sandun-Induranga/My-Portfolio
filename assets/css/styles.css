@@ -262,12 +262,6 @@ a, header ul li {
     transition-duration: 2s;
 }
 
-/*.social-icons img:hover {*/
-/*    cursor: pointer;*/
-/*    transition: all 1.5s;*/
-/*    transform: rotateY(360deg);*/
-/*}*/
-
 .social-icons > div:nth-child(1):hover{
     cursor: pointer;
     background-color: skyblue;
@@ -308,6 +302,18 @@ a, header ul li {
     text-align: center;
     margin-top: 100px;
     color: #313131;
+}
+
+.about-section > h1::after {
+    content: "";
+    height: 0.1em;
+    width: 100px;
+    background: linear-gradient(to left, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
 }
 
 .about-section > aside:nth-child(3) {
@@ -1442,6 +1448,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
 
 
     /* About Content */
+
     .about-section > aside:nth-child(3) > section {
         width: max-content;
         height: max-content;
