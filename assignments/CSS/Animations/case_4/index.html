@@ -9,25 +9,32 @@
         main {
             display: flex;
             flex-direction: column;
-            width: 99vw;
+            width: calc(100vw * 4);
             height: 98vh;
             background: #0c39bf;
         }
 
-        main > section:nth-child(1) {
-            position: relative;
-            width: 100%;
-            height: 60%;
-            background: url("assets/images/sky.jpg");
+        aside {
+            width: 25%;
+            height: 100%;
+            background: #0c39bf;
         }
 
-        main > section:nth-child(2) {
-            width: 100%;
+        aside > section:nth-child(1) {
+            position: relative;
+            width: 400%;
+            height: 60%;
+            background: url("assets/images/sky.jpg");
+            background-size: cover;
+        }
+
+        aside > section:nth-child(2) {
+            width: 400%;
             height: 40%;
             background: url("assets/images/road.jpg");
         }
 
-        main > section:nth-child(1)>section {
+        aside > section:nth-child(1) > section {
             position: absolute;
             width: 100%;
             height: 40%;
@@ -35,8 +42,8 @@
             background: url("assets/images/city.png");
         }
 
-        main > section:nth-child(2)>section{
-            position: absolute;
+        aside > section:nth-child(2) > section {
+            position: fixed;
             width: 500px;
             height: 230px;
             top: 50%;
@@ -45,12 +52,12 @@
             margin: auto;
         }
 
-        main > section:nth-child(2)>section>img:first-child {
+        aside > section:nth-child(2) > section > img:first-child {
             width: 100%;
             height: 100%;
         }
 
-        main > section:nth-child(2)>section>img:nth-child(2) {
+        aside > section:nth-child(2) > section > img:nth-child(2) {
             position: absolute;
             width: 100px;
             height: 100px;
@@ -58,7 +65,7 @@
             left: 40px;
         }
 
-        main > section:nth-child(2)>section>img:last-child {
+        aside > section:nth-child(2) > section > img:last-child {
             position: absolute;
             width: 100px;
             height: 100px;
@@ -72,27 +79,28 @@
 <body>
 
 <main>
+    <aside>
+            <!-- Sky -->
+            <section>
 
-    <!-- Sky -->
-    <section>
+                <!-- City -->
+                <section></section>
 
-        <!-- City -->
-        <section></section>
+            </section>
 
-    </section>
+            <!-- Road -->
+            <section>
 
-    <!-- Road -->
-    <section>
+                <section>
+                    <!-- Car -->
+                    <img src="assets/images/car.png" alt="car">
 
-        <section>
-            <!-- Car -->
-            <img src="assets/images/car.png" alt="car">
+                    <img src="assets/images/wheel.png" alt="wheel">
+                    <img src="assets/images/wheel.png" alt="wheel">
+                </section>
 
-            <img src="assets/images/wheel.png" alt="wheel">
-            <img src="assets/images/wheel.png" alt="wheel">
-        </section>
-
-    </section>
+            </section>
+    </aside>
 </main>
 
 </body>
