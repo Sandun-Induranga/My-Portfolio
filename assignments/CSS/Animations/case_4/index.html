@@ -15,6 +15,7 @@
         }
 
         main > section:nth-child(1) {
+            position: relative;
             width: 100%;
             height: 60%;
             background: url("assets/images/sky.jpg");
@@ -26,14 +27,72 @@
             background: url("assets/images/road.jpg");
         }
 
+        main > section:nth-child(1)>section {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            bottom: 0;
+            background: url("assets/images/city.png");
+        }
+
+        main > section:nth-child(2)>section{
+            position: absolute;
+            width: 500px;
+            height: 230px;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main > section:nth-child(2)>section>img:first-child {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(2)>section>img:nth-child(2) {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            left: 40px;
+        }
+
+        main > section:nth-child(2)>section>img:last-child {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            right: 55px;
+        }
+
     </style>
 
 </head>
 <body>
 
 <main>
-    <section></section>
-    <section></section>
+
+    <!-- Sky -->
+    <section>
+
+        <!-- City -->
+        <section></section>
+
+    </section>
+
+    <!-- Road -->
+    <section>
+
+        <section>
+            <!-- Car -->
+            <img src="assets/images/car.png" alt="car">
+
+            <img src="assets/images/wheel.png" alt="wheel">
+            <img src="assets/images/wheel.png" alt="wheel">
+        </section>
+
+    </section>
 </main>
 
 </body>
