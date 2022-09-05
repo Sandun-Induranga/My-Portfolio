@@ -269,13 +269,17 @@ a, header ul li {
     right: 160px;
     top: 280px;
     margin: auto;
+    animation-name: home-image-animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .des-image img {
     width: 228px;
     height: 304px;
     border-radius: 30px;
-    box-shadow: 4px 0 76px 10px #3A86FF;
+    box-shadow: 4px 0 30px 2px #3A86FF;
 }
 
 .social-icons {
@@ -296,7 +300,7 @@ a, header ul li {
     background-color: #e1e5f2;
     margin-right: 38px;
     border-radius: 20px;
-    box-shadow: 4px 0 76px 10px #3A86FF;
+    box-shadow: 4px 0 30px 5px #3A86FF;
     transition-property: all;
     transition-duration: 2s;
     /*box-shadow: 0px 1px 30px #3A86FF inset;*/
@@ -378,14 +382,15 @@ a, header ul li {
 .intro-image {
     display: flex;
     align-items: center;
-    margin-right: 80px;
+    margin-right: 100px;
 }
 
 .intro-image > img {
-    width: 413px;
-    height: 560px;
+    width: 350px;
+    height: 480px;
     border-radius: 10px;
     margin-left: 88px;
+    box-shadow: 0 4px 10px #3A86FF;
 }
 
 .info {
@@ -686,7 +691,7 @@ a, header ul li {
 }
 
 .skills > section > aside:nth-child(1) > section > div > div:hover {
-    background-color: #282828;
+    box-shadow: 0 4px 10px 5px #3A86FF;
     transition: all 2s;
 }
 
@@ -2092,5 +2097,20 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     }
     25% {
         border-bottom: 1px solid #3A86FF;
+    }
+}
+
+@keyframes home-image-animate {
+    0%{
+        border-top-color: #3A86FF;
+    }
+    25%{
+        border-right-color: #3A86FF;
+    }
+    50%{
+        border-bottom-color: #3A86FF;
+    }
+    75%{
+        border-left-color: #3A86FF;
     }
 }
