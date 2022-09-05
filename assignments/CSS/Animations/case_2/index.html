@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Two</title>
+  <style>
+    main{
+      display: flex;
+      width: 95vw;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    div{
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+      border: 2px solid red;
+      animation-name: my-animation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes my-animation {
+      from{
+        height: 20px;
+        width: 20px;
+        opacity: 1;
+      }
+      to{
+        height: 200px;
+        width: 200px;
+          opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div></div>
+</main>
+</body>
+</html>
