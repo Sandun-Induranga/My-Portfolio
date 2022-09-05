@@ -15,35 +15,40 @@
         }
 
         aside {
-            width: 25%;
+            width: 100%;
             height: 100%;
             background: #0c39bf;
         }
 
         aside > section:nth-child(1) {
             position: relative;
-            width: 400%;
+            width: 100%;
             height: 60%;
             background: url("assets/images/sky.jpg");
             background-size: cover;
         }
 
-        aside > section:nth-child(2) {
+        aside > section:nth-child(3) {
+            position: relative;
             width: 400%;
             height: 40%;
             background: url("assets/images/road.jpg");
+            animation-name: car-animation;
+            animation-duration: 10s;
         }
 
-        aside > section:nth-child(1) > section {
+        aside > section:nth-child(2) {
             position: absolute;
-            width: 100%;
+            width: 400%;
             height: 40%;
-            bottom: 0;
+            bottom: 26%;
             background: url("assets/images/city.png");
+            animation-name: car-animation;
+            animation-duration: 10s;
         }
 
-        aside > section:nth-child(2) > section {
-            position: fixed;
+        aside > section:last-child {
+            position: absolute;
             width: 500px;
             height: 230px;
             top: 50%;
@@ -52,12 +57,12 @@
             margin: auto;
         }
 
-        aside > section:nth-child(2) > section > img:first-child {
+        aside > section:last-child img:first-child {
             width: 100%;
             height: 100%;
         }
 
-        aside > section:nth-child(2) > section > img:nth-child(2) {
+        aside > section:last-child img:nth-child(2) {
             position: absolute;
             width: 100px;
             height: 100px;
@@ -65,12 +70,24 @@
             left: 40px;
         }
 
-        aside > section:nth-child(2) > section > img:last-child {
+        aside > section:last-child img:last-child {
             position: absolute;
             width: 100px;
             height: 100px;
             bottom: 10px;
             right: 55px;
+        }
+
+        @keyframes car-animation {
+            0%{
+                transform: translate(0);
+            }
+            75%, 85%{
+                transform: translate(-70%);
+            }
+            100%{
+                transform: translate(-80%);
+            }
         }
 
     </style>
@@ -83,23 +100,24 @@
             <!-- Sky -->
             <section>
 
-                <!-- City -->
-                <section></section>
-
             </section>
+
+        <!-- City -->
+        <section></section>
 
             <!-- Road -->
             <section>
 
-                <section>
-                    <!-- Car -->
-                    <img src="assets/images/car.png" alt="car">
-
-                    <img src="assets/images/wheel.png" alt="wheel">
-                    <img src="assets/images/wheel.png" alt="wheel">
-                </section>
-
             </section>
+
+        <section>
+            <!-- Car -->
+            <img src="assets/images/car.png" alt="car">
+
+            <img src="assets/images/wheel.png" alt="wheel">
+            <img src="assets/images/wheel.png" alt="wheel">
+        </section>
+
     </aside>
 </main>
 
