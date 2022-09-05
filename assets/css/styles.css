@@ -807,8 +807,8 @@ a, header ul li {
     cursor: pointer;
 }
 
-.skills > section > aside > section > div:nth-child(2):hover .skills > section > aside > section > div:nth-child(2) > div:first-child > img {
-    height: 1000px;
+.skills > section > aside > section > div:nth-child(2) :hover  {
+    box-shadow: 0 4px 76px 2px #3A86FF;
 }
 
 .skills > section > aside:last-child > section > div:nth-child(2) > div {
@@ -837,7 +837,7 @@ a, header ul li {
 }
 
 .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2):hover {
-    background-color: #3A86FF; /* ------------------------------------------------------------------------------------------ */
+    background-color: #3A86FF;
 }
 
 
