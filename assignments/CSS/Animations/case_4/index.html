@@ -6,6 +6,10 @@
 
     <style>
 
+        body,html{
+            overflow: hidden;
+        }
+
         main {
             display: flex;
             flex-direction: column;
@@ -35,16 +39,22 @@
             background: url("assets/images/road.jpg");
             animation-name: car-animation;
             animation-duration: 10s;
+            /*transition-timing-function: cubic-bezier(0, 0.56, 0.62, 0.78);*/
+            animation-iteration-count: infinite;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);
         }
 
         aside > section:nth-child(2) {
             position: absolute;
-            width: 400%;
+            width: 500%;
             height: 40%;
             bottom: 26%;
             background: url("assets/images/city.png");
             animation-name: car-animation;
             animation-duration: 10s;
+            /*transition-timing-function: cubic-bezier(0, 0.56, 0.62, 0.78);*/
+            animation-iteration-count: infinite;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);
         }
 
         aside > section:last-child {
@@ -68,6 +78,10 @@
             height: 100px;
             bottom: 10px;
             left: 40px;
+            animation-name: wheel-animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);
         }
 
         aside > section:last-child img:last-child {
@@ -76,17 +90,33 @@
             height: 100px;
             bottom: 10px;
             right: 55px;
+            animation-name: wheel-animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);
         }
 
         @keyframes car-animation {
             0%{
                 transform: translate(0);
             }
-            75%, 85%{
-                transform: translate(-70%);
-            }
+            /*60%, 61%{*/
+            /*    transform: translate(-70%);*/
+            /*}*/
             100%{
                 transform: translate(-80%);
+            }
+        }
+
+        @keyframes wheel-animation {
+            0%{
+                transform: rotate(0);
+            }
+            60%{
+                transform: rotate(-500deg);
+            }
+            100%{
+                transform: rotate(180deg);
             }
         }
 
@@ -113,7 +143,6 @@
         <section>
             <!-- Car -->
             <img src="assets/images/car.png" alt="car">
-
             <img src="assets/images/wheel.png" alt="wheel">
             <img src="assets/images/wheel.png" alt="wheel">
         </section>
