@@ -874,14 +874,14 @@ a, header ul li {
 
 .services > div > div {
     border: 1px solid transparent;
-    transition: all 1s;
-    background-color: #e1e5f2;
+    transition: all 2s;
+    background-color: white;
 }
 
 .services > div > div:hover {
     cursor: pointer;
-    border: 6px solid transparent;
-    transition: all 1s;
+    background-color: #999999;
+    transition: all 2s;
 }
 
 .services > div > div:hover .services > div > div > div:first-child > i {
@@ -1202,7 +1202,7 @@ a, header ul li {
 
 .contact > aside > aside:first-child > div {
     position: relative;
-    margin: 44px 88px 88px;
+    margin: 44px 88px 50px;
     height: 60px;
 }
 

@@ -6,7 +6,7 @@
 
     <style>
 
-        body,html{
+        body, html {
             overflow: hidden;
         }
 
@@ -39,7 +39,6 @@
             background: url("assets/images/road.jpg");
             animation-name: car-animation;
             animation-duration: 10s;
-            /*transition-timing-function: cubic-bezier(0, 0.56, 0.62, 0.78);*/
             animation-iteration-count: infinite;
             transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);
         }
@@ -52,9 +51,7 @@
             background: url("assets/images/city.png");
             animation-name: car-animation;
             animation-duration: 10s;
-            /*transition-timing-function: cubic-bezier(0, 0.56, 0.62, 0.78);*/
             animation-iteration-count: infinite;
-            /*transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);*/
             transition-timing-function: linear;
         }
 
@@ -82,7 +79,6 @@
             animation-name: wheel-animation;
             animation-duration: 10s;
             animation-iteration-count: infinite;
-            /*transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);*/
             transition-timing-function: linear;
         }
 
@@ -95,30 +91,26 @@
             animation-name: wheel-animation;
             animation-duration: 10s;
             animation-iteration-count: infinite;
-            /*transition-timing-function: cubic-bezier(0.4, 0, 0.34, 0.94);*/
             transition-timing-function: linear;
         }
 
         @keyframes car-animation {
-            0%{
+            0% {
                 transform: translate(0);
             }
-            /*60%, 61%{*/
-            /*    transform: translate(-70%);*/
-            /*}*/
-            100%{
+            100% {
                 transform: translate(-80%);
             }
         }
 
         @keyframes wheel-animation {
-            0%{
+            0% {
                 transform: rotate(0);
             }
-            60%{
+            60% {
                 transform: rotate(-500deg);
             }
-            100%{
+            100% {
                 transform: rotate(-410deg);
             }
         }
@@ -130,18 +122,18 @@
 
 <main>
     <aside>
-            <!-- Sky -->
-            <section>
+        <!-- Sky -->
+        <section>
 
-            </section>
+        </section>
 
         <!-- City -->
         <section></section>
 
-            <!-- Road -->
-            <section>
+        <!-- Road -->
+        <section>
 
-            </section>
+        </section>
 
         <section>
             <!-- Car -->
