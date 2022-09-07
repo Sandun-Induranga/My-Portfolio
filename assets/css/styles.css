@@ -241,6 +241,11 @@ a, header ul li {
     text-shadow: 0 4px 30px #3A86FF;
 }
 
+.main-description>h1>span>img{
+    width: 80px;
+    height: 80px;
+}
+
 .main-description > h1 {
     font-size: 3em;
     color: #313131;
@@ -1475,6 +1480,11 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         display: none;
     }
 
+    .main-description>h1>span>img{
+        width: 40px;
+        height: 40px;
+    }
+
     .des-image {
         left: 0;
         right: 0;
@@ -1961,6 +1971,11 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     .des-image img {
         width: 180px;
         height: 250px;
+    }
+
+    .main-description>h1>span>img{
+        width: 50px;
+        height: 50px;
     }
 
     .des-image {
