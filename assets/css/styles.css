@@ -1287,6 +1287,7 @@ fieldset {
 
 .contact form > fieldset > button {
     height: 60px;
+    width: 216px;
     color: white;
     border-radius: 8px;
     background-color: #3A86FF;
@@ -1909,7 +1910,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
 
 
     .contact form > fieldset > button {
-        width: 160px;
+        width: 180px;
         height: 46px;
     }
 
