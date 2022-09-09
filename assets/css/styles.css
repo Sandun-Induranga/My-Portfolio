@@ -1592,7 +1592,9 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     .about-section button {
         width: 160px;
         height: 46px;
-        margin-left: 80px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
 
