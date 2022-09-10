@@ -584,9 +584,8 @@ a, header ul li {
 
 .skills {
     position: relative;
-    display: inline-block;
     width: 99.5vw;
-    height: 1500px;
+    height: 5000px;
     margin-bottom: 80px;
 }
 
@@ -609,31 +608,46 @@ a, header ul li {
 
 .skills > section {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
 }
 
-.skills > section > aside:nth-child(1) {
+.skills > section > aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 628px;
     height: 628px;
     border-radius: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     cursor: pointer;
 }
 
-.skills > section > aside:nth-child(1)::before {
+.skills > section > aside > h4{
+    position: absolute;
+    z-index: 3;
+    color: #282828;
+    font-size: 1.5em;
+}
+
+.skills > section > aside::before {
     content: " ";
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*margin: auto;*/
+    width: 628px;
+    height: 628px;
     border-radius: 100%;
     border: 15px solid white;
     background: white;
@@ -641,13 +655,13 @@ a, header ul li {
     cursor: pointer;
 }
 
-.skills > section > aside:nth-child(1):hover::before {
+.skills > section > aside:hover::before {
     border-top: 15px solid crimson;
     transform: rotate(360deg);
     transition: all 2s;
 }
 
-.skills > section > aside:nth-child(1) > img {
+.skills > section > aside > img {
     position: absolute;
     height: 578px;
     width: 578px;
@@ -660,7 +674,7 @@ a, header ul li {
     box-shadow: 4px 0 30px 10px #B8B8B8;
 }
 
-.skills > section > aside:nth-child(1) > img:nth-child(2) {
+.skills > section > aside > img:nth-child(3) {
     box-shadow: 4px 0 76px 10px #3A86FF;
     border: 1px solid #3A86FF;
     height: 350px;
@@ -668,21 +682,21 @@ a, header ul li {
     opacity: 0.5;
 }
 
-.skills > section > aside:nth-child(1) > img:nth-child(1) {
+.skills > section > aside > img:nth-child(2) {
     /*opacity: 0.7;*/
 }
 
-.skills > section > aside:nth-child(2) {
+.skills > section > div {
     position: relative;
 }
 
-.skills > section > aside:nth-child(2) {
+.skills > section > div {
     position: relative;
     /*height: 980px;*/
     top: 680px;
 }
 
-.skills > section > aside:nth-child(1) > section {
+.skills > section > aside > section {
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -690,17 +704,17 @@ a, header ul li {
     height: 578px;
 }
 
-.skills > section > aside:nth-child(1) > section > div {
+.skills > section > aside > section > div {
     position: relative;
     width: calc(100% / 5);
 }
 
-.skills > section > aside:nth-child(1) > section > div > div:hover {
+.skills > section > aside > section > div > div:hover {
     box-shadow: 0 4px 10px 5px #3A86FF;
     transition: all 2s;
 }
 
-.skills > section > aside:nth-child(1) > section > div > div:first-child, .skills > section > aside:nth-child(1) > section > div > div:nth-child(2) {
+.skills > section > aside > section > div > div:first-child, .skills > section > aside > section > div > div:nth-child(2) {
     display: flex;
     position: absolute;
     left: 0;
@@ -713,7 +727,7 @@ a, header ul li {
     justify-content: center;
 }
 
-.skills > section > aside:nth-child(1) > section > div p {
+.skills > section > aside > section > div p {
     display: inline-block;
     font-size: 16px;
     margin: 0;
@@ -724,43 +738,43 @@ a, header ul li {
 
 /* Languages */
 
-.skills > section > aside:nth-child(1) > section > div:first-child > div:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > div:first-child {
+.skills > section > aside > section > div:first-child > div:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > div:first-child {
     top: 184px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:first-child > div:nth-child(2), .skills > section > aside:nth-child(1) > section > div:last-child > div:nth-child(2) {
+.skills > section > aside > section > div:first-child > div:nth-child(2), .skills > section > aside > section > div:last-child > div:nth-child(2) {
     bottom: 184px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child, .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child {
+.skills > section > aside > section > div:nth-child(2) > div:first-child, .skills > section > aside > section > div:nth-child(4) > div:first-child {
     top: 60px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child {
+.skills > section > aside > section > div:nth-child(2) > div:first-child {
     margin-right: 40px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2) {
+.skills > section > aside > section > div:nth-child(4) > div:nth-child(2) {
     margin-left: 40px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child {
+.skills > section > aside > section > div:nth-child(4) > div:first-child {
     margin-left: 40px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2) {
+.skills > section > aside > section > div:nth-child(2) > div:nth-child(2) {
     margin-right: 40px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2), .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2) {
+.skills > section > aside > section > div:nth-child(2) > div:nth-child(2), .skills > section > aside > section > div:nth-child(4) > div:nth-child(2) {
     bottom: 60px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(3) > div:first-child {
+.skills > section > aside > section > div:nth-child(3) > div:first-child {
     top: 17px;
 }
 
-.skills > section > aside:nth-child(1) > section > div:nth-child(3) > div:nth-child(2) {
+.skills > section > aside > section > div:nth-child(3) > div:nth-child(2) {
     bottom: 17px;
 }
 
@@ -774,14 +788,14 @@ a, header ul li {
     margin-bottom: 80px;
 }
 
-.skills > section > aside:last-child {
+.skills > section > div:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.skills > section > aside:last-child > section {
+.skills > section > div:last-child > section {
     position: relative;
     display: flex;
     width: 900px;
@@ -789,59 +803,59 @@ a, header ul li {
     justify-content: center;
 }
 
-.skills > section > aside:last-child > section > div {
+.skills > section > div:last-child > section > div {
     display: flex;
     align-items: center;
 }
 
-.skills > section > aside:last-child > section > div > button {
+.skills > section > div:last-child > section > div > button {
     margin: 55px;
     background: none;
     border: none;
 }
 
-.skills > section > aside:last-child > section > div > button > i {
+.skills > section > div:last-child > section > div > button > i {
     font-size: 3em;
     color: #3A86FF;
 }
 
-.skills > section > aside > section > div:nth-child(2) {
+.skills > section > div:last-child > section > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-.skills > section > aside > section > div:nth-child(2) :hover {
+.skills > section > div:last-child > section > div:nth-child(2) :hover {
     box-shadow: 0 4px 76px 2px #3A86FF;
 }
 
-.skills > section > aside:last-child > section > div:nth-child(2) > div {
+.skills > section > div:last-child > section > div:nth-child(2) > div {
     background-image: url("../images/certificate-1.png");
     background-size: cover;
     background-position: center;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
 }
 
-.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(1) {
+.skills > section > div:last-child > section > div:nth-child(2) > div:nth-child(1) {
     width: 360px;
     height: 250px;
     margin-right: -230px;
 }
 
-.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2) {
+.skills > section > div:last-child > section > div:nth-child(2) > div:nth-child(2) {
     width: 550px;
     height: 420px;
 }
 
-.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(3) {
+.skills > section > div:last-child > section > div:nth-child(2) > div:nth-child(3) {
     z-index: -1;
     width: 360px;
     height: 250px;
     margin-left: -230px;
 }
 
-.skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2):hover {
+.skills > section > div:last-child > section > div:nth-child(2) > div:nth-child(2):hover {
     background-color: #3A86FF;
 }
 
