@@ -1647,30 +1647,35 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     /* Skills */
     .skills {
         width: 99.5vw;
-        height: 880px;
+        margin-bottom: 100px;
     }
 
     .skills > h1, .skills h2 {
         margin-bottom: 60px;
     }
 
-    .skills > section > aside:nth-child(1) {
+    .skills > section > aside {
         width: 300px;
         height: 300px;
     }
 
-    .skills > section > aside:nth-child(1) > img {
+    .skills > section > aside > img:nth-child(2) {
         position: absolute;
         height: 280px;
         width: 280px;
     }
 
-    .skills > section > aside:nth-child(1) > img:nth-child(2) {
+    .skills > section > aside > img:nth-child(3) {
         height: 165px;
         width: 165px;
     }
 
-    .skills > section > aside:nth-child(1) > section {
+    .skills > section > aside::before{
+        width: 280px;
+        height: 280px;
+    }
+
+    .skills > section > aside > section {
         z-index: 1;
         display: flex;
         flex-direction: row;
@@ -1678,101 +1683,101 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         height: 280px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div {
+    .skills > section > aside > section > div {
         position: relative;
         width: calc(100% / 5);
     }
 
-    .skills > section > aside:nth-child(1) > section > div > div:first-child, .skills > section > aside:nth-child(1) > section > div > div:nth-child(2) {
+    .skills > section > aside > section > div > div:first-child, .skills > section > aside > section > div > div:nth-child(2) {
         width: 30px;
         margin: auto;
         border-radius: 10px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div img {
+    .skills > section > aside > section > div img {
         width: 30px;
         height: 30px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div p {
+    .skills > section > aside > section > div p {
         font-size: 8px;
     }
 
 
     /* Languages */
-    .skills > section > aside:nth-child(1) > section > div:first-child > div:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > div:first-child {
+    .skills > section > aside > section > div:first-child > div:first-child, .skills > section > aside > section > div:last-child > div:first-child {
         top: 165px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:first-child > div:nth-child(2), .skills > section > aside:nth-child(1) > section > div:last-child > div:nth-child(2) {
+    .skills > section > aside > section > div:first-child > div:nth-child(2), .skills > section > aside > section > div:last-child > div:nth-child(2) {
         bottom: 165px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child, .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child {
+    .skills > section > aside > section > div:nth-child(2) > div:first-child, .skills > section > aside > section > div:nth-child(4) > div:first-child {
         top: 30px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:first-child {
+    .skills > section > aside > section > div:nth-child(2) > div:first-child {
         margin-right: 20px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2) {
+    .skills > section > aside > section > div:nth-child(4) > div:nth-child(2) {
         margin-left: 20px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:first-child {
+    .skills > section > aside > section > div:nth-child(4) > div:first-child {
         margin-left: 20px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2) {
+    .skills > section > aside > section > div:nth-child(2) > div:nth-child(2) {
         margin-right: 20px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(2) > div:nth-child(2), .skills > section > aside:nth-child(1) > section > div:nth-child(4) > div:nth-child(2) {
+    .skills > section > aside > section > div:nth-child(2) > div:nth-child(2), .skills > section > aside > section > div:nth-child(4) > div:nth-child(2) {
         bottom: 30px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(3) > div:first-child {
+    .skills > section > aside > section > div:nth-child(3) > div:first-child {
         top: 8px;
     }
 
-    .skills > section > aside:nth-child(1) > section > div:nth-child(3) > div:nth-child(2) {
+    .skills > section > aside > section > div:nth-child(3) > div:nth-child(2) {
         bottom: 8px;
     }
 
 
     /* Certificates */
-    .skills > section > aside:last-child > section {
+    .skills > section > div:last-child > section {
         width: 90vw;
         height: 200px;
     }
 
-    .skills > section > aside:last-child > section > div > button {
+    .skills > section > div:last-child > section > div > button {
         margin: 10px;
     }
 
-    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(1) {
+    .skills > section > div:last-child > section > div:nth-child(2) > div:nth-child(1) {
         width: 160px;
         height: 115px;
         margin-right: -130px;
     }
 
-    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(2) {
+    .skills > section > div:last-child > section > div:nth-child(2) > div:nth-child(2) {
         width: 170px;
         height: 160px;
     }
 
-    .skills > section > aside:last-child > section > div:nth-child(2) > div:nth-child(3) {
+    .skills > section > div:last-child > section > div:nth-child(2) > div:nth-child(3) {
         width: 160px;
         height: 115px;
         margin-left: -130px;
     }
 
-    .skills > section > aside:last-child > section > div > button > i {
+    .skills > section > div:last-child > section > div > button > i {
         font-size: 2em;
     }
 
-    .skills > section > aside:nth-child(2) {
+    .skills > section > div:nth-child(2) {
         top: 340px;
     }
 
