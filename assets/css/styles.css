@@ -608,7 +608,6 @@ a, header ul li {
 .skills > section {
     position: relative;
     display: flex;
-    /*flex-direction: column;*/
     align-items: center;
     justify-content: center;
     gap: 80px;
@@ -623,10 +622,6 @@ a, header ul li {
     width: 628px;
     height: 628px;
     border-radius: 100%;
-    /*top: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*margin: auto;*/
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     cursor: pointer;
 }
@@ -634,18 +629,15 @@ a, header ul li {
 .skills > section > aside > h4{
     position: absolute;
     z-index: 3;
-    color: #282828;
+    color: white;
     font-size: 1.5em;
+    text-shadow: 0 4px 30px #3A86FF;
+    transition: all 2s;
 }
 
 .skills > section > aside::before {
     content: " ";
     position: absolute;
-    /*top: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*margin: auto;*/
     width: 600px;
     height: 600px;
     border-radius: 100%;
@@ -658,6 +650,11 @@ a, header ul li {
 .skills > section > aside:hover::before {
     border-top: 15px solid crimson;
     transform: rotate(360deg);
+    transition: all 2s;
+}
+
+.skills > section > aside:hover h4{
+    color: #3A86FF;
     transition: all 2s;
 }
 
@@ -692,8 +689,6 @@ a, header ul li {
 
 .skills > section > div {
     position: relative;
-    /*height: 980px;*/
-    /*top: 680px;*/
 }
 
 .skills > section > aside > section {
