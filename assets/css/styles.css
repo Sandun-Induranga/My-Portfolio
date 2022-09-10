@@ -139,8 +139,9 @@
     height: 60px;
     width: 99.5vw;
     padding: 0;
-    border-bottom: 2px solid #3A86FF;
+    /*border-bottom: 2px solid #3A86FF;*/
     /*box-shadow: 2px 0 5px 5px #3A86FF;*/
+    box-shadow: 0 4px 5px #3A86FF;
     background-color: white;
 }
 
@@ -626,7 +627,7 @@ a, header ul li {
     cursor: pointer;
 }
 
-.skills > section > aside > h4{
+.skills > section > aside > h4 {
     position: absolute;
     z-index: 3;
     color: white;
@@ -653,8 +654,9 @@ a, header ul li {
     transition: all 2s;
 }
 
-.skills > section > aside:hover h4{
+.skills > section > aside:hover h4 {
     color: #3A86FF;
+    font-size: 2em;
     transition: all 2s;
 }
 
@@ -1665,7 +1667,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         width: 165px;
     }
 
-    .skills > section > aside::before{
+    .skills > section > aside::before {
         width: 280px;
         height: 280px;
     }
