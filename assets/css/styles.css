@@ -585,8 +585,7 @@ a, header ul li {
 .skills {
     position: relative;
     width: 99.5vw;
-    height: 5000px;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
 }
 
 .skills > h1 {
@@ -609,8 +608,9 @@ a, header ul li {
 .skills > section {
     position: relative;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: center;
+    justify-content: center;
     gap: 80px;
     flex-wrap: wrap;
 }
@@ -646,8 +646,8 @@ a, header ul li {
     /*bottom: 0;*/
     /*left: 0;*/
     /*margin: auto;*/
-    width: 628px;
-    height: 628px;
+    width: 600px;
+    height: 600px;
     border-radius: 100%;
     border: 15px solid white;
     background: white;
@@ -693,7 +693,7 @@ a, header ul li {
 .skills > section > div {
     position: relative;
     /*height: 980px;*/
-    top: 680px;
+    /*top: 680px;*/
 }
 
 .skills > section > aside > section {
@@ -738,7 +738,7 @@ a, header ul li {
 
 /* Languages */
 
-.skills > section > aside > section > div:first-child > div:first-child, .skills > section > aside:nth-child(1) > section > div:last-child > div:first-child {
+.skills > section > aside > section > div:first-child > div:first-child, .skills > section > aside > section > div:last-child > div:first-child {
     top: 184px;
 }
 
