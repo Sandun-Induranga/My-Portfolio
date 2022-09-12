@@ -15,24 +15,29 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
 
     <style>
+        main{
+            height: 100vh;
+        }
     </style>
 </head>
 <body class="container-fluid">
 
-<main class="row align-items-center justify-content-center">
-    <section class="col-3 bg-danger border-danger">
+<main class="d-flex row align-items-center justify-content-center">
+    <section class="d-flex flex-column col-3 bg-white border-danger h-50 align-items-center justify-content-evenly rounded-4 shadow">
         <h1 class="fs-3 text-center">Welcome</h1>
-        <div class="">
+        <div>
             <form>
                 <div class="mb-3">
-                    <label for="userName" class="form-label">Email address</label>
+                    <label for="userName" class="form-label">Username</label>
                     <input type="text" class="form-control" id="userName">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password">
                 </div>
-                <button type="button" class="btn btn-primary">Login</button>
+                <div class="d-grid">
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
             </form>
         </div>
     </section>
