@@ -1,0 +1,14 @@
+body {
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-position: right;
+}
+
+.red-button {
+    background: #E94F5B;
+    border: #E94F5B;
+}
+
+.red-text{
+    color: #E94F5B;
+}
