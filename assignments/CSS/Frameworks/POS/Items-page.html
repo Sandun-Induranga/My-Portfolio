@@ -64,12 +64,13 @@
             </nav>
         </div>
 
-        <div class="row">
+        <!-- Search bar -->
+        <div class="row mt-5">
             <nav class="navbar">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-warning dropdown-toggle me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="container-fluid d-flex flex-column flex-lg-row">
+                    <form class="d-flex flex-column flex-lg-row" role="search">
+                        <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown button
                         </button>
                         <ul class="dropdown-menu">
@@ -79,10 +80,42 @@
                         </ul>
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                    <div class="dropdown">
-                    </div>
                 </div>
             </nav>
+        </div>
+
+        <!-- Table -->
+        <div class="mt-5">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>C001</td>
+                    <td>John</td>
+                    <td>Galle</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>C001</td>
+                    <td>Cena</td>
+                    <td>Colombo</td>
+                    <td>20000</td>
+                </tr>
+                <tr>
+                    <td>C001</td>
+                    <td>John</td>
+                    <td>Galle</td>
+                    <td>10000</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
     </section>
