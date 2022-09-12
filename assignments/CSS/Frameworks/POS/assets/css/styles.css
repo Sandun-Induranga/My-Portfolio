@@ -4,6 +4,10 @@ body {
     background-position: right;
 }
 
+main{
+    height: 100vh;
+}
+
 .red-button {
     background: #E94F5B;
     border: #E94F5B;
