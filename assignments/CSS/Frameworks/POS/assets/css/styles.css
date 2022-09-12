@@ -16,3 +16,7 @@ main{
 .red-text{
     color: #E94F5B;
 }
+
+i:hover{
+    cursor: pointer;
+}
