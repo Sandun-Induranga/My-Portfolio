@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>POS | Dashboard</title>
+    <title>POS | Place Orders</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
                                     Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i
+                                <a class="nav-link" aria-current="page" href="#"><i
                                         class="bi bi-people-fill"></i> Customers</a>
                             </li>
                             <li class="nav-item">
@@ -53,7 +53,7 @@
                                         class="bi bi-handbag-fill"></i> Items</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-cart-check-fill"></i>
+                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart-check-fill"></i>
                                     Place Orders</a>
                             </li>
 
@@ -68,6 +68,58 @@
                 </div>
             </nav>
         </div>
+
+        <form class="row g-3">
+            <div class="d-flex flex-column col-md-3">
+                <label for="cusId" class="form-label">Customer ID</label>
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="cusId">Customer ID</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <label for="cusName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="cusName" placeholder="Customer Name">
+            </div>
+            <div class="col-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Address">
+            </div>
+            <div class="col-3">
+                <label for="salary" class="form-label">Salary</label>
+                <input type="text" class="form-control" id="salary" placeholder="Salary">
+            </div>
+            <div class="d-flex flex-column col-md-3">
+                <label for="code" class="form-label">Item Code</label>
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="code">Code</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <label for="itemName" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="itemName" placeholder="Name">
+            </div>
+            <div class="col-md-3">
+                <label for="qtyOnHand" class="form-label">QTY On Hand</label>
+                <input type="number" class="form-control" id="qtyOnHand" placeholder="Qty On Hand">
+            </div>
+            <div class="col-md-3">
+                <label for="Price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="Price" placeholder="Price">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
 
 
     </section>
