@@ -23,6 +23,6 @@ i:hover{
 
 @media all and (min-width: 0) and (max-width: 768px){
     .full-height{
-        height: max-content !important;
+        height: 100vh !important;
     }
 }
