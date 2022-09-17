@@ -25,7 +25,7 @@
 <main class="d-flex row align-items-center justify-content-center">
 
     <section
-            class="d-flex full-height flex-column h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-around">
+            class="d-flex full-height flex-column h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between">
 
         <!-- Nav bar -->
         <div class="row w-100">
@@ -89,14 +89,57 @@
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success me-2" type="submit">Search</button>
                     </form>
+                    <!-- Add Customers Button -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Add New Customer
+                    </button>
                 </div>
             </nav>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Customers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="d-flex justify-content-center">
+                        <form class="w-75">
+                            <div class="mb-3">
+                                <label for="cusId" class="form-label">Customer ID</label>
+                                <input type="text" class="form-control" id="cusId">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cusName" class="form-label">Customer Name</label>
+                                <input type="text" class="form-control" id="cusName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="salary" class="form-label">Salary</label>
+                                <input type="text" class="form-control" id="salary">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
+                        <button type="button" class="btn btn-success">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Table -->
-        <div class="d-flex overflow-auto h-25 col-lg-8 col-12">
+        <div class="row d-flex overflow-auto mb-5 h-50 col-lg-8 col-12">
             <table class="table table-striped table-hover">
                 <thead class="table-dark sticky-top">
                 <tr>
@@ -240,50 +283,6 @@
                 </tr>
                 </tbody>
             </table>
-        </div>
-
-        <!-- Add Customers Button -->
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Add New Customer
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Add Customers</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <!-- Form -->
-                    <div class="d-flex justify-content-center">
-                        <form class="w-75">
-                            <div class="mb-3">
-                                <label for="cusId" class="form-label">Customer ID</label>
-                                <input type="text" class="form-control" id="cusId">
-                            </div>
-                            <div class="mb-3">
-                                <label for="cusName" class="form-label">Customer Name</label>
-                                <input type="text" class="form-control" id="cusName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address">
-                            </div>
-                            <div class="mb-3">
-                                <label for="salary" class="form-label">Salary</label>
-                                <input type="text" class="form-control" id="salary">
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                        <button type="button" class="btn btn-success">Save</button>
-                    </div>
-                </div>
-            </div>
         </div>
 
 
