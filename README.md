@@ -21,4 +21,6 @@
 
 🖼 Wire Frame URL : https://wireframe.cc/6hv27a
 
+🏝 Mock-up URL : https://www.figma.com/file/Qq5AZ8V873DLGeCNMQeN8e/Web-POS?node-id=0%3A1
+
 💻 Project URL : https://github.com/Sandun-Induranga/My-Portpolio/tree/master/assignments/CSS/Frameworks/POS
