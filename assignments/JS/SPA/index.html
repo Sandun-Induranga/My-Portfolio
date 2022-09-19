@@ -40,24 +40,24 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            <li id="btnDashboard" class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#"><i class="bi bi-house-fill"></i>
                                     Dashboard</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i
+                            <li id="btnCustomer" class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i
                                         class="bi bi-people-fill"></i> Customers</a>
                             </li>
-                            <li class="nav-item">
+                            <li id="btnItems" class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#"><i
                                         class="bi bi-handbag-fill"></i> Items</a>
                             </li>
-                            <li class="nav-item">
+                            <li id="btnOrders" class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#"><i class="bi bi-cart-check-fill"></i>
                                     Place Orders</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cloud-arrow-down-fill"></i>
+                            <li id="btnOrderDetails" class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-cloud-arrow-down-fill"></i>
                                     Order Details</a>
                             </li>
 
@@ -74,7 +74,7 @@
         </div>
 
         <!-- Customers -->
-        <aside id="customer" style="display: none !important;" class="d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
+        <aside id="customer" class="d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
             <!-- Search bar -->
             <div class="row">
                 <nav class="navbar">
@@ -289,7 +289,7 @@
         </aside>
 
         <!-- Items -->
-        <aside id="item" style="display: none !important;" class="d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
+        <aside id="item" class="d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
             <!-- Search bar -->
             <div class="row">
                 <nav class="navbar">
@@ -506,7 +506,7 @@
         </aside>
 
         <!-- Purchase Orders -->
-        <aside id="place-order" style="display: none !important;" class="overflow-x overflow-auto d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
+        <aside id="place-order" class="overflow-x overflow-auto d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
             <div class="w-100">
                 <form class="row g-3">
                     <div class="col-md-3">
@@ -905,6 +905,7 @@
 <!-- JS For Bootstrap -->
 <script src="assets/js/bootstrap.min.js"></script>
 
+<!-- JS For jQuery -->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
 <script src="assets/js/index.js"></script>
