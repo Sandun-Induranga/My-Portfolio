@@ -73,6 +73,7 @@
             </nav>
         </div>
 
+        <!-- Customers -->
         <aside id="customer" style="display: none !important;" class="d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
             <!-- Search bar -->
             <div class="row">
@@ -287,6 +288,7 @@
             </div>
         </aside>
 
+        <!-- Items -->
         <aside id="item" style="display: none !important;" class="d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
             <!-- Search bar -->
             <div class="row">
@@ -503,7 +505,8 @@
             </div>
         </aside>
 
-        <aside id="place-order" style="" class="overflow-x overflow-auto d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
+        <!-- Purchase Orders -->
+        <aside id="place-order" style="display: none !important;" class="overflow-x overflow-auto d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
             <div class="w-100">
                 <form class="row g-3">
                     <div class="col-md-3">
@@ -761,6 +764,137 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </aside>
+
+        <!-- Order Details -->
+        <aside id="order-details" class="overflow-x overflow-auto d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
+            <!-- Search bar -->
+            <div class="row">
+                <nav class="navbar">
+                    <div class="container-fluid d-flex flex-column flex-lg-row">
+                        <form class="d-flex flex-column flex-lg-row" role="search">
+                            <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                                   aria-label="Search">
+                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Table -->
+            <div class="d-flex overflow-auto h-50 w-75">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark sticky-top">
+                    <tr>
+                        <th scope="col">Order ID</th>
+                        <th scope="col">Customer ID</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody class="">
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>2021-02-02</td>
+                        <td>1460/=</td>
+                        <td>
+                            <i class="bi bi-pencil-fill text-success"></i>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </aside>
 
