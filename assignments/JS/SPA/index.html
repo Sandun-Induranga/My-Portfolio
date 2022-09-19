@@ -503,8 +503,8 @@
             </div>
         </aside>
 
-        <aside id="place-order" style="" class="overflow-auto d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
-            <div>
+        <aside id="place-order" style="" class="overflow-x overflow-auto d-flex flex-column align-items-center justify-content-evenly w-100 h-100">
+            <div class="w-100">
                 <form class="row g-3">
                     <div class="col-md-3">
                         <label for="customersId" class="form-label">Customer ID</label>
@@ -546,7 +546,7 @@
                         <label for="unitPrice" class="form-label">Price</label>
                         <input type="number" class="form-control" id="unitPrice" placeholder="Price">
                     </div>
-                    <div class="d-flex justify-content-end col-12">
+                    <div class="d-flex justify-content-end col-12 mb-2">
                         <button type="button" class="btn btn-warning mb-md-5">Add To Cart <i class="bi bi-cart-plus-fill"></i></button>
                     </div>
                 </form>
@@ -702,15 +702,15 @@
                 </table>
             </div>
 
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end align-items-center col-12">
-                <div class="mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end align-items-center w-100">
+                <div class="mb-2">
                     <label for="total" class="form-label disabled mt-2">Total</label>
                     <input type="text" class="form-control mb-2" id="total" placeholder="Total">
                 </div>
 
                 <!-- Place Order Button -->
                 <div>
-                    <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Place Order <i class="bi bi-shop"></i>
                     </button>
                 </div>

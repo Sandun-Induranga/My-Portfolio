@@ -21,11 +21,18 @@ i:hover{
     cursor: pointer;
 }
 
+.overflow-x{
+    overflow-x: hidden !important;
+}
+
 @media all and (min-width: 0) and (max-width: 768px){
     .full-height{
         height: 100vh !important;
     }
     .extra-height{
         height: 190vh !important;
+    }
+    .margin{
+        margin-bottom: 5px;
     }
 }
