@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>POS | Customers</title>
+    <title>POS | Items</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,10 +11,10 @@
           rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
     <meta name="viewport" content="width=device-width initial-scale=1">
 
@@ -25,7 +25,7 @@
 <main class="d-flex row align-items-center justify-content-center">
 
     <section
-            class="d-flex full-height flex-column h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between">
+            class="d-flex flex-column full-height h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between">
 
         <!-- Nav bar -->
         <div class="row w-100">
@@ -45,11 +45,11 @@
                                     Dashboard</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i
+                                <a class="nav-link" aria-current="page" href="#"><i
                                         class="bi bi-people-fill"></i> Customers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"><i
+                                <a class="nav-link active" aria-current="page" href="#"><i
                                         class="bi bi-handbag-fill"></i> Items</a>
                             </li>
                             <li class="nav-item">
@@ -57,7 +57,7 @@
                                     Place Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cloud-arrow-down-fill"></i>
+                                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-cloud-arrow-down-fill"></i>
                                     Order Details</a>
                             </li>
 
@@ -89,72 +89,74 @@
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                        <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                        <button class="btn btn-outline-success me-5 mb-2 mb-lg-0" type="submit">Search</button>
                     </form>
-                    <!-- Add Customers Button -->
+
+
+                    <!-- Add Items Button -->
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        Add New Customer
+                        Add New Item
                     </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Add Customers</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <!-- Form -->
+                                <div class="d-flex justify-content-center">
+                                    <form class="w-75">
+                                        <div class="mb-3">
+                                            <label for="code" class="form-label">Item Code</label>
+                                            <input type="text" class="form-control" id="code">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="itemName" class="form-label">Item Name</label>
+                                            <input type="text" class="form-control" id="itemName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="price" class="form-label">Price</label>
+                                            <input type="text" class="form-control" id="price">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="qtyOnHand" class="form-label">Quantity On Hand</label>
+                                            <input type="text" class="form-control" id="qtyOnHand">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
+                                    <button type="button" class="btn btn-success">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Add Customers</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <!-- Form -->
-                    <div class="d-flex justify-content-center">
-                        <form class="w-75">
-                            <div class="mb-3">
-                                <label for="cusId" class="form-label">Customer ID</label>
-                                <input type="text" class="form-control" id="cusId">
-                            </div>
-                            <div class="mb-3">
-                                <label for="cusName" class="form-label">Customer Name</label>
-                                <input type="text" class="form-control" id="cusName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address">
-                            </div>
-                            <div class="mb-3">
-                                <label for="salary" class="form-label">Salary</label>
-                                <input type="text" class="form-control" id="salary">
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                        <button type="button" class="btn btn-success">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Table -->
-        <div class="row d-flex overflow-auto mb-5 h-50 col-lg-8 col-12">
+        <div class="d-flex overflow-auto h-50 w-75 mb-5">
             <table class="table table-striped table-hover">
                 <thead class="table-dark sticky-top">
                 <tr>
-                    <th scope="col">Customer ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Salary</th>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty On Hand</th>
                     <th scope="col">Options</th>
                 </tr>
                 </thead>
                 <tbody class="">
                 <tr>
-                    <td>C001</td>
-                    <td>John John</td>
-                    <td>Galle</td>
+                    <td>ITM001</td>
+                    <td>Rice</td>
+                    <td>RS. 550/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -162,19 +164,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C002</td>
-                    <td>Cena John</td>
-                    <td>Colombo</td>
-                    <td>20000</td>
-                    <td class="d-flex justify-content-evenly">
-                        <i class="bi bi-pencil-fill text-success"></i>
-                        <i class="bi bi-trash text-danger"></i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>John John</td>
-                    <td>Galle</td>
+                    <td>ITM002</td>
+                    <td>Dahl</td>
+                    <td>RS. 550/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -182,19 +174,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C002</td>
-                    <td>Cena John</td>
-                    <td>Colombo</td>
-                    <td>20000</td>
-                    <td class="d-flex justify-content-evenly">
-                        <i class="bi bi-pencil-fill text-success"></i>
-                        <i class="bi bi-trash text-danger"></i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>John John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -202,9 +184,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -212,9 +194,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -222,9 +204,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -232,9 +214,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -242,9 +224,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -252,9 +234,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -262,9 +244,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -272,9 +254,29 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>C003</td>
-                    <td>John</td>
-                    <td>Galle</td>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
                     <td>10000</td>
                     <td class="d-flex justify-content-evenly">
                         <i class="bi bi-pencil-fill text-success"></i>
@@ -285,12 +287,11 @@
             </table>
         </div>
 
-
     </section>
 </main>
 
 <!-- JS For Bootstrap -->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
 
 </body>
 
