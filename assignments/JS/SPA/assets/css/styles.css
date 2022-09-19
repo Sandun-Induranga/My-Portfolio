@@ -1,0 +1,31 @@
+body {
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-position: right;
+}
+
+main{
+    height: 100vh;
+}
+
+.red-button {
+    background: #E94F5B;
+    border: #E94F5B;
+}
+
+.red-text{
+    color: #E94F5B;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+@media all and (min-width: 0) and (max-width: 768px){
+    .full-height{
+        height: 100vh !important;
+    }
+    .extra-height{
+        height: 190vh !important;
+    }
+}

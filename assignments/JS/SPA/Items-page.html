@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS | Items</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Source+Sans+Pro:wght@300&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+</head>
+
+<body class="container-fluid">
+
+<main class="d-flex row align-items-center justify-content-center">
+
+    <section
+            class="d-flex flex-column full-height h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between">
+
+        <!-- Nav bar -->
+        <div class="row w-100">
+            <nav class="navbar navbar-expand-lg bg-transparent border-bottom sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="bi bi-back red-text"></i> Business <span
+                            class="red-text">Name</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-house-fill"></i>
+                                    Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i
+                                        class="bi bi-people-fill"></i> Customers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="bi bi-handbag-fill"></i> Items</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-cart-check-fill"></i>
+                                    Place Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-cloud-arrow-down-fill"></i>
+                                    Order Details</a>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-box-arrow-left"></i>
+                                    Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Search bar -->
+        <div class="row">
+            <nav class="navbar">
+                <div class="container-fluid d-flex flex-column flex-lg-row">
+                    <form class="d-flex flex-column flex-lg-row" role="search">
+                        <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                               aria-label="Search">
+                        <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <button class="btn btn-outline-success me-5 mb-2 mb-lg-0" type="submit">Search</button>
+                    </form>
+
+
+                    <!-- Add Items Button -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Add New Item
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Add Customers</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <!-- Form -->
+                                <div class="d-flex justify-content-center">
+                                    <form class="w-75">
+                                        <div class="mb-3">
+                                            <label for="code" class="form-label">Item Code</label>
+                                            <input type="text" class="form-control" id="code">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="itemName" class="form-label">Item Name</label>
+                                            <input type="text" class="form-control" id="itemName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="price" class="form-label">Price</label>
+                                            <input type="text" class="form-control" id="price">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="qtyOnHand" class="form-label">Quantity On Hand</label>
+                                            <input type="text" class="form-control" id="qtyOnHand">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
+                                    <button type="button" class="btn btn-success">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Table -->
+        <div class="d-flex overflow-auto h-50 w-75 mb-5">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark sticky-top">
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty On Hand</th>
+                    <th scope="col">Options</th>
+                </tr>
+                </thead>
+                <tbody class="">
+                <tr>
+                    <td>ITM001</td>
+                    <td>Rice</td>
+                    <td>RS. 550/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM002</td>
+                    <td>Dahl</td>
+                    <td>RS. 550/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ITM003</td>
+                    <td>Biscuit</td>
+                    <td>RS. 230/=</td>
+                    <td>10000</td>
+                    <td class="d-flex justify-content-evenly">
+                        <i class="bi bi-pencil-fill text-success"></i>
+                        <i class="bi bi-trash text-danger"></i>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+</main>
+
+<!-- JS For Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
