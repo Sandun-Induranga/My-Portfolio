@@ -29,6 +29,7 @@
     position: relative;
     margin-left: 88px;
     margin-top: 4px;
+    width: 8em;
 }
 
 .top-bar button {
@@ -75,7 +76,7 @@ main > section {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 100px;
-    width: 1110px;
+    width: 90vw;
     height: 410px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
@@ -120,6 +121,11 @@ span {
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
+
+    header ul {
+        right: 20px;
+    }
+
     main > h1 {
         font-size: 1em;
     }
@@ -137,18 +143,23 @@ span {
 
     main > section > aside:first-child > div:nth-child(2) > button > i {
         font-size: 1em;
+        text-align: center;
+    }
+
+    main > section > aside:first-child > div:nth-child(2) {
+        width: 90vw;
+        justify-content: center;
     }
 
     main > section > aside:first-child > h2 {
-        color: #2B2B2B;
         margin-top: 40px;
         margin-bottom: 44px;
         font-size: 1em;
-        text-align: center;
     }
 
 
     p,span {
+        padding: 2px;
         font-size: 0.8em;
     }
 }
