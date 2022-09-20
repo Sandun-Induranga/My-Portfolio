@@ -105,21 +105,21 @@ main > section > aside:first-child > h2 {
     margin-bottom: 88px;
 }
 
-h3{
+h3 {
     color: #646464;
     font-size: 1em;
 }
 
-p{
+p {
     color: #B8B8B8;
     font-size: 1em;
 }
 
-span{
+span {
     color: #3A86FF;
 }
 
-@media all and (min-width: 320px) and (max-width: 768px){
+@media all and (min-width: 320px) and (max-width: 768px) {
     main > h1 {
         font-size: 1em;
     }
@@ -128,9 +128,27 @@ span{
         flex-direction: column;
         width: 90vw;
         height: max-content;
+        align-items: center;
     }
 
     img {
         width: 50vw;
+    }
+
+    main > section > aside:first-child > div:nth-child(2) > button > i {
+        font-size: 1em;
+    }
+
+    main > section > aside:first-child > h2 {
+        color: #2B2B2B;
+        margin-top: 40px;
+        margin-bottom: 44px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+
+    p,span {
+        font-size: 0.8em;
     }
 }
