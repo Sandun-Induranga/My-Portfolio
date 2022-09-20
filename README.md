@@ -1,6 +1,6 @@
 # 🤗 My-Portfolio Website 🤗
 
-![img_1.png](img_1.png)
+![Image](assets/images/readme-home.png)
 
 🕸 Website URL : https://sandun-induranga-portfolio.000webhostapp.com/
 <br>
