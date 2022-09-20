@@ -118,3 +118,19 @@ p{
 span{
     color: #3A86FF;
 }
+
+@media all and (min-width: 320px) and (max-width: 768px){
+    main > h1 {
+        font-size: 1em;
+    }
+
+    main > section {
+        flex-direction: column;
+        width: 90vw;
+        height: max-content;
+    }
+
+    img {
+        width: 50vw;
+    }
+}
