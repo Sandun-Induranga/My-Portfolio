@@ -1,4 +1,4 @@
-# 🤗 My-Portfolio Website 🤗
+# 🧔 My-Portfolio Website 🧔
 
 ![Image](assets/images/readme-home.png)
 
@@ -17,7 +17,12 @@
 🏝 Mock-up URL : https://www.figma.com/file/5MOqYPW1qRom2t1fztakgi/Protpolio?node-id=0%3A1
 <br>
 <br>
-# 😎 POS System 😎
+*Technologies*
+* Html
+* CSS
+* Java Script
+
+# 💲 POS System 💲
 
 ![img_2.png](assets/images/img_2.png)
 
@@ -28,3 +33,10 @@
 🏝 Mock-up URL : https://www.figma.com/file/Qq5AZ8V873DLGeCNMQeN8e/Web-POS?node-id=0%3A1
 
 💻 Project URL : https://github.com/Sandun-Induranga/My-Portpolio/tree/master/assignments/CSS/Frameworks/POS
+
+*Technologies*
+* Html
+* CSS
+* Java Script
+* Bootstrap
+* jQuery
