@@ -8,4 +8,7 @@ $("#dark").click(function () {
 
     $('.background').remove()
     $('body').css('background','#2B2D42')
+
+    $('h1').css('color','white')
+
 })
