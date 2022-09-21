@@ -22,8 +22,8 @@ $("#dark").click(function () {
     $('.edu-details a').css('color', '#EBEBEB')
 
     //
-    $('.services > div').css('background','#2B2D42')
+    $('.services > div > div').css('background','#2B2D42')
 
     $('.project > aside > section').css('background','#2B2D42')
-    $('.project > aside > section > div:nth-child(2) > h3').css('background','#2B2D42')
+    $('.project > aside > section > div:nth-child(2) > h3').css('color','#ECEFF1')
 })
