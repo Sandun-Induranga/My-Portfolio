@@ -11,10 +11,11 @@ $("#dark").click(function () {
     $('body').css('background','#2B2D42')
 
     $('h1').css('color','white')
+    $('h2').css('color','white')
 
     // about section
     $('.info').css('color','#ECEFF1')
-
     $('.info span').css('color','#EBEBEB')
+    $('.des').css('color','#EBEBEB')
 
 })
