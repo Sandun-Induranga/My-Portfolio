@@ -18,4 +18,8 @@ $("#dark").click(function () {
     $('.info span').css('color','#EBEBEB')
     $('.des').css('color','#EBEBEB')
 
+    //education
+    $('.edu-details > p:first-child').css('color','#ECEFF1')
+    $('.edu-details a').css('color','#EBEBEB')
+
 })
