@@ -6,9 +6,13 @@ $("#dark").click(function () {
     $('.top-bar').css('background','#2B2D42')
     $('.top-bar a').css('color','white')
 
+    // background
     $('.background').remove()
     $('body').css('background','#2B2D42')
 
     $('h1').css('color','white')
+
+    // about section
+    $('.info').css('color','#ECEFF1')
 
 })
