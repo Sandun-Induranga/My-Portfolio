@@ -17,10 +17,13 @@ $("#dark").click(function () {
     $('.info span').css('color', '#EBEBEB')
     $('.des').css('color', '#EBEBEB')
 
-    //education
+    // education
     $('.edu-details > p:first-child').css('color', '#ECEFF1')
     $('.edu-details a').css('color', '#EBEBEB')
 
-    $('.services *').css('background','#2B2D42')
+    //
+    $('.services > div').css('background','#2B2D42')
 
+    $('.project > aside > section').css('background','#2B2D42')
+    $('.project > aside > section > div:nth-child(2) > h3').css('background','#2B2D42')
 })
