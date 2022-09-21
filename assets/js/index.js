@@ -15,4 +15,6 @@ $("#dark").click(function () {
     // about section
     $('.info').css('color','#ECEFF1')
 
+    $('.info span').css('color','#EBEBEB')
+
 })
