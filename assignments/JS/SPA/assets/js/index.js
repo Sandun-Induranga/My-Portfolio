@@ -11,6 +11,7 @@ $(document).ready(function () {
     $('#place-order').attr('style', 'display : none !important')
     $('#order-details').attr('style', 'display : none !important')
 })
+
 $('#btnDashboard').click(function () {
     $('#btnDashboard a').css('color', 'black')
     $('#btnCustomer a').css('color', '#6c757d')
@@ -18,7 +19,7 @@ $('#btnDashboard').click(function () {
     $('#btnOrders a').css('color', '#6c757d')
     $('#btnOrderDetails a').css('color', '#6c757d')
 
-    $('#dashboard').attr('style', 'display : flex !important')
+    $('#dashboard').attr('style', 'display : block !important')
     $('#customer').attr('style', 'display : none !important')
     $('#item').attr('style', 'display : none !important')
     $('#place-order').attr('style', 'display : none !important')
