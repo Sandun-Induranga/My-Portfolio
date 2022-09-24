@@ -1,15 +1,15 @@
-body{
+body {
     background: url("../img/background-img.png");
     background-size: cover;
     width: 97vw;
     height: 98vh;
 }
 
-#buttons{
+#buttons {
     background-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
 }
 
-.keys{
+.keys {
     height: 50px;
     width: 50px;
     background-color: white;
@@ -17,7 +17,18 @@ body{
     border: none;
 }
 
-.keys:hover{
+.keys:hover {
     color: #3A86FF;
-    border: 1px solid #3A86FF;
+    border: 1px;
+    font-weight: bold;
+}
+
+.display{
+    border: 5px solid;
+    border-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
+    border-image-slice: 1;
+}
+
+.w-90{
+    width: 90%;
 }
