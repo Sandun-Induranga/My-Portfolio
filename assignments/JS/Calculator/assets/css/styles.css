@@ -8,3 +8,8 @@ body{
 #buttons{
     background-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
 }
+
+.size{
+    height: 50px;
+    width: 50px;
+}
