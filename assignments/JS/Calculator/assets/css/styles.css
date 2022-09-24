@@ -4,3 +4,7 @@ body{
     width: 97vw;
     height: 98vh;
 }
+
+#buttons{
+    background-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
+}
