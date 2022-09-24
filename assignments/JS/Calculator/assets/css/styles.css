@@ -23,12 +23,12 @@ body {
     font-weight: bold;
 }
 
-.display{
+.display {
     border: 5px solid;
     border-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
     border-image-slice: 1;
 }
 
-.w-90{
+.w-90 {
     width: 90%;
 }
