@@ -28,7 +28,7 @@ input:focus{
 
 .keys:hover {
     color: #3A86FF;
-    border: 1px;
+    border: 1px solid #3A86FF;
     font-weight: bold;
 }
 
