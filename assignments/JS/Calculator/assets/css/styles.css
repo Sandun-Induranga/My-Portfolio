@@ -1,4 +1,6 @@
 body{
     background: url("../img/background-img.png");
     background-size: cover;
+    width: 97vw;
+    height: 98vh;
 }
