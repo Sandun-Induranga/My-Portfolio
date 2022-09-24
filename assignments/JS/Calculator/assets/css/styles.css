@@ -5,6 +5,11 @@ body {
     height: 98vh;
 }
 
+main{
+    height: 600px;
+    width: 320px;
+}
+
 #buttons {
     background-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
 }
@@ -17,6 +22,10 @@ body {
     border: none;
 }
 
+input:focus{
+    border: none;
+}
+
 .keys:hover {
     color: #3A86FF;
     border: 1px;
@@ -24,9 +33,7 @@ body {
 }
 
 .display {
-    border: 5px solid;
-    border-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
-    border-image-slice: 1;
+    border: none;
 }
 
 .w-90 {
