@@ -9,7 +9,15 @@ body{
     background-image: linear-gradient(to left bottom, #ade8f4, #b5e6ff, #c9e2ff, #e4dcff, #ffd6ff);
 }
 
-.size{
+.keys{
     height: 50px;
     width: 50px;
+    background-color: white;
+    opacity: 70%;
+    border: none;
+}
+
+.keys:hover{
+    color: #3A86FF;
+    border: 1px solid #3A86FF;
 }
