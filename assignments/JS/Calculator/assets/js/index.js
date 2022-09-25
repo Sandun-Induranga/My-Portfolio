@@ -15,24 +15,16 @@ for (let i = 0; i < 17; i++) {
                 number = "";
                 break;
             case "+":
-                firstNumber = parseFloat(number);
-                number = "";
-                operator = "+";
+                setOutput("+");
                 break;
             case "-":
-                firstNumber = parseFloat(number);
-                number = "";
-                operator = "-";
+                setOutput("-");
                 break;
             case "x":
-                firstNumber = parseFloat(number);
-                number = "";
-                operator = "x";
+                setOutput("x");
                 break;
             case "/":
-                firstNumber = parseFloat(number);
-                number = "";
-                operator = "/";
+                setOutput("/");
                 break;
             case "=":
                 lastNumber = parseFloat(number);
@@ -58,4 +50,10 @@ function operations(operator, firstNum, lastNum) {
         case "/":
             return firstNum / lastNum;
     }
+}
+
+function setOutput(pressedButton) {
+    firstNumber = parseFloat(number);
+    number = "";
+    operator = pressedButton;
 }
