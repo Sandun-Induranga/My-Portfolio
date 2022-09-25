@@ -22,6 +22,17 @@ main{
     border: none;
 }
 
+.special{
+    background-image: linear-gradient(to right top, #7209b7, #e9007a, #ff3c2d, #f1a200, #a8eb12);
+    color: white;
+    font-weight: bold;
+}
+
+.special:hover{
+    color: black !important;
+    border: 1px solid black !important;
+}
+
 input:focus{
     border: none;
 }
