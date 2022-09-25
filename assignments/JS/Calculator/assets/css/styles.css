@@ -50,3 +50,7 @@ input:focus{
 .w-90 {
     width: 90%;
 }
+
+.data{
+    font-size: 20px;
+}
