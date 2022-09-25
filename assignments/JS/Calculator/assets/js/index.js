@@ -1,7 +1,7 @@
 let number = "";
 let firstNumber = 0;
 let lastNumber = 0;
-let operator = ""
+let operator = "";
 
 /* Get input from numbers and symbols */
 for (let i = 0; i < 17; i++) {
@@ -9,17 +9,21 @@ for (let i = 0; i < 17; i++) {
         let pressedBtn = $("#btn" + i).text();
         if (pressedBtn === "+") {
             firstNumber = parseFloat(number);
-            number = ""
-            pressedBtn = ""
-            operator = "+"
+            number = "";
+            operator = "+";
+            $(".display input").val(number);
+        } else if (pressedBtn === "-") {
+            firstNumber = parseFloat(number);
+            number = "";
+            operator = "-";
             $(".display input").val(number);
         } else if (pressedBtn === "=") {
             lastNumber = parseFloat(number);
             number = ""
-            pressedBtn = ""
             let ans = operations(operator, firstNumber, lastNumber);
             $(".display input").val(ans);
-        }else {
+            number = ans;
+        } else {
             number += pressedBtn;
             $(".display input").val(number);
         }
@@ -30,6 +34,9 @@ function operations(operator, firstNum, lastNum) {
     switch (operator) {
         case "+":
             return firstNum + lastNum;
+            break;
+        case "-":
+            return firstNum - lastNum;
             break;
     }
 }
