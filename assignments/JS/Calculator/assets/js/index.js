@@ -8,13 +8,13 @@ for (let i = 0; i < 17; i++) {
     $("#btn" + i).click(function () {
         let pressedBtn = $("#btn" + i).text();
         if (pressedBtn === "+") {
-            firstNumber = number;
+            firstNumber = parseFloat(number);
             number = ""
             pressedBtn = ""
             operator = "+"
             $(".display input").val(number);
         } else if (pressedBtn === "=") {
-            lastNumber = number;
+            lastNumber = parseFloat(number);
             number = ""
             pressedBtn = ""
             let ans = operations(operator, firstNumber, lastNumber);
