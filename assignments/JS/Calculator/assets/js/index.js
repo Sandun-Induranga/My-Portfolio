@@ -29,6 +29,11 @@ for (let i = 0; i < 17; i++) {
                 number = "";
                 operator = "x";
                 break;
+            case "/":
+                firstNumber = parseFloat(number);
+                number = "";
+                operator = "/";
+                break;
             case "=":
                 lastNumber = parseFloat(number);
                 number = ""
@@ -46,12 +51,11 @@ function operations(operator, firstNum, lastNum) {
     switch (operator) {
         case "+":
             return firstNum + lastNum;
-            break;
         case "-":
             return firstNum - lastNum;
-            break;
         case "x":
             return firstNum * lastNum;
-            break;
+        case "/":
+            return firstNum / lastNum;
     }
 }
