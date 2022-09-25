@@ -7,26 +7,27 @@ let operator = "";
 for (let i = 0; i < 17; i++) {
     $("#btn" + i).click(function () {
         let pressedBtn = $("#btn" + i).text();
-        if (pressedBtn === "+") {
-            firstNumber = parseFloat(number);
-            number = "";
-            operator = "+";
-            $(".display input").val(number);
-        } else if (pressedBtn === "-") {
-            firstNumber = parseFloat(number);
-            number = "";
-            operator = "-";
-            $(".display input").val(number);
-        } else if (pressedBtn === "=") {
-            lastNumber = parseFloat(number);
-            number = ""
-            let ans = operations(operator, firstNumber, lastNumber);
-            $(".display input").val(ans);
-            number = ans;
-        } else {
-            number += pressedBtn;
-            $(".display input").val(number);
+        switch (pressedBtn) {
+            case "+":
+                firstNumber = parseFloat(number);
+                number = "";
+                operator = "+";
+                break;
+            case "-":
+                firstNumber = parseFloat(number);
+                number = "";
+                operator = "-";
+                break;
+            case "=":
+                lastNumber = parseFloat(number);
+                number = ""
+                let ans = operations(operator, firstNumber, lastNumber);
+                number = ans;
+                break;
+            default:
+                number += pressedBtn;
         }
+        $(".display input").val(number);
     });
 }
 
