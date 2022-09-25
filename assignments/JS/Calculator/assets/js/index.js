@@ -2,6 +2,7 @@ let number = "";
 let firstNumber = 0;
 let lastNumber = 0;
 let operator = "";
+let topDisplay = ""
 
 /* Get input from numbers and symbols */
 for (let i = 0; i < 17; i++) {
@@ -13,6 +14,7 @@ for (let i = 0; i < 17; i++) {
                 lastNumber = "";
                 operator = "";
                 number = "";
+                topDisplay = "";
                 break;
             case "+":
                 setOutput("+");
@@ -28,14 +30,16 @@ for (let i = 0; i < 17; i++) {
                 break;
             case "=":
                 lastNumber = parseFloat(number);
-                number = ""
+                number = "";
                 let ans = operations(operator, firstNumber, lastNumber);
                 number = ans;
                 break;
             default:
                 number += pressedBtn;
+                topDisplay +=pressedBtn;
         }
-        $(".display input").val(number);
+        $(".display input:first-child").val(topDisplay);
+        $(".display input:last-child").val(number);
     });
 }
 
@@ -54,6 +58,7 @@ function operations(operator, firstNum, lastNum) {
 
 function setOutput(pressedButton) {
     firstNumber = parseFloat(number);
+    topDisplay += pressedButton;
     number = "";
     operator = pressedButton;
 }
