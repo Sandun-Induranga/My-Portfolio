@@ -18,6 +18,11 @@ for (let i = 0; i < 17; i++) {
                 number = "";
                 operator = "-";
                 break;
+            case "x":
+                firstNumber = parseFloat(number);
+                number = "";
+                operator = "x";
+                break;
             case "=":
                 lastNumber = parseFloat(number);
                 number = ""
@@ -38,6 +43,9 @@ function operations(operator, firstNum, lastNum) {
             break;
         case "-":
             return firstNum - lastNum;
+            break;
+        case "x":
+            return firstNum * lastNum;
             break;
     }
 }
