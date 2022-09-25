@@ -8,6 +8,12 @@ for (let i = 0; i < 17; i++) {
     $("#btn" + i).click(function () {
         let pressedBtn = $("#btn" + i).text();
         switch (pressedBtn) {
+            case "C":
+                firstNumber = "";
+                lastNumber = "";
+                operator = "";
+                number = "";
+                break;
             case "+":
                 firstNumber = parseFloat(number);
                 number = "";
@@ -49,9 +55,3 @@ function operations(operator, firstNum, lastNum) {
             break;
     }
 }
-
-/* Clear display */
-$("#btnClear").click(function () {
-    number = "";
-    $(".display input").val("");
-});
