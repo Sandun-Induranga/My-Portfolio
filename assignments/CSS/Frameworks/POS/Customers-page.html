@@ -185,17 +185,26 @@
 
         customers.push(customer);
 
-        getAll();
+        loadAllCustomers();
 
     });
 
-    function getAll() {
+    function loadAllCustomers() {
+
         $("#tblCustomer > tbody").empty();
+
         for (let customer of customers) {
             $("#tblCustomer > tbody").append(
                 `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td><td><i class="bi bi-pencil-fill text-success"></i><i class="bi bi-trash text-danger"></i></td></tr>`
             );
+            getCustomer();
         }
+    }
+
+    function getCustomer() {
+        $(".bi-pencil-fill").click(function () {
+            alert("Come");
+        });
     }
 
 </script>
