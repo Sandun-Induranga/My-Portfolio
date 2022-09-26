@@ -57,7 +57,8 @@
                                     Place Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cloud-arrow-down-fill"></i>
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="bi bi-cloud-arrow-down-fill"></i>
                                     Order Details</a>
                             </li>
 
@@ -100,7 +101,8 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -132,7 +134,7 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                        <button type="button" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-success" id="btnSave">Save</button>
                     </div>
                 </div>
             </div>
@@ -150,7 +152,7 @@
                     <th scope="col">Options</th>
                 </tr>
                 </thead>
-                <tbody class="">
+                <tbody>
                 <tr>
                     <td>C001</td>
                     <td>John John</td>
@@ -171,10 +173,20 @@
 
 <!-- JS For Bootstrap -->
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 
 <script>
 
+    let customers = [];
 
+    $("#btnSave").click(function () {
+        let cusId;
+        let cusName;
+        let cusAddress;
+        let cusSalary;
+
+
+    })
 
 </script>
 
