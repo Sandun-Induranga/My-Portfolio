@@ -122,12 +122,12 @@
                                 <input type="text" class="form-control" id="cusName">
                             </div>
                             <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address">
+                                <label for="cusAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="cusAddress">
                             </div>
                             <div class="mb-3">
-                                <label for="salary" class="form-label">Salary</label>
-                                <input type="text" class="form-control" id="salary">
+                                <label for="cusSalary" class="form-label">Salary</label>
+                                <input type="text" class="form-control" id="cusSalary">
                             </div>
                         </form>
                     </div>
@@ -180,10 +180,10 @@
     let customers = [];
 
     $("#btnSave").click(function () {
-        let cusId;
-        let cusName;
-        let cusAddress;
-        let cusSalary;
+        let cusId = $("#cusId").val();
+        let cusName = $("#cusName").val();
+        let cusAddress = $("#cusAddress").val();
+        let cusSalary = $("#cusSalary").val();
 
 
     })
