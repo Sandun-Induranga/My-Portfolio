@@ -2,7 +2,7 @@ let number = "";
 let firstNumber = 0;
 let lastNumber = 0;
 let operator = "";
-let topDisplay = ""
+let topDisplay = "";
 
 /* Get input from numbers and symbols */
 for (let i = 0; i < 17; i++) {
