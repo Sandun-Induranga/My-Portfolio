@@ -133,8 +133,8 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                        <button type="button" class="btn btn-success" id="btnSave">Save</button>
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" id="btnSave" data-bs-dismiss="modal">Save</button>
                     </div>
                 </div>
             </div>
@@ -153,20 +153,10 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>C001</td>
-                    <td>John John</td>
-                    <td>Galle</td>
-                    <td>10000</td>
-                    <td>
-                        <i class="bi bi-pencil-fill text-success"></i>
-                        <i class="bi bi-trash text-danger"></i>
-                    </td>
-                </tr>
+
                 </tbody>
             </table>
         </div>
-
 
     </section>
 </main>
@@ -180,6 +170,7 @@
     let customers = [];
 
     $("#btnSave").click(function () {
+
         let cusId = $("#cusId").val();
         let cusName = $("#cusName").val();
         let cusAddress = $("#cusAddress").val();
@@ -194,14 +185,18 @@
 
         customers.push(customer);
 
+        getAll();
+
+    });
+
+    function getAll() {
         $("#tblCustomer > tbody").empty();
         for (let customer of customers) {
             $("#tblCustomer > tbody").append(
-                `<tr><td>${cusId}</td><td>${cusName}</td><td>${cusAddress}</td><td>${cusSalary}</td><td><i class="bi bi-pencil-fill text-success"></i><i class="bi bi-trash text-danger"></i></td></tr>`
+                `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td><td><i class="bi bi-pencil-fill text-success"></i><i class="bi bi-trash text-danger"></i></td></tr>`
             );
         }
-
-    })
+    }
 
 </script>
 
