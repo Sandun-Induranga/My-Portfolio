@@ -131,7 +131,7 @@
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                                    <button type="button" class="btn btn-success">Save</button>
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="btnSave">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -166,6 +166,14 @@
 
 <!-- JS For jQuery -->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+<script>
+
+    $("#btnSave").click(function () {
+        alert("Hello");
+    });
+
+</script>
 
 </body>
 
