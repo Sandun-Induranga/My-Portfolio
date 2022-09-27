@@ -196,6 +196,7 @@
     });
 
     function loadAllItems() {
+        $("#tblItem tbody").empty();
         for (let item of items) {
             $("#tblItem > tbody").append(
                 `<tr><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger"></i></td></tr>`
