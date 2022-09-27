@@ -197,21 +197,18 @@
             $("#tblCustomer > tbody").append(
                 `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td><td><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger"></i></td></tr>`
             );
-            $(".bi-pencil-fill").click(function () {
-                $("#cusId").val(customer.id);
-                $("#cusName").val(customer.name);
-                $("#cusAddress").val(customer.address);
-                $("#cusSalary").val(customer.salary);
-                console.log(customer.id)
-            });
+            getCustomer($("#tblCustomer tbody").rows.item(0));
         }
     }
 
     function getCustomer(customer) {
-        $("#cusId").val("customer.id");
-        $("#cusName").val(customer.name);
-        $("#cusAddress").val(customer.address);
-        $("#cusSalary").val(customer.salary);
+        $(".bi-pencil-fill").click(function () {
+            $("#cusId").val(customer.id);
+            $("#cusName").val(customer.name);
+            $("#cusAddress").val(customer.address);
+            $("#cusSalary").val(customer.salary);
+            console.log(customer.id);
+        });
     }
 
 </script>
