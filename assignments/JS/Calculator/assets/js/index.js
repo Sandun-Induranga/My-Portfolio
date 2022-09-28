@@ -4,7 +4,6 @@ let lastNumber = 0;
 let operator = "";
 let topDisplay = "";
 
-/* Get input from numbers and symbols */
 for (let i = 0; i < 17; i++) {
     $("#btn" + i).click(function () {
         let pressedBtn = $("#btn" + i).text();
@@ -36,7 +35,7 @@ for (let i = 0; i < 17; i++) {
                 break;
             default:
                 number += pressedBtn;
-                topDisplay +=pressedBtn;
+                topDisplay += pressedBtn;
         }
         $(".display input:first-child").val(topDisplay);
         $(".display input:last-child").val(number);
