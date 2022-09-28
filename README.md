@@ -22,6 +22,7 @@
 * CSS
 * Java Script
 * Intellij Idea
+* Fontawesome
 
 # 💲 POS System 💲
 
