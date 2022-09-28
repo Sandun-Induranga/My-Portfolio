@@ -21,6 +21,7 @@
 * Html
 * CSS
 * Java Script
+* Intellij Idea
 
 # 💲 POS System 💲
 
@@ -40,3 +41,4 @@
 * Java Script
 * Bootstrap
 * jQuery
+* Intellij Idea
