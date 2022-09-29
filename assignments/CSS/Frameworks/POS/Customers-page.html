@@ -80,7 +80,7 @@
                 <div class="container-fluid d-flex flex-column flex-lg-row">
                     <form class="d-flex flex-column flex-lg-row" role="search">
                         <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
-                               aria-label="Search">
+                               aria-label="Search" id="txtSearch">
                         <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown button
@@ -199,6 +199,13 @@
             );
         }
     }
+
+    $('#txtSearch').keypress(function(event){
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            alert('Done');
+        }
+    });
 
     function getCustomer(customer) {
         $("#cusId").val(customer.id);
