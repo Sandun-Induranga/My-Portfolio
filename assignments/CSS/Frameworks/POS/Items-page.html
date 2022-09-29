@@ -95,8 +95,13 @@
 
 
                     <!-- Add Items Button -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-dark me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Add New Item
+                    </button>
+
+                    <!-- Get All Button -->
+                    <button type="button" class="btn btn-dark" id="btnGetAll">
+                        Get All
                     </button>
 
                     <!-- Modal -->
@@ -209,6 +214,10 @@
         }
 
     });
+
+    $("#btnGetAll").click(function () {
+        loadAllItems();
+    })
 
     function loadAllItems() {
         $("#tblItem tbody").empty();
