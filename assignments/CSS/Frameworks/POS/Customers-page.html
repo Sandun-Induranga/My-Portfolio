@@ -93,12 +93,12 @@
                         <button class="btn btn-outline-success me-2" type="submit">Search</button>
                     </form>
                     <!-- Add Customers Button -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-dark me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Add New Customer
                     </button>
 
                     <!-- Get All Button -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="btnGetAll">
                         Get All
                     </button>
                 </div>
@@ -218,6 +218,10 @@
             }
         }
 
+    });
+
+    $("#btnGetAll").click(function () {
+        loadAllCustomers();
     });
 
     function getCustomer(customer) {
