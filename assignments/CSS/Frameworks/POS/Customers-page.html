@@ -197,18 +197,14 @@
             $("#tblCustomer > tbody").append(
                 `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td><td><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit"></i><i class="bi bi-trash text-danger"></i></td></tr>`
             );
-            $("tr i").click(function () {
-                $("#cusId").val(customer.id);
-                $("#cusName").val(customer.name);
-                $("#cusAddress").val(customer.address);
-                $("#cusSalary").val(customer.salary);
-                console.log(customer.id);
-            });
         }
     }
 
     function getCustomer(customer) {
-
+        $("#cusId").val(customer.id);
+        $("#cusName").val(customer.name);
+        $("#cusAddress").val(customer.address);
+        $("#cusSalary").val(customer.salary);
     }
 
 </script>
