@@ -80,7 +80,7 @@
                 <div class="container-fluid d-flex flex-column flex-lg-row">
                     <form class="d-flex flex-column flex-lg-row" role="search">
                         <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
-                               aria-label="Search">
+                               aria-label="Search" id="txtSearch">
                         <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown button
@@ -198,11 +198,11 @@
     $('#txtSearch').keypress(function () {
         var keycode = (event.keyCode ? event.keyCode : event.which);
         if (keycode == '13') {
-            $("#tblCustomer > tbody").empty();
-            for (let customer of customers) {
-                if (customer.id === $("#txtSearch").val()) {
-                    $("#tblCustomer > tbody").append(
-                        `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td><td><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit"></i><i class="bi bi-trash text-danger"></i></td></tr>`
+            $("#tblItem > tbody").empty();
+            for (let item of items) {
+                if (item.code === $("#txtSearch").val()) {
+                    $("#tblItem > tbody").append(
+                        `<tr><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger"></i></td></tr>`
                     );
                 }
             }
