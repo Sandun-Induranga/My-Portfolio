@@ -29,5 +29,6 @@ $("#dark").click(function () {
 });
 
 $("#btnRightProject").click(function () {
-    alert("done");
+    $(".project > aside > section:nth-child(3)").css('display','flex');
+    $(".project > aside > section:nth-child(2)").css('display','none');
 });
