@@ -1025,7 +1025,11 @@ a, header ul li {
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
     justify-content: center;
-    background-color: #e1e5f2;
+    /*background-color: #e1e5f2;*/
+}
+
+.project > aside > section:nth-child(3){
+    display: none;
 }
 
 .project > aside > section > div {
