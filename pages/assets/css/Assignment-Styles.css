@@ -87,9 +87,18 @@ section {
     margin: 50px;
 }
 
-section:nth-child(1){
+a:nth-child(1) > section {
     background: url("../images/css-case-1.png");
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a:nth-child(2) > section {
+    background: url("../images/css-case-2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*@media all and (min-width: 320px) and (max-width: 768px) {*/
