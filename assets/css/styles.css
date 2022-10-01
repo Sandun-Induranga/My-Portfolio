@@ -1023,21 +1023,20 @@ a, header ul li {
     height: 450px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
-.project > aside > section:nth-child(3){
+.project > aside > section:nth-child(3) {
     display: none;
 }
 
-.project > aside > section>section{
+.project > aside > section > section {
     width: 500%;
 }
 
-.project > aside > section>section > div {
-    /*display: flex;*/
-    /*position: relative;*/
+.project > aside > section > section > div {
     display: inline-block;
+    text-align: center;
     background: #3A86FF;
     border: 1px solid #3A86FF;
     width: 250px;
