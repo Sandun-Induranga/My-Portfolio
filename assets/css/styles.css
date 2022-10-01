@@ -1045,6 +1045,11 @@ a, header ul li {
     margin: 70px 50px 50px;
 }
 
+.project > aside > section > section > div>h1>i{
+    font-size: 100px;
+    color: #8338ec;
+}
+
 /*.project > aside > section > div:first-child {*/
 /*    align-items: center;*/
 /*    justify-content: center;*/
