@@ -1031,7 +1031,8 @@ a, header ul li {
 }
 
 .project > aside > section > section {
-    width: 500%;
+    width: 400%;
+    height: 100%;
 }
 
 .project > aside > section > section > div {
@@ -1042,7 +1043,7 @@ a, header ul li {
     border-radius: 10px;
     width: 250px;
     height: 300px;
-    margin: 70px 50px 50px;
+    margin: 70px 260px 50px;
 }
 
 .project > aside > section > section > div > h1 > i {

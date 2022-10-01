@@ -29,11 +29,10 @@ $("#dark").click(function () {
 });
 
 $("#btnRightProject").click(function () {
-    $(".project > aside > section:nth-child(3)").css('display','flex');
-    $(".project > aside > section:nth-child(2)").css('display','none');
+    $(".project > aside > section>section").css('transform','translate(-25%)');
+    // $(".project > aside > section:nth-child(2)").css('display','none');
 });
 
 $("#btnLeftProject").click(function () {
-    $(".project > aside > section:nth-child(3)").css('display','none');
-    $(".project > aside > section:nth-child(2)").css('display','flex');
+    $(".project > aside > section>section").css('transform','translate(0%)');
 });
