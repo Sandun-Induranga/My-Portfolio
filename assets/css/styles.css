@@ -1018,24 +1018,30 @@ a, header ul li {
     transform: rotateY(360deg);
 }
 
-.project > aside > section:nth-child(2) {
+.project > aside > section {
     width: 780px;
     height: 450px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
+    overflow-x: scroll;
 }
 
 .project > aside > section:nth-child(3){
     display: none;
 }
 
-.project > aside > section > div {
+.project > aside > section>section{
+    width: 500%;
+}
+
+.project > aside > section>section > div {
     /*display: flex;*/
     /*position: relative;*/
+    display: inline-block;
     background: #3A86FF;
     border: 1px solid #3A86FF;
-    width: 350px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     margin: 50px;
 }
 
