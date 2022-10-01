@@ -1037,11 +1037,12 @@ a, header ul li {
 .project > aside > section > section > div {
     display: inline-block;
     text-align: center;
-    background: #3A86FF;
-    border: 1px solid #3A86FF;
+    background: white;
+    box-shadow: 4px 0 32px 10px rgba(184, 184, 184, 1);
+    border-radius: 10px;
     width: 250px;
     height: 300px;
-    margin: 50px;
+    margin: 70px 50px 50px;
 }
 
 /*.project > aside > section > div:first-child {*/
