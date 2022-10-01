@@ -22,17 +22,24 @@ $("#dark").click(function () {
     $('.edu-details a').css('color', '#EBEBEB');
 
     //
-    $('.services > div > div').css('background','#2B2D42');
+    $('.services > div > div').css('background', '#2B2D42');
 
-    $('.project > aside > section').css('background','#2B2D42');
-    $('.project > aside > section > div:nth-child(2) > h3').css('color','#ECEFF1');
+    $('.project > aside > section').css('background', '#2B2D42');
+    $('.project > aside > section > div:nth-child(2) > h3').css('color', '#ECEFF1');
 });
 
+let pos = 0;
+
 $("#btnRightProject").click(function () {
-    $(".project > aside > section>section").css('transform','translate(-25%)');
-    // $(".project > aside > section:nth-child(2)").css('display','none');
+    if (pos >= -75 && pos < 75) {
+        pos -= 25;
+        $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
+    }
 });
 
 $("#btnLeftProject").click(function () {
-    $(".project > aside > section>section").css('transform','translate(0%)');
+    if (pos >= -75 && pos < 75) {
+        pos += 25;
+        $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
+    }
 });
