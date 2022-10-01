@@ -1023,7 +1023,7 @@ a, header ul li {
     height: 450px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .project > aside > section:nth-child(3) {
