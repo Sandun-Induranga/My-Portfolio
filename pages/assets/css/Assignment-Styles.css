@@ -14,7 +14,7 @@
 
 /* Top bar */
 
-header{
+header {
     height: 60px;
 }
 
@@ -61,12 +61,16 @@ a, header ul li {
     color: #313131;
 }
 
-main{
+main {
     position: relative;
     top: 80px;
 }
 
-aside{
+h1 {
+    text-align: center;
+}
+
+aside {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -77,6 +81,7 @@ section {
     position: relative;
     width: 300px;
     height: 300px;
+    border-radius: 20px;
     background: white;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     margin: 50px;
