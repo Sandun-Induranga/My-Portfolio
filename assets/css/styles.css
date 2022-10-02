@@ -1023,7 +1023,7 @@ a, header ul li {
     height: 450px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     border-radius: 10px;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 .project > aside > section:nth-child(3) {
@@ -1818,59 +1818,21 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     .project > aside > section {
         width: 90vw;
         height: 480px;
+        padding: 10px;
         flex-direction: column;
+        overflow-x: scroll;
     }
 
-    .project > aside > section > div:nth-child(1) > img {
-        width: 180px;
-        height: 140px;
+    .project > aside > section::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
     }
 
-    .project > aside > section > div {
-        align-items: center;
-    }
-
-    .project > aside > section > div:nth-child(2) > h3 {
-        text-align: center;
-        margin: 0 0 30px;
-    }
-
-
-    .project > aside > section > div:nth-child(2) > h4 {
-        text-align: center;
-        margin: 0;
-    }
-
-
-    .project > aside > section > div:first-child {
-        height: 75%;
-    }
-
-    .project > aside > section > div:nth-child(2) > ul {
-        text-align: center;
-        margin: 20px 0 30px;
-        padding: 0;
-    }
-
-    .project > aside > section > div:nth-child(2) > ul > li {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .project > aside > section > div:nth-child(2) > button {
-        width: 196px;
-        height: 56px;
-        margin: 0;
+    .project > aside > section>section>div{
+        margin: 80px 10px 10px;
     }
 
     .project > aside > div {
         display: none;
-    }
-
-    .project > aside > section > div:nth-child(2) > button {
-        width: 160px;
-        height: 46px;
-        margin: 0;
     }
 
 
@@ -2081,17 +2043,17 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         margin: 35px;
     }
 
+
     /* Services */
     .services > div > div > div:nth-child(2) > p {
         text-align: center;
     }
 
-    .project > aside > section > div:nth-child(1) > img {
-        width: 300px;
-        height: 200px;
+    .project > aside > section > section{
+        width: 450%;
     }
 
-    .gallery > aside > section {
+.gallery > aside > section {
         width: 90vw;
     }
 
