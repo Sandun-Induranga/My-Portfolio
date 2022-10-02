@@ -282,6 +282,13 @@
         }
     });
 
+    $('#cusAddress').keypress(function () {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            $("#cusSalary").focus();
+        }
+    });
+
 
 </script>
 
