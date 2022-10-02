@@ -273,7 +273,13 @@
         if (keycode == '13') {
             $("#cusName").focus();
         }
+    });
 
+    $('#cusName').keypress(function () {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            $("#cusAddress").focus();
+        }
     });
 
 
