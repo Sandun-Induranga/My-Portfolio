@@ -93,7 +93,8 @@
                         <button class="btn btn-outline-success me-2" type="submit">Search</button>
                     </form>
                     <!-- Add Customers Button -->
-                    <button type="button" class="btn btn-dark me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-dark me-2" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
                         Add New Customer
                     </button>
 
@@ -157,7 +158,7 @@
                     <th scope="col">Options</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="body">
 
                 </tbody>
             </table>
@@ -191,6 +192,7 @@
         customers.push(customer);
 
         loadAllCustomers();
+        bindRowClickEvents();
 
     });
 
@@ -211,18 +213,41 @@
             $("#tblCustomer > tbody").empty();
             for (let customer of customers) {
                 if (customer.id === $("#txtSearch").val()) {
-                    $("#tblCustomer > tbody").append(
-                        `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td><td><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit"></i><i class="bi bi-trash text-danger"></i></td></tr>`
-                    );
+                    let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td><td><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit"></i><i class="bi bi-trash text-danger"></i></td></tr>`;
+                    $("#tblCustomer > tbody").append(row);
                 }
             }
         }
 
     });
 
-    $("#btnGetAll").click(function () {
-        loadAllCustomers();
-    });
+    function bindRowClickEvents() {
+        $("#tblCustomer> tbody> tr").click(function () {
+            //how to get the row we click at the moment
+            let id = $(this).children(":eq(0)").text();
+            console.log(id);
+            let name = $(this).children(":eq(1)").text();
+            console.log(name);
+            let address = $(this).children(":eq(2)").text();
+            console.log(address);
+            let salary = $(this).children(":eq(3)").text();
+            console.log(salary);
+
+            let customer = {
+                id: id,
+                name: name,
+                address: address,
+                salary: salary
+            }
+
+            getCustomer(customer);
+        });
+
+        $("#tblCustomer> tbody> tr>").dblclick(function () {
+            $(this).parent().remove();
+        });
+
+    }
 
     function getCustomer(customer) {
         $("#cusId").val(customer.id);
@@ -231,8 +256,14 @@
         $("#cusSalary").val(customer.salary);
     }
 
-    $(function() {
-        $("form").submit(function() { return false; });
+    $(function () {
+        $("form").submit(function () {
+            return false;
+        });
+    });
+
+    $("#body>tr").click(function () {
+        alert("done");
     });
 
 </script>
