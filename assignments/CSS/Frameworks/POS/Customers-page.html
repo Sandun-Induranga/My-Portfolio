@@ -266,6 +266,17 @@
         alert("done");
     });
 
+
+    // text fields events
+    $('#cusId').keypress(function () {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            $("#cusName").focus();
+        }
+
+    });
+
+
 </script>
 
 </body>
