@@ -195,7 +195,9 @@
         customers.push(customer);
 
         loadAllCustomers();
-        bindRowClickEvents();
+        bindEditEvent();
+        bindDeleteEvent();
+
     }
 
     function loadAllCustomers() {
@@ -223,8 +225,8 @@
 
     });
 
-    function bindRowClickEvents() {
-        $(".bi").click(function () {
+    function bindEditEvent() {
+        $(".bi-pencil-fill").click(function () {
             //how to get the row we click at the moment
             let id = $(this).parent().parent().children(":eq(0)").text();
             console.log(id);
@@ -243,12 +245,14 @@
             }
 
             getCustomer(customer);
-        });
+        }
 
-        $("#tblCustomer> tbody> tr>").dblclick(function () {
-            $(this).parent().remove();
-        });
+        )}
 
+    function bindDeleteEvent() {
+        $(".bi-trash").click(function () {
+            $(this).parent().parent().remove();
+        });
     }
 
     function getCustomer(customer) {
