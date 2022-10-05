@@ -274,6 +274,7 @@
 
     let cusIdPattern = /^(C)[0-9]{3}$/;
     let cusNamePattern = /^[A-z]{3,}$/;
+    let cusAddressPattern = /^[A-z][0-9]{3,}$/;
 
 
     // text fields events
@@ -301,9 +302,15 @@
         }
     });
 
-    $('#cusAddress').keypress(function (event) {
-        if (event.key == 'Enter') {
-            $("#cusSalary").focus();
+    $('#cusAddress').keyup(function (event) {
+        if (!cusAddressPattern.test($("#cusAddress").val())) {
+            $(this).css('color', 'red');
+        } else {
+            $(this).css('color', 'green');
+            if (event.key == 'Enter') {
+                $(this).css('color', 'green');
+                $("#cusSalary").focus();
+            }
         }
     });
 
