@@ -281,11 +281,11 @@
     // text fields events
     $('#cusId').keyup(function (event) {
         if (!cusIdPattern.test($("#cusId").val())) {
-            $(this).css('color', 'red');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
             $(this).css('color', 'green');
             if (event.key == 'Enter') {
-                $(this).css('color', 'green');
+                $(this).css('box-shadow', '0 0 0 0.2rem rgba(40, 167, 69, 0.25);');
                 $("#cusName").focus();
             }
         }
@@ -293,7 +293,7 @@
 
     $('#cusName').keyup(function (event) {
         if (!cusNamePattern.test($("#cusName").val())) {
-            $(this).css('color', 'red');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
             $(this).css('color', 'green');
             if (event.key == 'Enter') {
@@ -305,7 +305,7 @@
 
     $('#cusAddress').keyup(function (event) {
         if (!cusAddressPattern.test($("#cusAddress").val())) {
-            $(this).css('color', 'red');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
             $(this).css('color', 'green');
             if (event.key == 'Enter') {
@@ -317,7 +317,7 @@
 
     $('#cusSalary').keyup(function (event) {
         if (!cusSalaryPattern.test($("#cusSalary").val())) {
-            $(this).css('color', 'red');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
             $(this).css('color', 'green');
             if (event.key == 'Enter') {
