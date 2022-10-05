@@ -283,9 +283,8 @@
         if (!cusIdPattern.test($("#cusId").val())) {
             $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
-            $(this).css('color', 'green');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(50, 220, 10, 0.50)");
             if (event.key == 'Enter') {
-                $(this).css('box-shadow', '0 0 0 0.2rem rgba(40, 167, 69, 0.25);');
                 $("#cusName").focus();
             }
         }
@@ -295,7 +294,7 @@
         if (!cusNamePattern.test($("#cusName").val())) {
             $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
-            $(this).css('color', 'green');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(50, 220, 10, 0.50)");
             if (event.key == 'Enter') {
                 $(this).css('color', 'green');
                 $("#cusAddress").focus();
@@ -307,7 +306,7 @@
         if (!cusAddressPattern.test($("#cusAddress").val())) {
             $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
-            $(this).css('color', 'green');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(50, 220, 10, 0.50)");
             if (event.key == 'Enter') {
                 $(this).css('color', 'green');
                 $("#cusSalary").focus();
@@ -319,7 +318,7 @@
         if (!cusSalaryPattern.test($("#cusSalary").val())) {
             $(this).css("box-shadow", "0 0 0 0.2rem rgba(220, 50, 10, 0.50)");
         } else {
-            $(this).css('color', 'green');
+            $(this).css("box-shadow", "0 0 0 0.2rem rgba(50, 220, 10, 0.50)");
             if (event.key == 'Enter') {
                 saveCustomer();
             }
