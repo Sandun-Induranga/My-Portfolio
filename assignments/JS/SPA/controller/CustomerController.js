@@ -81,7 +81,7 @@ $('#txtCustomerSearch').on("keyup", function (event) {
     console.log($('#txtCustomerSearch').val())
     $("#tblCustomer > tbody").empty();
     for (let customer of customerDB) {
-        if (customer.cusId == $("#txtCustomerSearch").val()) {
+        if (customer.cusId.indexOf($("#txtCustomerSearch").val()) !== -1) {
             let row = `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i className="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i className="bi bi-trash text-danger"></i></td></tr>`;
             $("#tblCustomer > tbody").append(row);
         }
