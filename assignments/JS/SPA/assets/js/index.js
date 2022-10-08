@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('#dashboard').attr('style', 'display : block !important');
     $('#customer').attr('style', 'display : none !important');
     $('#item').attr('style', 'display : none !important');
-    $('#place-order').attr('style', 'display : none !important');
+    $('#purchase-order').attr('style', 'display : none !important');
     $('#order-details').attr('style', 'display : none !important');
 });
 
@@ -22,7 +22,7 @@ $('#btnDashboard').click(function () {
     $('#dashboard').attr('style', 'display : block !important');
     $('#customer').attr('style', 'display : none !important');
     $('#item').attr('style', 'display : none !important');
-    $('#place-order').attr('style', 'display : none !important');
+    $('#purchase-order').attr('style', 'display : none !important');
     $('#order-details').attr('style', 'display : none !important');
 });
 
@@ -36,7 +36,7 @@ $('#btnCustomer').click(function () {
     $('#dashboard').attr('style', 'display : none !important');
     $('#customer').attr('style', 'display : flex !important');
     $('#item').attr('style', 'display : none !important');
-    $('#place-order').attr('style', 'display : none !important');
+    $('#purchase-order').attr('style', 'display : none !important');
     $('#order-details').attr('style', 'display : none !important');
 });
 
@@ -50,7 +50,7 @@ $('#btnItems').click(function () {
     $('#dashboard').attr('style', 'display : none !important');
     $('#customer').attr('style', 'display : none !important');
     $('#item').attr('style', 'display : flex !important');
-    $('#place-order').attr('style', 'display : none !important');
+    $('#purchase-order').attr('style', 'display : none !important');
     $('#order-details').attr('style', 'display : none !important');
 });
 
@@ -64,7 +64,7 @@ $('#btnOrders').click(function () {
     $('#dashboard').attr('style', 'display : none !important');
     $('#customer').attr('style', 'display : none !important');
     $('#item').attr('style', 'display : none !important');
-    $('#place-order').attr('style', 'block : none !important');
+    $('#purchase-order').attr('style', 'block : none !important');
     $('#order-details').attr('style', 'display : none !important');
 });
 
@@ -78,6 +78,6 @@ $('#btnOrderDetails').click(function () {
     $('#dashboard').attr('style', 'display : none !important');
     $('#customer').attr('style', 'display : none !important');
     $('#item').attr('style', 'display : none !important');
-    $('#place-order').attr('style', 'display : none !important');
+    $('#purchase-order').attr('style', 'display : none !important');
     $('#order-details').attr('style', 'display : flex !important');
 });

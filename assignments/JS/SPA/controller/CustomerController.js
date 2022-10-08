@@ -7,4 +7,6 @@ function saveCustomer() {
     let name = $("#txtCusName").val();
     let address = $("#txtAddress").val();
     let salary = $("#txtSalary").val();
+
+    console.log(setCustomer(customerId, name, address, salary));
 }
