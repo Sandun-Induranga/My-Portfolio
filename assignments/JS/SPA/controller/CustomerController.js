@@ -3,6 +3,10 @@ $("#btnSaveCustomer").on("click", function () {
     saveCustomer();
 });
 
+$("#btnAddNewCustomer").on("click", function () {
+    $("#btnSaveCustomer").text("Save");
+});
+
 function saveCustomer() {
     let customerId = $("#txtCusId").val();
     let name = $("#txtCusName").val();
@@ -83,7 +87,6 @@ function updateCustomer(customerId, name, address, salary) {
         customer.cusName = name;
         customer.cusAddress = address;
         customer.cusSalary = salary;
-        console.log(customer);
         return true;
     } else {
         return false;
