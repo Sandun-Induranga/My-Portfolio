@@ -143,7 +143,7 @@ $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").on('blur', function (event) {
 
 
 $("#txtCusId").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusIDRegEx, $("#txtCusID"))) {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#txtCusId"))) {
         $("#txtCusName").focus();
     } else {
         focusText($("#txtCusId"));
@@ -230,6 +230,6 @@ function setButtonState(value){
 
 function clearAllTexts() {
     $("#txtCusId").focus();
-    $("#txtCusId,#txtCusName,#txtAddress,#txtCusSalary").val("");
+    $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").val("");
     checkValidity();
 }
