@@ -89,16 +89,20 @@ section {
 
 a:nth-child(1) > section {
     background: url("../images/css-case-1.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 a:nth-child(2) > section {
     background: url("../images/css-case-2.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+}
+
+a:nth-child(3) > section {
+    background: url("../images/css-case-3.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /*@media all and (min-width: 320px) and (max-width: 768px) {*/
