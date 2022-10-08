@@ -133,6 +133,48 @@ customerValidations.push({reg: cusNameRegEx, field: $('#txtCusName'),error:'Cust
 customerValidations.push({reg: cusAddressRegEx, field: $('#txtAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
 customerValidations.push({reg: cusSalaryRegEx, field: $('#txtSalary'),error:'Customer Salary Pattern is Wrong : 100 or 100.00'});
 
+$("#txtCusId,#txtCusName,#txtAddress,#txtSalary").on('keyup', function (event) {
+    checkValidity();
+});
+
+$("#txtCusId,#txtCusName,#txtAddress,#txtSalary").on('blur', function (event) {
+    checkValidity();
+});
+
+
+$("#txtCusId").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#txtCusID"))) {
+        $("#txtCusName").focus();
+    } else {
+        focusText($("#txtCusId"));
+    }
+});
+
+
+$("#txtCusName").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusNameRegEx, $("#txtCusName"))) {
+        focusText($("#txtAddress"));
+    }
+});
+
+
+$("#txtAddress").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusAddressRegEx, $("#txtAddress"))) {
+        focusText($("#txtSalary"));
+    }
+});
+
+
+$("#txtSalary").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusSalaryRegEx, $("#txtSalary"))) {
+        let res = confirm("Do you want to add this customer.?");
+        if (res) {
+            saveCustomer();
+            clearAllTexts();
+        }
+    }
+});
+
 function checkValidity() {
     let errorCount=0;
     for (let validation of customerValidations) {
@@ -144,4 +186,50 @@ function checkValidity() {
         }
     }
     setButtonState(errorCount);
+}
+
+function check(regex, txtField) {
+    let inputValue = txtField.val();
+    return regex.test(inputValue) ? true : false;
+}
+
+function setTextError(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid red');
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function textSuccess(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid green');
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function defaultText(txtField,error) {
+    txtField.css("border", "1px solid #ced4da");
+    txtField.parent().children('span').text(error);
+}
+
+function focusText(txtField) {
+    txtField.focus();
+}
+
+function setButtonState(value){
+    if (value>0){
+        $("#btnSaveCustomer").attr('disabled',true);
+    }else{
+        $("#btnSaveCustomer").attr('disabled',false);
+    }
+}
+
+function clearAllTexts() {
+    $("#txtCusId").focus();
+    $("#txtCusId,#txtCusName,#txtAddress,#txtCusSalary").val("");
+    checkValidity();
 }
