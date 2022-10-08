@@ -8,15 +8,19 @@ function saveCustomer() {
     let address = $("#txtAddress").val();
     let salary = $("#txtSalary").val();
 
-    var customer = setCustomer(customerId, name, address, salary);
-    customerDB.push(customer);
-    console.log(customer);
+    if ($("#btnSaveCustomer").text()=="Save"){
+        var customer = setCustomer(customerId, name, address, salary);
+        customerDB.push(customer);
+    }else {
+        updateCustomer(customerId, name, address, salary);
+    }
 
     loadAllCustomers();
     bindEditEvent();
 
 }
 
+// load all customers
 function loadAllCustomers() {
 
     $("#tblCustomer > tbody").empty();
@@ -28,6 +32,7 @@ function loadAllCustomers() {
     }
 }
 
+// edit button on action
 function bindEditEvent() {
     $(".bi-pencil-fill").on("click", function () {
             var id = $(this).parent().parent().children(":eq(0)").text();
@@ -39,6 +44,8 @@ function bindEditEvent() {
             var salary = $(this).parent().parent().children(":eq(3)").text();
 
             setCustomerTextFields(id, name, address, salary);
+
+            $("#btnSaveCustomer").text("Update");
         }
     )
 }
@@ -48,4 +55,29 @@ function setCustomerTextFields(id, name, address, salary) {
     $("#txtCusName").val(name);
     $("#txtAddress").val(address);
     $("#txtSalary").val(salary);
+}
+
+function searchCustomer(customerID) {
+    for (let customer of customerDB) {
+        if (customer.cusId == customerID) {
+            return customer;
+        }
+    }
+    return null;
+}
+
+function updateCustomer(customerId, name, address, salary) {
+    let customer = searchCustomer(customerId);
+    if (customer != null) {
+        customer.cusId = customerId;
+        customer.cusName = name;
+        customer.cusAddress = address;
+        customer.cusSalary = salary;
+        console.log(customer);
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+    }
+
 }
