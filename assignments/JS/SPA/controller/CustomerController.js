@@ -133,4 +133,15 @@ customerValidations.push({reg: cusNameRegEx, field: $('#txtCusName'),error:'Cust
 customerValidations.push({reg: cusAddressRegEx, field: $('#txtAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
 customerValidations.push({reg: cusSalaryRegEx, field: $('#txtSalary'),error:'Customer Salary Pattern is Wrong : 100 or 100.00'});
 
-
+function checkValidity() {
+    let errorCount=0;
+    for (let validation of customerValidations) {
+        if (check(validation.reg,validation.field)) {
+            textSuccess(validation.field,"");
+        } else {
+            errorCount=errorCount+1;
+            setTextError(validation.field,validation.error);
+        }
+    }
+    setButtonState(errorCount);
+}
