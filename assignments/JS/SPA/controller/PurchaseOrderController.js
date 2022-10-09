@@ -7,3 +7,12 @@ function loadAllCustomerIdsInPurchaseOrder() {
         $("#cmbCustomerId").append(`<option>${customer.cusId}</option>`);
     }
 }
+
+function loadAllItemCodesInPurchaseOrder() {
+    $("#cmbItemCode").empty();
+    $("#cmbItemCode").append(`<option disabled selected hidden>Item Code</option>`);
+
+    for (let item of itemDB) {
+        $("#cmbItemCode").append(`<option>${item.itemCode}</option>`);
+    }
+}

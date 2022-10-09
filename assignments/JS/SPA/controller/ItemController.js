@@ -32,6 +32,7 @@ function saveItem() {
     }
 
     loadAllItems();
+    loadAllItemCodesInPurchaseOrder();
 }
 
 // Load all Items
