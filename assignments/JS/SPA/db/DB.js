@@ -1,1 +1,3 @@
 let customerDB = [];
+
+let itemDB = [];
