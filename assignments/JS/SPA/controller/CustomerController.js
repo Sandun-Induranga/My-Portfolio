@@ -32,6 +32,7 @@ function saveCustomer() {
     }
 
     loadAllCustomers();
+    loadAllCustomerIdsInPurchaseOrder();
 }
 
 // Load all customers
