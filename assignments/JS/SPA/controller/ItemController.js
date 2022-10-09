@@ -113,3 +113,13 @@ function updateItem(itemCode, itemName, unitPrice, qty) {
         return false;
     }
 }
+
+$('#txtItemSearch').on("keyup", function () {
+    $("#tblItem > tbody").empty();
+    for (let item of itemDB) {
+        if (item.itemCode.indexOf($("#txtItemSearch").val()) !== -1) {
+            let row = `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#modelItem"></i><i class="bi bi-trash text-danger"></i></td></tr>`;
+            $("#tblItem > tbody").append(row);
+        }
+    }
+});

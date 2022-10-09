@@ -82,7 +82,7 @@ function setCustomerTextFields(id, name, address, salary) {
     $("#txtSalary").val(salary);
 }
 
-$('#txtCustomerSearch').on("keyup", function (event) {
+$('#txtCustomerSearch').on("keyup", function () {
     console.log($('#txtCustomerSearch').val())
     $("#tblCustomer > tbody").empty();
     for (let customer of customerDB) {

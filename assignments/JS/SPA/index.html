@@ -228,16 +228,16 @@
                     <div class="container-fluid d-flex flex-column flex-lg-row">
                         <form class="d-flex flex-column flex-lg-row" role="search">
                             <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
-                                   aria-label="Search">
-                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu">
+                                   aria-label="Search" id="txtItemSearch">
+                            <ul class="dropdown-menu" id="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
+                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                    data-bs-toggle="dropdown" data-bs-target="#dropdown-menu" aria-expanded="false">
+                                Dropdown button
+                            </button>
                             <button class="btn btn-outline-success me-5 mb-2 mb-lg-0" type="submit">Search</button>
                         </form>
 
