@@ -78,3 +78,31 @@ function bindEditEvent() {
         $("#txtQty").val("");
     });
 }
+
+function bindDeleteEvent() {
+    $(".bi-trash").on("click", function () {
+        var code = $(this).parent().parent().children(":eq(0)").text();
+        deleteCartObject(code);
+        loadCart();
+    });
+}
+
+function deleteCartObject(code) {
+    let cartItem = searchCartItem(code);
+    if (cartItem != null) {
+        let indexNumber = cartDB.indexOf(cartItem);
+        cartDB.splice(indexNumber, 1);
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function searchCartItem(code) {
+    for (let cartItem of cartDB) {
+        if (cartItem.code == code) {
+            return cartItem;
+        }
+    }
+    return null;
+}
