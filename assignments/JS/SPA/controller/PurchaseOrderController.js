@@ -1,4 +1,3 @@
-
 function loadAllCustomerIdsInPurchaseOrder() {
     $("#cmbCustomerId").empty();
     $("#cmbCustomerId").append(`<option disabled selected hidden>Customer ID</option>`);
@@ -37,17 +36,24 @@ $("#btnAddToCart").on("click", function () {
     var qtyOnHand = $("#qty_OnHand").val();
     var unitPrice = $("#unitPrice").val();
     var qty = $("#txtQty").val();
+    var cartItem = searchCartItem(code);
 
-    var cart = {
-        code: code,
-        name: name,
-        qtyOnHand: qtyOnHand,
-        unitPrice: unitPrice,
-        qty: qty,
-        total: parseFloat(unitPrice)*parseInt(qty)
+    if (cartItem == null) {
+        var cart = {
+            code: code,
+            name: name,
+            qtyOnHand: qtyOnHand,
+            unitPrice: unitPrice,
+            qty: qty,
+            total: parseFloat(unitPrice) * parseInt(qty)
+        }
+        cartDB.push(cart);
+        // updateItem(cart.code, cart.name, cart.unitPrice, cart.qtyOnHand-cart.qty);
+    } else {
+        cartItem.qtyOnHand = cartItem.qtyOnHand-parseInt($("#txtQty").val());
+        cartItem.qty = parseInt(cartItem.qty) + parseInt($("#txtQty").val());
     }
-    cartDB.push(cart);
-    console.log(cart);
+
     loadCart();
 
 });
@@ -69,11 +75,12 @@ function loadCart() {
 function bindEditEvent() {
     $(".bi-pencil-fill").on("click", function () {
         var code = $(this).parent().parent().children(":eq(0)").text();
+        var cartItem = searchCartItem(code);
 
         var item = searchItem(code);
         $("#cmbItemCode").val(item.itemCode);
         $("#item_name").val(item.itemName);
-        $("#qty_OnHand").val(item.qty);
+        $("#qty_OnHand").val(parseInt(item.qty) - parseInt(cartItem.qty));
         $("#unitPrice").val(item.unitPrice);
         $("#txtQty").val("");
     });
