@@ -23,3 +23,10 @@ $("#cmbCustomerId").change(function () {
     $("#cusAddress").val(customer.cusAddress);
     $("#cusSalary").val(customer.cusSalary);
 });
+
+$("#cmbItemCode").change(function () {
+    var item = searchItem($(this).val());
+    $("#item_name").val(item.itemName);
+    $("#qty_OnHand").val(item.qty);
+    $("#unitPrice").val(item.unitPrice);
+});
