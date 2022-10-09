@@ -14,7 +14,7 @@ $("#btnSaveItem").on("click", function () {
     saveItem();
 });
 
-$("#btnSaveItem").on("click", function () {
+$("#btnAddNewItem").on("click", function () {
     $("#btnSaveItem").text("Save");
 });
 
@@ -41,7 +41,25 @@ function loadAllItems() {
 
     for (let item of itemDB) {
         $("#tblItem > tbody").append(
-            `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger"></i></td></tr>`
+            `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#modelItem"></i><i class="bi bi-trash text-danger"></i></td></tr>`
         );
+        bindEditEvent();
     }
+}
+
+// Edit button on action
+function bindEditEvent() {
+
+    $(".bi-pencil-fill").on("click", function () {
+        var code = $(this).parent().parent().children(":eq(0)").text();
+
+        var name = $(this).parent().parent().children(":eq(1)").text();
+
+        var unitPrice = $(this).parent().parent().children(":eq(2)").text();
+
+        var qty = $(this).parent().parent().children(":eq(3)").text();
+
+        setItemTextFields(code, name, unitPrice, qty);
+        $("#btnSaveItem").text("Update");
+    });
 }
