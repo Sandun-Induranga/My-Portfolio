@@ -30,3 +30,7 @@ $("#cmbItemCode").change(function () {
     $("#qty_OnHand").val(item.qty);
     $("#unitPrice").val(item.unitPrice);
 });
+
+$("#btnAddToCart").on("click", function () {
+
+})
