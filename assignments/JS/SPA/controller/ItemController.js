@@ -8,3 +8,16 @@ $(function () {
         $('#txtItemCode').trigger('focus');
     });
 });
+
+// Button Save On Action
+$("#btnSaveItem").on("click", function () {
+    saveItem();
+});
+
+$("#btnSaveItem").on("click", function () {
+    $("#btnSaveItem").text("Save");
+});
+
+function saveItem() {
+
+}
