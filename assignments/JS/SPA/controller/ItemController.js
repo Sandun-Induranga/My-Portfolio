@@ -82,7 +82,7 @@ function bindDeleteEvent() {
 }
 
 function deleteItem(itemCode) {
-    let item = searchCustomer(itemCode);
+    let item = searchItem(itemCode);
     if (item != null) {
         let indexNumber = itemDB.indexOf(item);
         itemDB.splice(indexNumber, 1);
@@ -90,4 +90,13 @@ function deleteItem(itemCode) {
     } else {
         return false;
     }
+}
+
+function searchItem(itemCode) {
+    for (let item of itemDB) {
+        if (item.itemCode == itemCode) {
+            return item;
+        }
+    }
+    return null;
 }
