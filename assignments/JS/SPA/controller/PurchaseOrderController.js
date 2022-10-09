@@ -18,5 +18,8 @@ function loadAllItemCodesInPurchaseOrder() {
 }
 
 $("#cmbCustomerId").change(function () {
-    alert("come")
+    var customer = searchCustomer($(this).val());
+    $("#cusName").val(customer.cusName);
+    $("#cusAddress").val(customer.cusAddress);
+    $("#cusSalary").val(customer.cusSalary);
 });
