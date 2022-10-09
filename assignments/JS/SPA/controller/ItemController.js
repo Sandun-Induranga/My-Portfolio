@@ -63,3 +63,10 @@ function bindEditEvent() {
         $("#btnSaveItem").text("Update");
     });
 }
+
+function setItemTextFields(code, name, unitPrice, qty) {
+    $("#txtItemCode").val(code);
+    $("#txtItemName").val(name);
+    $("#txtItemPrice").val(unitPrice);
+    $("#qtyOnHand").val(qty);
+}
