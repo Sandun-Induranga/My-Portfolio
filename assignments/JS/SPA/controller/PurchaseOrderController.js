@@ -70,6 +70,7 @@ function loadCart() {
         bindEditEvent();
         bindDeleteEvent();
     }
+    setTotal();
 }
 
 function bindEditEvent() {
@@ -112,4 +113,12 @@ function searchCartItem(code) {
         }
     }
     return null;
+}
+
+function setTotal() {
+    let total = 0;
+    for (let cartItem of cartDB) {
+        total += parseFloat(cartItem.total);
+    }
+    $("#total").val(total+" /=");
 }
