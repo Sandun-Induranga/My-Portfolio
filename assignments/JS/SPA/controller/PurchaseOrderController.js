@@ -16,3 +16,7 @@ function loadAllItemCodesInPurchaseOrder() {
         $("#cmbItemCode").append(`<option>${item.itemCode}</option>`);
     }
 }
+
+$("#cmbCustomerId").change(function () {
+    alert("come")
+});
