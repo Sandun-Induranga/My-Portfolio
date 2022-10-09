@@ -44,6 +44,7 @@ function loadAllItems() {
             `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#modelItem"></i><i class="bi bi-trash text-danger"></i></td></tr>`
         );
         bindEditEvent();
+        bindDeleteEvent();
     }
 }
 
@@ -69,4 +70,24 @@ function setItemTextFields(code, name, unitPrice, qty) {
     $("#txtItemName").val(name);
     $("#txtItemPrice").val(unitPrice);
     $("#qtyOnHand").val(qty);
+}
+
+function bindDeleteEvent() {
+    // Delete button on action
+    $(".bi-trash").on("click", function () {
+        var itemCode = $(this).parent().parent().children(":eq(0)").text();
+        deleteItem(itemCode);
+        loadAllItems();
+    });
+}
+
+function deleteItem(itemCode) {
+    let item = searchCustomer(itemCode);
+    if (item != null) {
+        let indexNumber = itemDB.indexOf(item);
+        itemDB.splice(indexNumber, 1);
+        return true;
+    } else {
+        return false;
+    }
 }
