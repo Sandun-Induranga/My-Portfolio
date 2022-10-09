@@ -113,8 +113,20 @@ section {
     background-position: center;
 }
 
+.basics > a:nth-child(4) > section {
+    background: url("../images/css-case-4.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .transitions > a:nth-child(1) > section{
     background: url("../images/transitions-case-1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.transitions > a:nth-child(2) > section{
+    background: url("../images/transition-case-2.png");
     background-size: cover;
     background-position: center;
 }
