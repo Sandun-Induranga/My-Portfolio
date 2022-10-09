@@ -4,7 +4,7 @@ $(function () {
     });
 
     // Auto Focus Item Code
-    $('#modelItem').on('shown.bs.modal', function() {
+    $('#modelItem').on('shown.bs.modal', function () {
         $('#txtItemCode').trigger('focus');
     });
 });
@@ -99,4 +99,17 @@ function searchItem(itemCode) {
         }
     }
     return null;
+}
+
+function updateItem(itemCode, itemName, unitPrice, qty) {
+    let item = searchItem(itemCode);
+    if (item != null) {
+        item.itemCode = itemCode;
+        item.itemName = itemName;
+        item.unitPrice = unitPrice;
+        item.qty = qty;
+        return true;
+    } else {
+        return false;
+    }
 }
