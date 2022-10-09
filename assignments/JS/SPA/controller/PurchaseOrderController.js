@@ -32,5 +32,21 @@ $("#cmbItemCode").change(function () {
 });
 
 $("#btnAddToCart").on("click", function () {
+    $("#tblCart").empty();
+    var code = $("#cmbItemCode").val();
+    var name = $("#item_name").val();
+    var qtyOnHand = $("#qty_OnHand").val();
+    var unitPrice = $("#unitPrice").val();
+    var qty = $("#txtQty").val();
+
+    var cart = {
+        code: code,
+        name: name,
+        qtyOnHand: qtyOnHand,
+        unitPrice: unitPrice,
+        qty: qty
+    }
+    cartDB.push(cart);
+    console.log(cart);
 
 })
