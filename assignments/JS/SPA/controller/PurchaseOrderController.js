@@ -52,16 +52,29 @@ $("#btnAddToCart").on("click", function () {
 
 });
 
-// Load all customers
+// Load Cart
 function loadCart() {
 
     $("#tblCart > tbody").empty();
 
     for (let cart of cartDB) {
         $("#tblCart > tbody").append(
-            `<tr><td>${cart.code}</td><td>${cart.name}</td><td>${cart.unitPrice}</td><td>${cart.qtyOnHand}</td><td>${cart.total}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger"></i></td></tr>`
+            `<tr><td>${cart.code}</td><td>${cart.name}</td><td>${cart.unitPrice}</td><td>${cart.qty}</td><td>${cart.total}</td><td><i class="bi bi-pencil-fill text-success me-4"></i><i class="bi bi-trash text-danger"></i></td></tr>`
         );
         bindEditEvent();
         bindDeleteEvent();
     }
+}
+
+function bindEditEvent() {
+    $(".bi-pencil-fill").on("click", function () {
+        var code = $(this).parent().parent().children(":eq(0)").text();
+
+        var item = searchItem(code);
+        $("#cmbItemCode").val(item.itemCode);
+        $("#item_name").val(item.itemName);
+        $("#qty_OnHand").val(item.qty);
+        $("#unitPrice").val(item.unitPrice);
+        $("#txtQty").val("");
+    });
 }
