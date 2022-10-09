@@ -244,12 +244,12 @@
 
                         <!-- Add Items Button -->
                         <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-                                data-bs-target="#staticsBackdrop">
+                                data-bs-target="#modelItem">
                             Add New Item
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="staticsBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <div class="modal fade" id="modelItem" data-bs-backdrop="static" data-bs-keyboard="false"
                              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -263,8 +263,8 @@
                                     <div class="d-flex justify-content-center">
                                         <form class="w-75">
                                             <div class="mb-3">
-                                                <label for="code" class="form-label">Item Code</label>
-                                                <input type="text" class="form-control" id="code">
+                                                <label for="txtItemCode" class="form-label">Item Code</label>
+                                                <input type="text" class="form-control" id="txtItemCode">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="itemName" class="form-label">Item Name</label>
@@ -855,6 +855,7 @@
 
 <script src="controller/CustomerController.js"></script>
 <script src="model/Customer.js"></script>
+<script src="controller/ItemController.js"></script>
 <script src="db/DB.js"></script>
 
 </body>
