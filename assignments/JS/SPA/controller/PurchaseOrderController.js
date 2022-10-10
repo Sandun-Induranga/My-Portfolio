@@ -125,10 +125,10 @@ function setTotal() {
 
 function generateNewOrderId() {
     if (ordersDB.length > 0) {
-        var lastId = ordersDB[ordersDB.length - 1];
-        var splitElement = ordersDB[0].split('0')[2];
-        var number = parseInt(splitElement) + 1;
-        return lastId.replace(splitElement, number);
+        var lastId = ordersDB[ordersDB.length - 1].orderId;
+        var digit = lastId.substring(6);
+        var number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
     } else {
         return "ORD-001";
     }
@@ -149,5 +149,11 @@ $("#dis").on("keyup", function () {
 });
 
 $("#btnPurchaseOrder").on("click", function () {
-
+    let orderId = $("#orderId").val();
+    let customerId = $("#customerId").val();
+    let total = $("#totalAmount").val();
+    let discount = $("#dis").val();
+    let amount = $("#amount").val();
+    var order = setOrder(orderId, customerId, total, discount, amount);
+    ordersDB.push(order);
 });
