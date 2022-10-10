@@ -124,3 +124,27 @@ $('#txtItemSearch').on("keyup", function () {
         }
     }
 });
+
+// Item Regular Expressions
+const itemCodeRegEx = /^(ITM-)[0-9]{1,3}$/;
+const itemNameRegEx = /^[A-z ]{5,20}$/;
+const unitPriceRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+const qtyOnHandRegEx = /^[0-9]{1,}$/
+
+let itemValidations = [];
+itemValidations.push({reg: itemCodeRegEx, field: $('#txtItemCode'), error: 'Item Code Pattern is Wrong : ITM-001'});
+itemValidations.push({
+    reg: itemNameRegEx,
+    field: $('#txtItemName'),
+    error: 'Item Name Pattern is Wrong : A-z 5-20'
+});
+itemValidations.push({
+    reg: cusAddressRegEx,
+    field: $('#txtItemPrice'),
+    error: 'Item Price Pattern is Wrong : 100 or 100.00'
+});
+itemValidations.push({
+    reg: qtyOnHandRegEx,
+    field: $('#qtyOnHand'),
+    error: 'Qty Pattern is Wrong : 100'
+});
