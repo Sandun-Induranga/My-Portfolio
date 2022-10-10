@@ -139,7 +139,7 @@ itemValidations.push({
     error: 'Item Name Pattern is Wrong : A-z 5-20'
 });
 itemValidations.push({
-    reg: cusAddressRegEx,
+    reg: unitPriceRegEx,
     field: $('#txtItemPrice'),
     error: 'Item Price Pattern is Wrong : 100 or 100.00'
 });
@@ -158,7 +158,7 @@ $("#txtItemCode,#txtItemName,#txtItemPrice,#qtyOnHand").on('blur', function (eve
 });
 
 $("#txtItemCode").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusIDRegEx, $("#txtItemCode"))) {
+    if (event.key == "Enter" && check(itemCodeRegEx, $("#txtItemCode"))) {
         $("#txtItemName").focus();
     } else {
         focusText($("#txtItemCode"));
@@ -166,7 +166,7 @@ $("#txtItemCode").on('keydown', function (event) {
 });
 
 $("#txtItemName").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusIDRegEx, $("#txtItemName"))) {
+    if (event.key == "Enter" && check(itemNameRegEx, $("#txtItemName"))) {
         $("#txtItemPrice").focus();
     } else {
         focusText($("#txtItemName"));
@@ -174,7 +174,7 @@ $("#txtItemName").on('keydown', function (event) {
 });
 
 $("#txtItemPrice").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusIDRegEx, $("#txtItemPrice"))) {
+    if (event.key == "Enter" && check(unitPriceRegEx, $("#txtItemPrice"))) {
         $("#qtyOnHand").focus();
     } else {
         focusText($("#txtItemPrice"));
