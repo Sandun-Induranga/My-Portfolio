@@ -69,7 +69,7 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 2em;
     margin-left: 20px;
 }
@@ -90,9 +90,28 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    background: white;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
     margin: 50px;
+}
+
+section::before {
+    content: "";
+    background: black;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    margin: auto;
+}
+
+h4 {
+    padding: 50px;
+    color: white;
+    font-size: 2em;
+    background-color: #313131;
 }
 
 .basics > a:nth-child(1) > section {
@@ -132,34 +151,39 @@ section {
 }
 
 
-
-.transitions > a:nth-child(1) > section{
+.transitions > a:nth-child(1) > section {
     background: url("../images/transitions-case-1.png");
     background-size: cover;
     background-position: center;
 }
 
-.transitions > a:nth-child(2) > section{
+.transitions > a:nth-child(2) > section {
     background: url("../images/transition-case-2.png");
     background-size: cover;
     background-position: center;
 }
 
 
-.animations > a:nth-child(1) > section{
+.animations > a:nth-child(1) > section {
     background: url("../images/animations-case-1.png");
     background-size: cover;
     background-position: center;
 }
 
-.animations > a:nth-child(2) > section{
+.animations > a:nth-child(2) > section {
     background: url("../images/animations-case-2.png");
     background-size: cover;
     background-position: center;
 }
 
-.animations > a:nth-child(3) > section{
+.animations > a:nth-child(3) > section {
     background: url("../images/animations-case-3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.animations > a:nth-child(4) > section {
+    background: url("../images/animations-case-4.png");
     background-size: cover;
     background-position: center;
 }
