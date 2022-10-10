@@ -149,6 +149,14 @@ itemValidations.push({
     error: 'Qty Pattern is Wrong : 100'
 });
 
+$("#txtItemCode,#txtItemName,#txtItemPrice,#qtyOnHand").on('keyup', function (event) {
+    checkValidity(itemValidations);
+});
+
+$("#txtItemCode,#txtItemName,#txtItemPrice,#qtyOnHand").on('blur', function (event) {
+    checkValidity(itemValidations);
+});
+
 $("#txtItemCode").on('keydown', function (event) {
     if (event.key == "Enter" && check(cusIDRegEx, $("#txtItemCode"))) {
         $("#txtItemName").focus();
@@ -162,5 +170,13 @@ $("#txtItemName").on('keydown', function (event) {
         $("#txtItemPrice").focus();
     } else {
         focusText($("#txtItemName"));
+    }
+});
+
+$("#txtItemPrice").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#txtItemPrice"))) {
+        $("#qtyOnHand").focus();
+    } else {
+        focusText($("#txtItemPrice"));
     }
 });

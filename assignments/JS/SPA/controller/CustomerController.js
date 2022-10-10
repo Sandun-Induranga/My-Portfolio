@@ -152,11 +152,11 @@ customerValidations.push({
 });
 
 $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").on('keyup', function (event) {
-    checkValidity();
+    checkValidity(customerValidations);
 });
 
 $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").on('blur', function (event) {
-    checkValidity();
+    checkValidity(customerValidations);
 });
 
 

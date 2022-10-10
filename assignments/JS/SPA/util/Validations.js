@@ -1,6 +1,6 @@
-function checkValidity() {
+function checkValidity(validationArray) {
     let errorCount = 0;
-    for (let validation of customerValidations) {
+    for (let validation of validationArray) {
         if (check(validation.reg, validation.field)) {
             textSuccess(validation.field, "");
         } else {
