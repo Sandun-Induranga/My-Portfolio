@@ -156,3 +156,11 @@ $("#txtItemCode").on('keydown', function (event) {
         focusText($("#txtItemCode"));
     }
 });
+
+$("#txtItemName").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#txtItemName"))) {
+        $("#txtItemPrice").focus();
+    } else {
+        focusText($("#txtItemName"));
+    }
+});
