@@ -91,6 +91,9 @@ section {
     height: 300px;
     border-radius: 20px;
     box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+}
+
+a{
     margin: 50px;
 }
 
@@ -111,6 +114,7 @@ h4 {
     padding: 50px;
     color: white;
     font-size: 2em;
+    border-radius: 10px;
     background-color: #313131;
 }
 
