@@ -128,8 +128,8 @@ function generateNewOrderId() {
         var lastId = ordersDB[ordersDB.length - 1];
         var splitElement = ordersDB[0].split('0')[2];
         var number = parseInt(splitElement) + 1;
-        return lastId.replace(splitElement, number)
-    }else {
+        return lastId.replace(splitElement, number);
+    } else {
         return "ORD-001";
     }
 }
@@ -138,4 +138,16 @@ $("#btnPlaceOrder").on("click", function () {
     $("#orderId").val(generateNewOrderId());
     $("#customerId").val($("#cmbCustomerId").val());
     $("#totalAmount").val($("#total").text());
+});
+
+$("#dis").on("keyup", function () {
+    if ($(this).val() !== "") {
+        $("#amount").val(parseFloat($("#totalAmount").val()) - parseFloat($(this).val()));
+    } else {
+        $("#amount").val($("#totalAmount").val());
+    }
+});
+
+$("#btnPurchaseOrder").on("click", function () {
+
 });
