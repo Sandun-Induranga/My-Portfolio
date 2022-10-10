@@ -182,11 +182,17 @@ $("#txtItemPrice").on('keydown', function (event) {
 });
 
 $("#qtyOnHand").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusSalaryRegEx, $("#qtyOnHand"))) {
+    if (event.key == "Enter" && check(qtyOnHandRegEx, $("#qtyOnHand"))) {
         let res = confirm("Do you want to add this item.?");
         if (res) {
             saveItem();
-            // clearAllTexts();
+            clearAllItemTexts();
         }
     }
 });
+
+function clearAllItemTexts() {
+    $("#txtItemCode").focus();
+    $("#txtItemCode,#txtItemName,#txtItemPrice,#qtyOnHand").val("");
+    checkValidity();
+}
