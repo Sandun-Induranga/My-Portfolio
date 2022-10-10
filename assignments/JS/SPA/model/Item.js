@@ -6,4 +6,3 @@ function setItem(itemCode, itemName, unitPrice, qty) {
         qty: qty
     };
 }
-
