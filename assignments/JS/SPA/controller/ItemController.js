@@ -148,3 +148,11 @@ itemValidations.push({
     field: $('#qtyOnHand'),
     error: 'Qty Pattern is Wrong : 100'
 });
+
+$("#txtItemCode").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#txtItemCode"))) {
+        $("#txtItemName").focus();
+    } else {
+        focusText($("#txtItemCode"));
+    }
+});
