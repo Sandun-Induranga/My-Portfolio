@@ -180,3 +180,13 @@ $("#txtItemPrice").on('keydown', function (event) {
         focusText($("#txtItemPrice"));
     }
 });
+
+$("#qtyOnHand").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusSalaryRegEx, $("#qtyOnHand"))) {
+        let res = confirm("Do you want to add this item.?");
+        if (res) {
+            saveItem();
+            // clearAllTexts();
+        }
+    }
+});
