@@ -120,7 +120,7 @@ function setTotal() {
     for (let cartItem of cartDB) {
         total += parseFloat(cartItem.total);
     }
-    $("#total").val(total + " /=");
+    $("#total").text(total + " /=");
 }
 
 function generateNewOrderId() {
@@ -129,5 +129,13 @@ function generateNewOrderId() {
         var splitElement = ordersDB[0].split('0')[2];
         var number = parseInt(splitElement) + 1;
         return lastId.replace(splitElement, number)
+    }else {
+        return "ORD-001";
     }
 }
+
+$("#btnPlaceOrder").on("click", function () {
+    $("#orderId").val(generateNewOrderId());
+    $("#customerId").val($("#cmbCustomerId").val());
+    $("#totalAmount").val($("#total").text());
+});

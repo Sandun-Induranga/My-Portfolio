@@ -394,7 +394,7 @@
                 <!-- Place Order Button -->
                 <div>
                     <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal"
-                            data-bs-target="#modelPlaceOrder">
+                            data-bs-target="#modelPlaceOrder" id="btnPlaceOrder">
                         Place Order <i class="bi bi-shop"></i>
                     </button>
                 </div>
@@ -419,11 +419,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="customerId" class="form-label">Customer ID</label>
-                                        <select id="customerId" class="form-select">
-                                            <option>C001</option>
-                                            <option>C002</option>
-                                            <option>C003</option>
-                                        </select>
+                                        <input type="text" class="form-control" id="customerId">
                                     </div>
                                     <div class="mb-3">
                                         <label for="totalAmount" class="form-label">Total</label>
