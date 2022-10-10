@@ -25,9 +25,14 @@ $("#cmbCustomerId").change(function () {
 
 $("#cmbItemCode").change(function () {
     var item = searchItem($(this).val());
+    var cartItem = searchCartItem($(this).val());
     $("#item_name").val(item.itemName);
-    $("#qty_OnHand").val(item.qty);
     $("#unitPrice").val(item.unitPrice);
+    if (cartItem != null) {
+        $("#qty_OnHand").val(parseInt(item.qty) - parseInt(cartItem.qty));
+    }else {
+        $("#qty_OnHand").val(item.qty);
+    }
 });
 
 $("#btnAddToCart").on("click", function () {
