@@ -144,3 +144,22 @@ section {
     background-size: cover;
     background-position: center;
 }
+
+
+.animations > a:nth-child(1) > section{
+    background: url("../images/animations-case-1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.animations > a:nth-child(2) > section{
+    background: url("../images/animations-case-2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.animations > a:nth-child(3) > section{
+    background: url("../images/animations-case-3.png");
+    background-size: cover;
+    background-position: center;
+}
