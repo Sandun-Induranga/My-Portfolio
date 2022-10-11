@@ -194,5 +194,5 @@ $("#qtyOnHand").on('keydown', function (event) {
 function clearAllItemTexts() {
     $("#txtItemCode").focus();
     $("#txtItemCode,#txtItemName,#txtItemPrice,#qtyOnHand").val("");
-    checkValidity();
+    checkValidity(itemValidations);
 }

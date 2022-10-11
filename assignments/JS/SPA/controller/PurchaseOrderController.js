@@ -1,3 +1,8 @@
+$(function () {
+    $("#btnAddToCart").attr("disabled", true);
+    $("#btnPlaceOrder").attr("disabled", true);
+});
+
 function loadAllCustomerIdsInPurchaseOrder() {
     $("#cmbCustomerId").empty();
     $("#cmbCustomerId").append(`<option disabled selected hidden>Customer ID</option>`);
@@ -30,9 +35,10 @@ $("#cmbItemCode").change(function () {
     $("#unitPrice").val(item.unitPrice);
     if (cartItem != null) {
         $("#qty_OnHand").val(parseInt(item.qty) - parseInt(cartItem.qty));
-    }else {
+    } else {
         $("#qty_OnHand").val(item.qty);
     }
+    $("#btnAddToCart").attr("disabled", false);
 });
 
 $("#btnAddToCart").on("click", function () {
@@ -60,7 +66,7 @@ $("#btnAddToCart").on("click", function () {
     }
 
     loadCart();
-
+    $("#btnPlaceOrder").attr("disabled", false);
 });
 
 // Load Cart

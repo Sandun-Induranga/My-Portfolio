@@ -196,5 +196,5 @@ $("#txtSalary").on('keydown', function (event) {
 function clearAllTexts() {
     $("#txtCusId").focus();
     $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").val("");
-    checkValidity();
+    checkValidity(customerValidations);
 }
