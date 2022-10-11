@@ -187,6 +187,7 @@ $("#qtyOnHand").on('keydown', function (event) {
         if (res) {
             saveItem();
             clearAllItemTexts(itemValidations);
+            saveAlert();
         }
     }
 });
