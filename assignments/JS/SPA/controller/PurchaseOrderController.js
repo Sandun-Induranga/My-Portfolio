@@ -49,7 +49,10 @@ $("#btnAddToCart").on("click", function () {
     var qty = $("#txtQty").val();
     var cartItem = searchCartItem(code);
 
-    if (cartItem == null) {
+    if (parseInt(qtyOnHand)<qty){
+        alert("No Stock");
+        return false;
+    }else if (cartItem == null) {
         var cart = {
             code: code,
             name: name,
@@ -149,6 +152,7 @@ $("#btnPlaceOrder").on("click", function () {
     $("#orderId").val(generateNewOrderId());
     $("#customerId").val($("#cmbCustomerId").val());
     $("#totalAmount").val($("#total").text());
+    alert("Order Placed..!");
 });
 
 $("#dis").on("keyup", function () {
