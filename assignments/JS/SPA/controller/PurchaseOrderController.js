@@ -152,7 +152,7 @@ $("#btnPlaceOrder").on("click", function () {
     $("#orderId").val(generateNewOrderId());
     $("#customerId").val($("#cmbCustomerId").val());
     $("#totalAmount").val($("#total").text());
-    alert("Order Placed..!");
+
 });
 
 $("#dis").on("keyup", function () {
@@ -166,9 +166,13 @@ $("#dis").on("keyup", function () {
 $("#btnPurchaseOrder").on("click", function () {
     let orderId = $("#orderId").val();
     let customerId = $("#customerId").val();
+    let customerName = $("#cusName").val();
+    let date = new Date().toLocaleDateString();
     let total = $("#totalAmount").val();
     let discount = $("#dis").val();
     let amount = $("#amount").val();
-    var order = setOrder(orderId, customerId, total, discount, amount);
+    var order = setOrder(orderId, customerId, customerName, date, total, discount, amount);
     ordersDB.push(order);
+    $("#modelPlaceOrder").modal('hide');
+    alert("Order Placed..!");
 });

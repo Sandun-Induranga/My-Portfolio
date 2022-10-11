@@ -186,7 +186,7 @@ $("#qtyOnHand").on('keydown', function (event) {
         let res = confirm("Do you want to add this item.?");
         if (res) {
             saveItem();
-            clearAllItemTexts();
+            clearAllItemTexts(itemValidations);
         }
     }
 });
