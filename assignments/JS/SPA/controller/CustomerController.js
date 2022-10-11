@@ -189,6 +189,7 @@ $("#txtSalary").on('keydown', function (event) {
         if (res) {
             saveCustomer();
             clearAllTexts();
+            saveAlert();
         }
     }
 });
