@@ -7,6 +7,7 @@ $(function () {
     $('#modelItem').on('shown.bs.modal', function () {
         $('#txtItemCode').trigger('focus');
     });
+    loadAllItems();
 });
 
 // Button Save On Action
