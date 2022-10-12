@@ -36,7 +36,6 @@ function saveItem() {
         clearAllItemTexts();
         updateAlert();
     }
-
     loadAllItems();
 }
 

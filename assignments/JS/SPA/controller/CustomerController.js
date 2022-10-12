@@ -162,7 +162,6 @@ $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").on('blur', function (event) {
     checkValidity(customerValidations);
 });
 
-
 $("#txtCusId").on('keydown', function (event) {
     if (event.key == "Enter" && check(cusIDRegEx, $("#txtCusId"))) {
         $("#txtCusName").focus();
@@ -171,13 +170,11 @@ $("#txtCusId").on('keydown', function (event) {
     }
 });
 
-
 $("#txtCusName").on('keydown', function (event) {
     if (event.key == "Enter" && check(cusNameRegEx, $("#txtCusName"))) {
         focusText($("#txtAddress"));
     }
 });
-
 
 $("#txtAddress").on('keydown', function (event) {
     if (event.key == "Enter" && check(cusAddressRegEx, $("#txtAddress"))) {
@@ -185,12 +182,12 @@ $("#txtAddress").on('keydown', function (event) {
     }
 });
 
-
 $("#txtSalary").on('keydown', function (event) {
     if (event.key == "Enter" && check(cusSalaryRegEx, $("#txtSalary"))) {
         let res = confirm("Do you want to add this customer.?");
         if (res) {
             saveCustomer();
+            clearAllCustomerTexts(customerValidations);
         }
     }
 });
