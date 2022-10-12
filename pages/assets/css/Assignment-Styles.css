@@ -191,3 +191,9 @@ h4 {
     background-size: cover;
     background-position: center;
 }
+
+.frameworks > a:nth-child(1) > section {
+    background: url("../images/bootstrap-pos.png");
+    background-size: cover;
+    background-position: center;
+}
