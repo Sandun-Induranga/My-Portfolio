@@ -27,8 +27,10 @@ function saveItem() {
     if ($("#btnSaveItem").text() == "Save") {
         var item = setItem(itemCode, itemName, unitPrice, qty);
         itemDB.push(item);
+        saveAlert();
     } else {
         updateItem(itemCode, itemName, unitPrice, qty);
+        updateAlert();
     }
 
     loadAllItems();

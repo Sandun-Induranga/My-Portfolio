@@ -16,6 +16,8 @@ $("#btnSaveCustomer").on("click", function () {
 
 $("#btnAddNewCustomer").on("click", function () {
     $("#btnSaveCustomer").text("Save");
+    $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").val("");
+    checkValidity(customerValidations)
 });
 
 function saveCustomer() {
@@ -27,10 +29,12 @@ function saveCustomer() {
     if ($("#btnSaveCustomer").text() == "Save") {
         var customer = setCustomer(customerId, name, address, salary);
         customerDB.push(customer);
+        clearAllCustomerTexts();
+        saveAlert();
     } else {
         updateCustomer(customerId, name, address, salary);
+        updateAlert();
     }
-
     loadAllCustomers();
     loadAllCustomerIdsInPurchaseOrder();
 }
@@ -42,7 +46,7 @@ function loadAllCustomers() {
 
     for (let customer of customerDB) {
         $("#tblCustomer > tbody").append(
-            `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><button class="text-success me-4 customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`
+            `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success me-4 customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`
         );
     }
     bindCustomerEditEvent();
@@ -83,7 +87,6 @@ function setCustomerTextFields(id, name, address, salary) {
 }
 
 $('#txtCustomerSearch').on("keyup", function () {
-    console.log($('#txtCustomerSearch').val())
     $("#tblCustomer > tbody").empty();
     for (let customer of customerDB) {
         if (customer.cusId.indexOf($("#txtCustomerSearch").val()) !== -1) {
@@ -188,8 +191,6 @@ $("#txtSalary").on('keydown', function (event) {
         let res = confirm("Do you want to add this customer.?");
         if (res) {
             saveCustomer();
-            clearAllCustomerTexts();
-            // saveAlert();
         }
     }
 });
