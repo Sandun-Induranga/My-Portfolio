@@ -15,4 +15,7 @@ let itemDB = [
 
 let cartDB = [];
 
-let ordersDB = [];
+let ordersDB = [
+    setOrder("ORD-001","C00-001","Bandara","21/09/2022",1000.00,50, 950.00),
+    setOrder("ORD-002","C00-003","Virat","12/10/2022",800.00,5, 795.00)
+];
