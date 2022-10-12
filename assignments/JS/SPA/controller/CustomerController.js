@@ -33,6 +33,8 @@ function saveCustomer() {
 
     loadAllCustomers();
     loadAllCustomerIdsInPurchaseOrder();
+    bindEditEvent();
+    bindDeleteEvent();
 }
 
 // Load all customers
@@ -42,17 +44,19 @@ function loadAllCustomers() {
 
     for (let customer of customerDB) {
         $("#tblCustomer > tbody").append(
-            `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger"></i></td></tr>`
+            `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success me-4 customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`
         );
         bindEditEvent();
         bindDeleteEvent();
     }
+    bindEditEvent();
+    bindDeleteEvent();
 }
 
 // Edit button on action
 function bindEditEvent() {
 
-    $(".bi-pencil-fill").on("click", function () {
+    $(".customer-edits").on("click", function () {
         var id = $(this).parent().parent().children(":eq(0)").text();
 
         var name = $(this).parent().parent().children(":eq(1)").text();
@@ -62,17 +66,16 @@ function bindEditEvent() {
         var salary = $(this).parent().parent().children(":eq(3)").text();
 
         setCustomerTextFields(id, name, address, salary);
-        loadAllCustomers();
         $("#btnSaveCustomer").text("Update");
     });
 }
 
 function bindDeleteEvent() {
     // Delete button on action
-    $(".bi-trash").on("click", function () {
+    $(".customer-deletes").on("click", function () {
         var cusId = $(this).parent().parent().children(":eq(0)").text();
         deleteCustomer(cusId);
-        loadAllCustomers();
+        alert("come")
     });
 }
 
@@ -88,7 +91,7 @@ $('#txtCustomerSearch').on("keyup", function () {
     $("#tblCustomer > tbody").empty();
     for (let customer of customerDB) {
         if (customer.cusId.indexOf($("#txtCustomerSearch").val()) !== -1) {
-            let row = `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i className="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i className="bi bi-trash text-danger"></i></td></tr>`;
+            let row = `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`;
             $("#tblCustomer > tbody").append(row);
         }
     }
@@ -121,6 +124,7 @@ function deleteCustomer(customerID) {
     if (customer != null) {
         let indexNumber = customerDB.indexOf(customer);
         customerDB.splice(indexNumber, 1);
+        loadAllCustomers();
         return true;
     } else {
         return false;
@@ -188,13 +192,13 @@ $("#txtSalary").on('keydown', function (event) {
         let res = confirm("Do you want to add this customer.?");
         if (res) {
             saveCustomer();
-            clearAllTexts();
-            saveAlert();
+            clearAllCustomerTexts();
+            // saveAlert();
         }
     }
 });
 
-function clearAllTexts() {
+function clearAllCustomerTexts() {
     $("#txtCusId").focus();
     $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").val("");
     checkValidity(customerValidations);

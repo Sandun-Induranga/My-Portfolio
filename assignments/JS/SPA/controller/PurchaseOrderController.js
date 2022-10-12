@@ -42,12 +42,12 @@ $("#cmbItemCode").change(function () {
 });
 
 $("#btnAddToCart").on("click", function () {
-    var code = $("#cmbItemCode").val();
-    var name = $("#item_name").val();
-    var qtyOnHand = $("#qty_OnHand").val();
-    var unitPrice = $("#unitPrice").val();
-    var qty = $("#txtQty").val();
-    var cartItem = searchCartItem(code);
+    let code = $("#cmbItemCode").val();
+    let name = $("#item_name").val();
+    let qtyOnHand = $("#qty_OnHand").val();
+    let unitPrice = $("#unitPrice").val();
+    let qty = $("#txtQty").val();
+    let cartItem = searchCartItem(code);
 
     if (parseInt(qtyOnHand)<qty){
         alert("No Stock");
@@ -79,7 +79,7 @@ function loadCart() {
 
     for (let cart of cartDB) {
         $("#tblCart > tbody").append(
-            `<tr><td>${cart.code}</td><td>${cart.name}</td><td>${cart.unitPrice}</td><td>${cart.qty}</td><td>${cart.total}</td><td><i class="bi bi-pencil-fill text-success me-4"></i><i class="bi bi-trash text-danger"></i></td></tr>`
+            `<tr><td>${cart.code}</td><td>${cart.name}</td><td>${cart.unitPrice}</td><td>${cart.qty}</td><td>${cart.total}</td><td><i class="bi bi-pencil-fill text-success me-4 purchase-order-edits"></i><i class="bi bi-trash text-danger purchase-order-deletes"></i></td></tr>`
         );
         bindEditEvent();
         bindDeleteEvent();
@@ -88,7 +88,7 @@ function loadCart() {
 }
 
 function bindEditEvent() {
-    $(".bi-pencil-fill").on("click", function () {
+    $(".purchase-order-edits").on("click", function () {
         var code = $(this).parent().parent().children(":eq(0)").text();
         var cartItem = searchCartItem(code);
 
@@ -102,7 +102,7 @@ function bindEditEvent() {
 }
 
 function bindDeleteEvent() {
-    $(".bi-trash").on("click", function () {
+    $(".purchase-order-deletes").on("click", function () {
         var code = $(this).parent().parent().children(":eq(0)").text();
         deleteCartObject(code);
         loadCart();

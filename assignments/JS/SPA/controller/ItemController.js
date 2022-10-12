@@ -32,7 +32,6 @@ function saveItem() {
     }
 
     loadAllItems();
-    loadAllItemCodesInPurchaseOrder();
 }
 
 // Load all Items
@@ -42,17 +41,18 @@ function loadAllItems() {
 
     for (let item of itemDB) {
         $("#tblItem > tbody").append(
-            `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#modelItem"></i><i class="bi bi-trash text-danger"></i></td></tr>`
+            `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><span class="spans"><i class="bi bi-pencil-fill text-success me-4 item-edits" data-bs-toggle="modal" data-bs-target="#modelItem"></span></i><i class="bi bi-trash text-danger item-deletes"></i></td></tr>`
         );
         bindEditEvent();
         bindDeleteEvent();
     }
+    loadAllItemCodesInPurchaseOrder();
 }
 
 // Edit button on action
 function bindEditEvent() {
 
-    $(".bi-pencil-fill").on("click", function () {
+    $(".spans").on("click", function () {
         var code = $(this).parent().parent().children(":eq(0)").text();
 
         var name = $(this).parent().parent().children(":eq(1)").text();
@@ -75,7 +75,7 @@ function setItemTextFields(code, name, unitPrice, qty) {
 
 function bindDeleteEvent() {
     // Delete button on action
-    $(".bi-trash").on("click", function () {
+    $(".item-deletes").on("click", function () {
         var itemCode = $(this).parent().parent().children(":eq(0)").text();
         deleteItem(itemCode);
         loadAllItems();
@@ -119,7 +119,7 @@ $('#txtItemSearch').on("keyup", function () {
     $("#tblItem > tbody").empty();
     for (let item of itemDB) {
         if (item.itemCode.indexOf($("#txtItemSearch").val()) !== -1) {
-            let row = `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4" data-bs-toggle="modal" data-bs-target="#modelItem"></i><i class="bi bi-trash text-danger"></i></td></tr>`;
+            let row = `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4 item-edits" data-bs-toggle="modal" data-bs-target="#modelItem"></i><i class="bi bi-trash text-danger item-deletes"></i></td></tr>`;
             $("#tblItem > tbody").append(row);
         }
     }
@@ -187,7 +187,7 @@ $("#qtyOnHand").on('keydown', function (event) {
         if (res) {
             saveItem();
             clearAllItemTexts(itemValidations);
-            saveAlert();
+            // saveAlert();
         }
     }
 });
