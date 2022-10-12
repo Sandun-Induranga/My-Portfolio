@@ -90,14 +90,14 @@ function setCustomerTextFields(id, name, address, salary) {
 $('#txtCustomerSearch').on("keyup", function () {
     $("#tblCustomer > tbody").empty();
     for (let customer of customerDB) {
-        if ($("#cusSearch").val()=="Customer Id"){
+        if ($("#cusSearch").val() == "Customer Id") {
             if (customer.cusId.indexOf($("#txtCustomerSearch").val()) !== -1) {
-                let row = `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`;
+                let row = `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success me-4 customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`;
                 $("#tblCustomer > tbody").append(row);
             }
-        }else {
+        } else {
             if (customer.cusName.indexOf($("#txtCustomerSearch").val()) !== -1) {
-                let row = `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`;
+                let row = `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success me-4 customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`;
                 $("#tblCustomer > tbody").append(row);
             }
         }

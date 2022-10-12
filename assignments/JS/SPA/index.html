@@ -225,15 +225,11 @@
                         <form class="d-flex flex-column flex-lg-row" role="search">
                             <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
                                    aria-label="Search" id="txtItemSearch">
-                            <ul class="dropdown-menu" id="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
-                                    data-bs-toggle="dropdown" data-bs-target="#dropdown-menu" aria-expanded="false">
-                                Dropdown button
-                            </button>
+                            <select class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button" id="itemSearch"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <option><a class="dropdown-item" href="#">Item Code</a></option>
+                                <option><a class="dropdown-item" href="#">Item Name</a></option>
+                            </select>
                             <button class="btn btn-outline-success me-5 mb-2 mb-lg-0" type="submit">Search</button>
                         </form>
 
@@ -456,16 +452,12 @@
                     <div class="container-fluid d-flex flex-column flex-lg-row">
                         <form class="d-flex flex-column flex-lg-row" role="search">
                             <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
-                                   aria-label="Search">
-                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                   aria-label="Search" id="txtOrderSearch">
+                            <select class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button" id="orderSearch"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                                <option><a class="dropdown-item" href="#">Order Id</a></option>
+                                <option><a class="dropdown-item" href="#">Customer Id</a></option>
+                            </select>
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
