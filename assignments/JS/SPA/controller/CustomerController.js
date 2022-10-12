@@ -7,6 +7,7 @@ $(function () {
     $('#staticBackdrop').on('shown.bs.modal', function () {
         $('#txtCusId').trigger('focus');
     });
+    loadAllCustomers();
 });
 
 // Button Save On Action
@@ -133,7 +134,7 @@ function deleteCustomer(customerID) {
 // customer regular expressions
 const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
 const cusNameRegEx = /^[A-z ]{5,20}$/;
-const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+const cusAddressRegEx = /^[0-9/A-z. ,]{5,}$/;
 const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
 let customerValidations = [];
