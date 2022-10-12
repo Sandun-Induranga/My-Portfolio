@@ -30,16 +30,27 @@ $("#dark").click(function () {
 
 let pos = 0;
 
-$("#btnRightProject").click(function () {
-    if (pos >= -75 && pos < 75) {
-        pos -= 25;
-        $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
-    }
-});
+    $("#btnRightProject").click(function () {
+        if (pos > -50) {
+            pos -= 25;
+            $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
+            $("#btnLeftProject").attr("disabled", false);
+        }
+        if (pos == -50){
+            $("#btnRightProject").attr("disabled", true);
+        }
+        console.log(pos);
+    });
 
-$("#btnLeftProject").click(function () {
-    if (pos >= -75 && pos < 75) {
-        pos += 25;
-        $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
-    }
-});
+    $("#btnLeftProject").click(function () {
+        if (pos < 50) {
+            pos += 25;
+            $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
+            $("#btnRightProject").attr("disabled", false);
+            console.log(pos);
+        }
+        if (pos == 50){
+            $("#btnLeftProject").attr("disabled", true);
+        }
+        console.log(pos);
+    });
