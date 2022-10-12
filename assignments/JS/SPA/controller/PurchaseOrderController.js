@@ -1,6 +1,11 @@
 $(function () {
     $("#btnAddToCart").attr("disabled", true);
     $("#btnPlaceOrder").attr("disabled", true);
+    $("#btnPurchaseOrder").attr("disabled", true);
+
+    $('#modelPlaceOrder').on('shown.bs.modal', function () {
+        $('#dis').trigger('focus');
+    });
 });
 
 function loadAllCustomerIdsInPurchaseOrder() {
@@ -42,6 +47,10 @@ $("#cmbItemCode").change(function () {
 });
 
 $("#btnAddToCart").on("click", function () {
+    addToCart();
+});
+
+function addToCart() {
     let code = $("#cmbItemCode").val();
     let name = $("#item_name").val();
     let qtyOnHand = $("#qty_OnHand").val();
@@ -70,7 +79,7 @@ $("#btnAddToCart").on("click", function () {
 
     loadCart();
     $("#btnPlaceOrder").attr("disabled", false);
-});
+}
 
 // Load Cart
 function loadCart() {
@@ -164,6 +173,10 @@ $("#dis").on("keyup", function () {
 });
 
 $("#btnPurchaseOrder").on("click", function () {
+    purchaseOrder();
+});
+
+function purchaseOrder() {
     let orderId = $("#orderId").val();
     let customerId = $("#customerId").val();
     let customerName = $("#cusName").val();
@@ -175,14 +188,32 @@ $("#btnPurchaseOrder").on("click", function () {
     ordersDB.push(order);
     $("#modelPlaceOrder").modal('hide');
     alert("Order Placed..!");
-});
+    for (let cartItem of cartDB) {
+        var searchItem = searchItem(cartItem.code);
+
+    }
+}
 
 // validation
 const qtyRegEx = /^[0-9]{1,}$/
 
+$("#dis").on('keyup', function (event) {
+    if (check(qtyRegEx, $("#txtQty"))) {
+        $("#btnPurchaseOrder").attr("disabled", false);
+        if (event.key == "Enter") {
+            purchaseOrder();
+        }
+    } else {
+        $("#btnPurchaseOrder").attr("disabled", true);
+    }
+});
+
 $("#txtQty").on('keyup', function (event) {
     if (check(qtyRegEx, $("#txtQty"))) {
         $("#btnAddToCart").attr("disabled", false);
+        if (event.key == "Enter") {
+            addToCart();
+        }
     } else {
         $("#btnAddToCart").attr("disabled", true);
     }
