@@ -176,3 +176,14 @@ $("#btnPurchaseOrder").on("click", function () {
     $("#modelPlaceOrder").modal('hide');
     alert("Order Placed..!");
 });
+
+// validation
+const qtyRegEx = /^[0-9]{1,}$/
+
+$("#txtQty").on('keyup', function (event) {
+    if (check(qtyRegEx, $("#txtQty"))) {
+        $("#btnAddToCart").attr("disabled", false);
+    } else {
+        $("#btnAddToCart").attr("disabled", true);
+    }
+});
