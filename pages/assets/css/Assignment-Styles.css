@@ -192,7 +192,21 @@ h4 {
     background-position: center;
 }
 
+
 .frameworks > a:nth-child(1) > section {
+    background: url("../images/bootstrap-pos.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.js > a:nth-child(1) > section {
+    background: url("../images/calculator.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.js > a:nth-child(2) > section {
     background: url("../images/bootstrap-pos.png");
     background-size: cover;
     background-position: center;
