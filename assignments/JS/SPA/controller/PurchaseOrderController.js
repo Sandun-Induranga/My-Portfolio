@@ -195,7 +195,9 @@ function purchaseOrder() {
     }
     cartDB = [];
     loadAllItems();
+    loadAllOrders();
     loadCart();
+    clearCustomerAndItemTexts();
 }
 
 // validation
@@ -222,3 +224,9 @@ $("#txtQty").on('keyup', function (event) {
         $("#btnAddToCart").attr("disabled", true);
     }
 });
+
+function clearCustomerAndItemTexts() {
+    loadAllCustomerIdsInPurchaseOrder();
+    loadAllItemCodesInPurchaseOrder();
+    $("#cusName ,#cusAddress, #cusSalary, #item_name, #qty_OnHand, #unitPrice, #txtQty").val("");
+}
