@@ -33,10 +33,10 @@ function saveCustomer() {
         saveAlert();
     } else {
         updateCustomer(customerId, name, address, salary);
+        clearAllCustomerTexts();
         updateAlert();
     }
     loadAllCustomers();
-    loadAllCustomerIdsInPurchaseOrder();
 }
 
 // Load all customers
@@ -51,6 +51,7 @@ function loadAllCustomers() {
     }
     bindCustomerEditEvent();
     bindCustomerDeleteEvent();
+    loadAllCustomerIdsInPurchaseOrder();
 }
 
 // Edit button on action
@@ -70,12 +71,11 @@ function bindCustomerEditEvent() {
     });
 }
 
+// Delete button on action
 function bindCustomerDeleteEvent() {
-    // Delete button on action
     $(".customer-deletes").on("click", function () {
         var cusId = $(this).parent().parent().children(":eq(0)").text();
         deleteCustomer(cusId);
-        alert("come")
     });
 }
 

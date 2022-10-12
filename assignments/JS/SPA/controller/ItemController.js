@@ -16,6 +16,8 @@ $("#btnSaveItem").on("click", function () {
 
 $("#btnAddNewItem").on("click", function () {
     $("#btnSaveItem").text("Save");
+    $("#txtItemCode,#txtItemName,#txtItemPrice,#qtyOnHand").val("");
+    checkValidity(itemValidations);
 });
 
 function saveItem() {
@@ -27,9 +29,11 @@ function saveItem() {
     if ($("#btnSaveItem").text() == "Save") {
         var item = setItem(itemCode, itemName, unitPrice, qty);
         itemDB.push(item);
+        clearAllItemTexts();
         saveAlert();
     } else {
         updateItem(itemCode, itemName, unitPrice, qty);
+        clearAllItemTexts();
         updateAlert();
     }
 
@@ -189,7 +193,6 @@ $("#qtyOnHand").on('keydown', function (event) {
         if (res) {
             saveItem();
             clearAllItemTexts(itemValidations);
-            // saveAlert();
         }
     }
 });
