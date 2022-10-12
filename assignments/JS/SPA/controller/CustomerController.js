@@ -33,8 +33,6 @@ function saveCustomer() {
 
     loadAllCustomers();
     loadAllCustomerIdsInPurchaseOrder();
-    bindEditEvent();
-    bindDeleteEvent();
 }
 
 // Load all customers
@@ -44,17 +42,15 @@ function loadAllCustomers() {
 
     for (let customer of customerDB) {
         $("#tblCustomer > tbody").append(
-            `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><i class="bi bi-pencil-fill text-success me-4 customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`
+            `<tr><td>${customer.cusId}</td><td>${customer.cusName}</td><td>${customer.cusAddress}</td><td>${customer.cusSalary}</td><td><button class="text-success me-4 customer-edits" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button><i class="bi bi-trash text-danger customer-deletes"></i></td></tr>`
         );
-        bindEditEvent();
-        bindDeleteEvent();
     }
-    bindEditEvent();
-    bindDeleteEvent();
+    bindCustomerEditEvent();
+    bindCustomerDeleteEvent();
 }
 
 // Edit button on action
-function bindEditEvent() {
+function bindCustomerEditEvent() {
 
     $(".customer-edits").on("click", function () {
         var id = $(this).parent().parent().children(":eq(0)").text();
@@ -70,7 +66,7 @@ function bindEditEvent() {
     });
 }
 
-function bindDeleteEvent() {
+function bindCustomerDeleteEvent() {
     // Delete button on action
     $(".customer-deletes").on("click", function () {
         var cusId = $(this).parent().parent().children(":eq(0)").text();

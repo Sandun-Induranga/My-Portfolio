@@ -81,13 +81,13 @@ function loadCart() {
         $("#tblCart > tbody").append(
             `<tr><td>${cart.code}</td><td>${cart.name}</td><td>${cart.unitPrice}</td><td>${cart.qty}</td><td>${cart.total}</td><td><i class="bi bi-pencil-fill text-success me-4 purchase-order-edits"></i><i class="bi bi-trash text-danger purchase-order-deletes"></i></td></tr>`
         );
-        bindEditEvent();
-        bindDeleteEvent();
+        bindPurchaseEditEvent();
+        bindPurchaseDeleteEvent();
     }
     setTotal();
 }
 
-function bindEditEvent() {
+function bindPurchaseEditEvent() {
     $(".purchase-order-edits").on("click", function () {
         var code = $(this).parent().parent().children(":eq(0)").text();
         var cartItem = searchCartItem(code);
@@ -101,7 +101,7 @@ function bindEditEvent() {
     });
 }
 
-function bindDeleteEvent() {
+function bindPurchaseDeleteEvent() {
     $(".purchase-order-deletes").on("click", function () {
         var code = $(this).parent().parent().children(":eq(0)").text();
         deleteCartObject(code);

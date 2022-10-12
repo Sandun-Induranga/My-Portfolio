@@ -41,18 +41,18 @@ function loadAllItems() {
 
     for (let item of itemDB) {
         $("#tblItem > tbody").append(
-            `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><span class="spans"><i class="bi bi-pencil-fill text-success me-4 item-edits" data-bs-toggle="modal" data-bs-target="#modelItem"></span></i><i class="bi bi-trash text-danger item-deletes"></i></td></tr>`
+            `<tr><td>${item.itemCode}</td><td>${item.itemName}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><i class="bi bi-pencil-fill text-success me-4 item-edits" data-bs-toggle="modal" data-bs-target="#modelItem"></i><i class="bi bi-trash text-danger item-deletes"></i></td></tr>`
         );
-        bindEditEvent();
-        bindDeleteEvent();
     }
+    bindItemsEditEvent();
+    bindItemsDeleteEvent();
     loadAllItemCodesInPurchaseOrder();
 }
 
 // Edit button on action
-function bindEditEvent() {
+function bindItemsEditEvent() {
 
-    $(".spans").on("click", function () {
+    $(".item-edits").on("click", function () {
         var code = $(this).parent().parent().children(":eq(0)").text();
 
         var name = $(this).parent().parent().children(":eq(1)").text();
@@ -73,7 +73,7 @@ function setItemTextFields(code, name, unitPrice, qty) {
     $("#qtyOnHand").val(qty);
 }
 
-function bindDeleteEvent() {
+function bindItemsDeleteEvent() {
     // Delete button on action
     $(".item-deletes").on("click", function () {
         var itemCode = $(this).parent().parent().children(":eq(0)").text();
