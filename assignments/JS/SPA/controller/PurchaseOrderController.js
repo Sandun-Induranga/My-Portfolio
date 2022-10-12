@@ -58,10 +58,10 @@ function addToCart() {
     let qty = $("#txtQty").val();
     let cartItem = searchCartItem(code);
 
-    if (parseInt(qtyOnHand)<qty){
+    if (parseInt(qtyOnHand) < qty) {
         alert("No Stock");
         return false;
-    }else if (cartItem == null) {
+    } else if (cartItem == null) {
         var cart = {
             code: code,
             name: name,
@@ -187,18 +187,22 @@ function purchaseOrder() {
     var order = setOrder(orderId, customerId, customerName, date, total, discount, amount);
     ordersDB.push(order);
     $("#modelPlaceOrder").modal('hide');
-    alert("Order Placed..!");
+    saveAlert();
     for (let cartItem of cartDB) {
-        var searchItem = searchItem(cartItem.code);
-
+        let searchItem1 = searchItem(cartItem.code);
+            var qtyOnHand = parseInt(searchItem1.qty) - parseInt(cartItem.qty);
+            updateItem(searchItem1.itemCode, searchItem1.itemName, searchItem1.unitPrice, qtyOnHand);
     }
+    cartDB = [];
+    loadAllItems();
+    loadCart();
 }
 
 // validation
 const qtyRegEx = /^[0-9]{1,}$/
 
 $("#dis").on('keyup', function (event) {
-    if (check(qtyRegEx, $("#txtQty"))) {
+    if (check(qtyRegEx, $("#dis"))) {
         $("#btnPurchaseOrder").attr("disabled", false);
         if (event.key == "Enter") {
             purchaseOrder();
