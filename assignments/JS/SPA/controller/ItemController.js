@@ -136,6 +136,8 @@ $('#txtItemSearch').on("keyup", function () {
             }
         }
     }
+    bindItemsEditEvent();
+    bindItemsDeleteEvent();
 });
 
 // Item Regular Expressions

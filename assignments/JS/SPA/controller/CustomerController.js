@@ -102,6 +102,8 @@ $('#txtCustomerSearch').on("keyup", function () {
             }
         }
     }
+    bindCustomerEditEvent();
+    bindCustomerDeleteEvent();
 });
 
 function searchCustomer(customerID) {
