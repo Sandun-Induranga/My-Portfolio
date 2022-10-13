@@ -11,7 +11,7 @@ $(window).on("load", function () {
 
 // dark mode
 let dark = false;
-$("#dark").click(function () {
+$("#dark, #theme").click(function () {
     if (dark == true){
         dark = false;
         location.reload();
@@ -50,6 +50,8 @@ $("#dark").click(function () {
 
     $('.project > aside > section').css('background', '#2B2D42');
     $('.project > aside > section > div:nth-child(2) > h3').css('color', '#ECEFF1');
+
+    $("input, textarea").css("background", "#333b84");
 
     dark = true;
 });
