@@ -142,7 +142,7 @@ $('#txtItemSearch').on("keyup", function () {
 
 // Item Regular Expressions
 const itemCodeRegEx = /^(ITM-)[0-9]{1,3}$/;
-const itemNameRegEx = /^[A-z ]{5,20}$/;
+const itemNameRegEx = /^[A-z ]{4,20}$/;
 const unitPriceRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 const qtyOnHandRegEx = /^[0-9]{1,}$/
 

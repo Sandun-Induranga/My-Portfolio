@@ -43,7 +43,6 @@ $("#cmbItemCode").change(function () {
     } else {
         $("#qty_OnHand").val(item.qty);
     }
-    $("#btnAddToCart").attr("disabled", false);
 });
 
 $("#btnAddToCart").on("click", function () {

@@ -79,14 +79,18 @@ let i = 1;
 
 $("#cert-right").click(function () {
     // if (i < certificates.length){
-        $(".skills > section > div:last-child > section > div:nth-child(2) > div").css("background-image", certificates[i]);
-        i++;
+    $(".skills > section > div:last-child > section > div:nth-child(2) > div").css("background-image", certificates[i]);
+    $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-property', 'all');
+    $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-duration', '2s');
+    i++;
     // }
 });
 
 $("#cert-left").click(function () {
     // if (i > 0){
     $(".skills > section > div:last-child > section > div:nth-child(2) > div").css("background-image", certificates[i]);
+    $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-property', 'all');
+    $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-duration', '2s');
     i--;
     // }
 });
