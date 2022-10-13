@@ -202,6 +202,10 @@ $("#txtSalary").on('keydown', function (event) {
     }
 });
 
+$("#btnCustomerClear").on("click", function () {
+    clearAllCustomerTexts();
+});
+
 function clearAllCustomerTexts() {
     $("#txtCusId").focus();
     $("#txtCusId,#txtCusName,#txtAddress,#txtSalary").val("");
