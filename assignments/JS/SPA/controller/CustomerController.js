@@ -76,7 +76,10 @@ function bindCustomerEditEvent() {
 function bindCustomerDeleteEvent() {
     $(".customer-deletes").on("click", function () {
         var cusId = $(this).parent().parent().children(":eq(0)").text();
-        deleteCustomer(cusId);
+        let res = confirm("Are you sure..?");
+        if (res) {
+            deleteCustomer(cusId);
+        }
     });
 }
 
@@ -134,6 +137,7 @@ function deleteCustomer(customerID) {
         let indexNumber = customerDB.indexOf(customer);
         customerDB.splice(indexNumber, 1);
         loadAllCustomers();
+        deleteAlert();
         return true;
     } else {
         return false;

@@ -17,3 +17,13 @@ function updateAlert() {
         timer: 1500
     });
 }
+
+function deleteAlert() {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'warning',
+        title: 'Deleted..!',
+        showConfirmButton: false,
+        timer: 1500
+    });
+}

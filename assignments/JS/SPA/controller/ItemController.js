@@ -83,7 +83,11 @@ function bindItemsDeleteEvent() {
     // Delete button on action
     $(".item-deletes").on("click", function () {
         var itemCode = $(this).parent().parent().children(":eq(0)").text();
-        deleteItem(itemCode);
+        let res = confirm("Are you sure..?");
+        if (res){
+            deleteItem(itemCode);
+            deleteAlert();
+        }
         loadAllItems();
     });
 }
