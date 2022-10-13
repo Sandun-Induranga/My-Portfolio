@@ -14,8 +14,11 @@
 }
 
 body > div {
-    background: url("../images/loading.gif");
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97vw;
+    height: 97vh;
 }
 
 /* Background */
