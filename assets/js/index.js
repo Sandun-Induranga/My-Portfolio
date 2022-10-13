@@ -21,6 +21,10 @@ $("#dark").click(function () {
 
     $('.skills > section > div:last-child > section > div:nth-child(2) > div, .services > div > div, .project > aside > section, .project > aside > section > section > div, .gallery > aside > section > div, .skills > section > aside').css('box-shadow', '4px 0 76px 10px #3A86FF');
 
+    // main image
+    $("#main-image").attr("src", "assets/images/main-image-dark.png");
+    $("#main-image").css("opacity", "1");
+
     // top bar
     $('.top-bar').css('background', '#2B2D42');
     $('.top-bar a').css('color', 'white');
