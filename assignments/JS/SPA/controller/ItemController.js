@@ -206,6 +206,10 @@ $("#qtyOnHand").on('keydown', function (event) {
     }
 });
 
+$("#btnClearItem").on("click", function () {
+    clearAllItemTexts();
+})
+
 function clearAllItemTexts() {
     $("#txtItemCode").focus();
     $("#txtItemCode,#txtItemName,#txtItemPrice,#qtyOnHand").val("");
