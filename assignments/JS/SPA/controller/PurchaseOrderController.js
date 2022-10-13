@@ -47,6 +47,7 @@ $("#cmbItemCode").change(function () {
 
 $("#btnAddToCart").on("click", function () {
     addToCart();
+    $(this).attr("disabled", true);
 });
 
 function addToCart() {
@@ -78,6 +79,7 @@ function addToCart() {
 
     loadCart();
     $("#btnPlaceOrder").attr("disabled", false);
+    $("#txtQty").val("");
 }
 
 // Load Cart
