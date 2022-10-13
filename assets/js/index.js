@@ -65,3 +65,10 @@ $("#btnLeftProject").click(function () {
     }
     console.log(pos);
 });
+
+// certificate slide
+let certificates = [
+    "certificate-1.png",
+    "certificate-2.png",
+    "certificate-3.jpg"
+]
