@@ -31,7 +31,7 @@ $("#dark").click(function () {
 let pos = 0;
 
     $("#btnRightProject").click(function () {
-        if (pos > -50) {
+        if (pos > -100) {
             pos -= 25;
             $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
             $("#btnLeftProject").attr("disabled", false);
@@ -43,7 +43,7 @@ let pos = 0;
     });
 
     $("#btnLeftProject").click(function () {
-        if (pos < 50) {
+        if (pos < 0) {
             pos += 25;
             $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
             $("#btnRightProject").attr("disabled", false);
