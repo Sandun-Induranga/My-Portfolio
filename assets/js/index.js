@@ -10,7 +10,13 @@ $(window).on("load", function () {
 });
 
 // dark mode
+let dark = false;
 $("#dark").click(function () {
+    if (dark == true){
+        dark = false;
+        location.reload();
+        return;
+    }
     $('.skills > section > div:last-child > section > div:nth-child(2) > div, .services > div > div, .project > aside > section, .project > aside > section > section > div, .gallery > aside > section > div').css('box-shadow', '4px 0 76px 10px #3A86FF');
 
     // top bar
@@ -38,6 +44,7 @@ $("#dark").click(function () {
 
     $('.project > aside > section').css('background', '#2B2D42');
     $('.project > aside > section > div:nth-child(2) > h3').css('color', '#ECEFF1');
+    dark = true;
 });
 
 let pos = 0;
