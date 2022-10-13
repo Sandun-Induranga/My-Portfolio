@@ -45,6 +45,8 @@ $("#btnRightProject").click(function () {
     if (pos > -100) {
         pos -= 25;
         $(".project > aside > section>section").css('transform', `translate(${pos}%)`);
+        $(".project > aside > section>section").css('transition-property', 'all');
+        $(".project > aside > section>section").css('transition-duration', '2s');
         $("#btnLeftProject").attr("disabled", false);
     }
     if (pos == -50) {
@@ -68,7 +70,23 @@ $("#btnLeftProject").click(function () {
 
 // certificate slide
 let certificates = [
-    "certificate-1.png",
-    "certificate-2.png",
-    "certificate-3.jpg"
-]
+    "url(assets/images/certificate-1.png)",
+    "url(assets/images/certificate-2.png)",
+    "url(assets/images/certificate-3.jpg)"
+];
+
+let i = 1;
+
+$("#cert-right").click(function () {
+    // if (i < certificates.length){
+        $(".skills > section > div:last-child > section > div:nth-child(2) > div").css("background-image", certificates[i]);
+        i++;
+    // }
+});
+
+$("#cert-left").click(function () {
+    // if (i > 0){
+    $(".skills > section > div:last-child > section > div:nth-child(2) > div").css("background-image", certificates[i]);
+    i--;
+    // }
+});
