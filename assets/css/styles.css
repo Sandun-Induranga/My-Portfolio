@@ -13,6 +13,11 @@
     background-color: #a5a5a5;
 }
 
+body > div {
+    background: url("../images/loading.gif");
+    display: none;
+}
+
 /* Background */
 .background {
     width: 99.5vw;
@@ -926,7 +931,6 @@ a, header ul li {
 }
 
 .project > aside > section > section {
-    position: relative;
     width: 410%;
     height: 100%;
 }
@@ -950,74 +954,6 @@ a, header ul li {
 .project > aside > section > section > div > h3 {
     margin-bottom: 50px;
 }
-
-/*.project > aside > section > div:first-child {*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) {*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(1) > img {*/
-/*    width: 350px;*/
-/*    height: 220px;*/
-/*    box-shadow: -4px 0 76px -10px rgba(184, 184, 184, 1);*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) > h3 {*/
-/*    margin-top: 75px;*/
-/*    margin-left: 20px;*/
-/*    margin-bottom: 50px;*/
-/*    font-size: 1.1em;*/
-/*    color: #2B2B2B;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) > h4 {*/
-/*    margin-top: 0;*/
-/*    margin-left: 90px;*/
-/*    margin-bottom: 0;*/
-/*    font-size: 1em;*/
-/*    color: #646464;*/
-/*    font-weight: normal;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) > ul {*/
-/*    list-style: none;*/
-/*    margin-left: 90px;*/
-/*    margin-top: 15px;*/
-/*    margin-bottom: 50px;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) > ul > li {*/
-/*    padding: 0 0 2px;*/
-/*    color: #B8B8B8;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) > button {*/
-/*    width: 196px;*/
-/*    height: 56px;*/
-/*    margin-left: 90px;*/
-/*    border-radius: 8px;*/
-/*    background-color: #3A86FF;*/
-/*    border: none;*/
-/*    transition-property: all;*/
-/*    transition-duration: 2s;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) > button:hover, .project > aside > section > div:nth-child(2) > button > a:hover {*/
-/*    background-color: white;*/
-/*    color: #3A86FF;*/
-/*    border: 1px solid #3A86FF;*/
-/*    transition-property: all;*/
-/*    transition-duration: 2s;*/
-/*}*/
-
-/*.project > aside > section > div:nth-child(2) > button > a {*/
-/*    color: white;*/
-/*}*/
 
 
 /* Gallery */
@@ -1720,10 +1656,10 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     }
 
     .project > aside > section::-webkit-scrollbar {
-        display: none;  /* Safari and Chrome */
+        display: none; /* Safari and Chrome */
     }
 
-    .project > aside > section>section>div{
+    .project > aside > section > section > div {
         margin: 80px 10px 10px;
     }
 
@@ -1945,11 +1881,11 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
         text-align: center;
     }
 
-    .project > aside > section > section{
+    .project > aside > section > section {
         width: 450%;
     }
 
-.gallery > aside > section {
+    .gallery > aside > section {
         width: 90vw;
     }
 

@@ -1,3 +1,14 @@
+// loading animation
+$(document).ready(function () {
+    $("header, main, footer").css("display", "none");
+    $("body> div").css("display", "block");
+});
+
+$(window).on("load", function () {
+    $("header, main, footer").css("display", "block");
+    $("body> div").css("display", "none");
+});
+
 // dark mode
 $("#dark").click(function () {
 
@@ -30,27 +41,27 @@ $("#dark").click(function () {
 
 let pos = 0;
 
-    $("#btnRightProject").click(function () {
-        if (pos > -100) {
-            pos -= 25;
-            $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
-            $("#btnLeftProject").attr("disabled", false);
-        }
-        if (pos == -50){
-            $("#btnRightProject").attr("disabled", true);
-        }
-        console.log(pos);
-    });
+$("#btnRightProject").click(function () {
+    if (pos > -100) {
+        pos -= 25;
+        $(".project > aside > section>section").css('transform', `translate(${pos}%)`);
+        $("#btnLeftProject").attr("disabled", false);
+    }
+    if (pos == -50) {
+        $("#btnRightProject").attr("disabled", true);
+    }
+    console.log(pos);
+});
 
-    $("#btnLeftProject").click(function () {
-        if (pos < 0) {
-            pos += 25;
-            $(".project > aside > section>section").css('transform',`translate(${pos}%)`);
-            $("#btnRightProject").attr("disabled", false);
-            console.log(pos);
-        }
-        if (pos == 50){
-            $("#btnLeftProject").attr("disabled", true);
-        }
+$("#btnLeftProject").click(function () {
+    if (pos < 0) {
+        pos += 25;
+        $(".project > aside > section>section").css('transform', `translate(${pos}%)`);
+        $("#btnRightProject").attr("disabled", false);
         console.log(pos);
-    });
+    }
+    if (pos == 50) {
+        $("#btnLeftProject").attr("disabled", true);
+    }
+    console.log(pos);
+});
