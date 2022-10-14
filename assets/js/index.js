@@ -12,7 +12,7 @@ $(window).on("load", function () {
 // dark mode
 let dark = false;
 $("#dark, #theme").click(function () {
-    if (dark == true){
+    if (dark == true) {
         dark = false;
         location.reload();
         return;
