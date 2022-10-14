@@ -19,7 +19,7 @@ $("#dark, #theme").click(function () {
     }
     $(this).css("color", "#3A86FF");
 
-    $('.skills > section > div:last-child > section > div:nth-child(2) > div, .services > div > div, .project > aside > section, .project > aside > section > section > div, .gallery > aside > section > div, .skills > section > aside').css('box-shadow', '4px 0 76px 10px #3A86FF');
+    $('.skills > section > div:last-child > section > div:nth-child(2) > div, .services > div > div, .project > aside > section, .project > aside > section > section > div, .gallery > aside > section > div, .skills > section > aside').css('box-shadow', '4px 4px 20px 10px #3C3E58');
 
     // main image
     $("#main-image").attr("src", "assets/images/main-image-dark.png");
