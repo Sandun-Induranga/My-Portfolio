@@ -89,25 +89,28 @@ $("#btnLeftProject").click(function () {
 let certificates = [
     "url(assets/images/certificate-1.png)",
     "url(assets/images/certificate-2.png)",
-    "url(assets/images/certificate-3.jpg)"
+    "url(assets/images/certificate-3.jpg)",
+    "url(assets/images/certificate-4.jpg)",
+    "url(assets/images/certificate-5.png)",
+    "url(assets/images/certificate-6.png)"
 ];
 
-let i = 1;
+let i = 0;
 
 $("#cert-right").click(function () {
     // if (i < certificates.length){
+    i++;
     $(".skills > section > div:last-child > section > div:nth-child(2) > div").css("background-image", certificates[i]);
     $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-property', 'all');
     $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-duration', '2s');
-    i++;
     // }
 });
 
 $("#cert-left").click(function () {
     // if (i > 0){
+    i--;
     $(".skills > section > div:last-child > section > div:nth-child(2) > div").css("background-image", certificates[i]);
     $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-property', 'all');
     $(".skills > section > div:last-child > section > div:nth-child(2) > div").css('transition-duration', '2s');
-    i--;
     // }
 });
