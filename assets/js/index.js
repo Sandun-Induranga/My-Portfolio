@@ -37,21 +37,22 @@ $("#dark, #theme").click(function () {
     $('h2').css('color', 'white');
 
     // about section
-    $('.info').css('color', '#ECEFF1');
+    $('.info, .services > div > div > div > p, .contact > aside > aside > div > h4').css('color', '#ECEFF1');
     $('.info span').css('color', '#EBEBEB');
-    $('.des').css('color', '#EBEBEB');
+    $('.des, .project > aside > section > section > div>a').css('color', '#EBEBEB');
 
     // education
-    $('.edu-details > p:first-child').css('color', '#ECEFF1');
+    $('.edu-details > p:first-child, .project > aside > section > section > div').css('color', '#ECEFF1');
     $('.edu-details a').css('color', '#EBEBEB');
 
     //
-    $('.services > div > div').css('background', '#2B2D42');
+    $('.services > div > div, .social-icons > div, .project > aside > section > section > div').css('background', '#2B2D42');
 
     $('.project > aside > section').css('background', '#2B2D42');
     $('.project > aside > section > div:nth-child(2) > h3').css('color', '#ECEFF1');
 
-    $("input, textarea").css("background", "#333b84");
+    $("input, textarea").css("background", "#3A86FF");
+    $("input, textarea").css("opacity", "10%");
 
     dark = true;
 });
