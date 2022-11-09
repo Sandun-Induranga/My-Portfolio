@@ -18,3 +18,20 @@ body {
     height: 70px;
     border: 1px solid white;
 }
+
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+#btnStart{
+    background: #3A86FF;
+}
+
+#btnStop{
+    background: #E94F5B;
+}
