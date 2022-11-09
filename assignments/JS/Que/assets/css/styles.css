@@ -32,6 +32,7 @@ main > section:first-child {
 main > section:last-child > img {
     width: 350px;
     height: 350px;
+    border-radius: 20px;
 }
 
 h4 {
