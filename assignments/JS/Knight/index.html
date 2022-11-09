@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight-Rider</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.93);
+        }
+
+        #container {
+            display: flex;
+            height: 70px;
+        }
+
+        #container > div {
+            width: 100%;
+            height: 70px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <section>
+        <div>
+            <h1 class="text-center text-white">Knight-Rider</h1>
+        </div>
+    </section>
+    <section>
+        <section id="container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+    <section>
+        <div>
+            <button id="btnStart">Start</button>
+            <button id="btnStop">Stop</button>
+        </div>
+    </section>
+</section>
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    var initArray = [];
+    var leftColors = ['white', 'white', 'white', 'white', 'white', 'white', '#d3c5c5', '#be7474', '#cd4a4a', '#b83030', '#c52525', '#dc1e1e'];
+    var rightColors = ['white', 'white', 'white', 'white', 'white', 'white', '#dc1e1e', '#c52525', '#b83030', '#cd4a4a', '#be7474', '#d3c5c5'];
+
+    // renderKnightRider();
+
+    function animateRight() {
+        let firstValue = initArray.shift();
+        initArray.push(firstValue);
+    }
+
+    function animateLeft() {
+        let lastColor = initArray.pop();
+        initArray.unshift(lastColor);
+    }
+
+    var count = 0;
+
+    function animate() {
+        count++;
+        if (count <= leftColors.length) {
+            initArray = leftColors;
+            animateLeft();
+        } else {
+            if (count >= (leftColors.length * 2)) {
+                count = 0;
+            }
+            initArray = rightColors;
+            animateRight();
+        }
+    }
+
+
+    function renderKnightRider() {
+        $("#container").empty();
+        for (let i = 0; i < (initArray.length) / 2; i++) {
+            $("#container").append(`<div style="background-color: ${initArray[i]}"></div>`)
+        }
+        animate();
+    }
+
+    setInterval(renderKnightRider, 100);
+</script>
+</body>
+</html>

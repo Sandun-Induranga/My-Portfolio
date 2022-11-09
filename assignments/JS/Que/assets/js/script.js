@@ -1,6 +1,6 @@
 let imgSrc = "assets/img/man.gif";
 let queData = {
-    men:[
+    men: [
         {letter: "A", img: imgSrc},
         {letter: "B", img: imgSrc},
         {letter: "C", img: imgSrc},
@@ -8,8 +8,8 @@ let queData = {
         {letter: "E", img: imgSrc},
         {letter: "F", img: imgSrc}
     ],
-    nextMan:function (){
-        let lastMan= this.men.pop();
+    nextMan: function () {
+        let lastMan = this.men.pop();
         this.men.unshift(lastMan);
     }
 }
