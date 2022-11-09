@@ -10,6 +10,7 @@ main {
 }
 
 main > section:first-child > div {
+    position: relative;
     width: 250px;
     height: 250px;
 }
@@ -26,4 +27,12 @@ main > section:first-child{
 main > section:last-child > img{
     width: 350px;
     height: 350px;
+}
+
+h4{
+    position: absolute;
+    top: 5px;
+    left: 80px;
+    color: #3A86FF;
+    font-size: 1.5em;
 }
