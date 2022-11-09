@@ -1,4 +1,4 @@
-let imgSrc = "../img/man.gif"
+let imgSrc = "../img/man.gif";
 let queData = {
     men:[
         {letter: "A", img: imgSrc},
@@ -11,5 +11,7 @@ let queData = {
 }
 
 function renderQue() {
-
+    $("main> section:first-child").empty();
 }
+
+renderQue();
