@@ -1,12 +1,17 @@
-body{
+body {
     width: 97.5vw;
     height: 97.5vh;
     display: flex;
     align-items: center;
 }
+
 main {
     display: flex;
     align-items: center;
+}
+
+main > section:first-child {
+    width: calc(100vw/4*3);
 }
 
 main > section:first-child > div {
@@ -15,21 +20,21 @@ main > section:first-child > div {
     height: 250px;
 }
 
-main > section:first-child > div > img{
+main > section:first-child > div > img {
     width: 100%;
     height: 100%;
 }
 
-main > section:first-child{
+main > section:first-child {
     display: flex;
 }
 
-main > section:last-child > img{
+main > section:last-child > img {
     width: 350px;
     height: 350px;
 }
 
-h4{
+h4 {
     position: absolute;
     top: 5px;
     left: 80px;
