@@ -19,7 +19,7 @@ body {
     border: 1px solid white;
 }
 
-button{
+button {
     width: 100px;
     height: 50px;
     font-size: 1.5em;
@@ -28,10 +28,10 @@ button{
     color: white;
 }
 
-#btnStart{
+#btnStart {
     background: #3A86FF;
 }
 
-#btnStop{
+#btnStop {
     background: #E94F5B;
 }
