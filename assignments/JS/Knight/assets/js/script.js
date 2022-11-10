@@ -51,3 +51,8 @@ $("#btnStart").on("click", function () {
     clearInterval(interval);
     interval = setInterval(renderKnightRider, 100);
 });
+
+$("#btnStop").on("click", function () {
+    audio.pause();
+    clearInterval(interval);
+});
