@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghost Game</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body class="bg-dark d-flex align-items-center justify-content-center">
+
+<main class="border border-1 border-white">
+
+    <aside class="game-board">
+        
+        <!-- Pumpkins -->
+        <section class="pumpkin pumpkin-1">
+            <svg class="ghost ghost1"></svg>
+        </section>
+        <section class="pumpkin pumpkin-2">
+            <svg class="ghost ghost2"></svg>
+        </section>
+        <section class="pumpkin pumpkin-3">
+            <svg class="ghost ghost3"></svg>
+        </section>
+        <section class="pumpkin pumpkin-4">
+            <svg class="ghost ghost4"></svg>
+        </section>
+        <section class="pumpkin pumpkin-5">
+            <svg class="ghost ghost5"></svg>
+        </section>
+        
+    </aside>
+
+    <section class="evaluations d-flex justify-content-between">
+
+        <div>
+            <p class="h1 text-white" id="txtTime">60</p>
+            <p class="text-white" id="lblLevel">Level 1</p>
+        </div>
+
+        <div class="progress bg-transparent border border-1 border-white">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100"
+                 aria-valuemin="0" aria-valuemax="100" style="width:100%">
+            </div>
+        </div>
+
+        <div>
+            <h1 id="score">00/100</h1>
+        </div>
+
+    </section>
+
+    <section class="d-flex justify-content-center position-absolute bottom-0 w-100 h-25 controls">
+
+        <button class="btn" id="btnStart">
+            <i class="bi bi-play-fill"></i>
+        </button>
+
+        <button class="btn" id="btnStop">
+            <i class="bi bi-stop-fill"></i>
+        </button>
+
+    </section>
+
+    <section class="message">
+        <h1></h1>
+        <p>...</p>
+    </section>
+
+    <section class="over">
+
+        <h1>Level Failed</h1>
+        <button><i class="bi bi-arrow-repeat"></i></button>
+
+    </section>
+
+</main>
+
+<!-- JS For Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

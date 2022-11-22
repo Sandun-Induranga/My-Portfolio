@@ -1,0 +1,243 @@
+/**
+* @author : Sandun Induranga
+* @since : 0.1.0
+**/
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 936px;
+    height: 80%;
+    border-radius: 50px;
+    background: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.game-board {
+    width: 700px;
+    height: 100%;
+}
+
+.pumpkin {
+    pointer-events: none;
+    position: absolute;
+    display: inline-block;
+}
+
+.pumpkin-1 {
+    top: 20%;
+    left: 120px;
+    width: 150px;
+    height: 150px;
+}
+
+.pumpkin-2 {
+    top: 20%;
+    right: 120px;
+    width: 150px;
+    height: 150px;
+}
+
+.pumpkin-3 {
+    bottom: 20%;
+    left: 120px;
+    width: 200px;
+    height: 200px;
+}
+
+.pumpkin-4 {
+    bottom: 20%;
+    right: 120px;
+    width: 200px;
+    height: 200px;
+}
+
+.pumpkin-5 {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+}
+
+.evaluations {
+    font-family: 'Dancing Script', cursive;
+    padding-left: 5%;
+    padding-right: 10%;
+    position: absolute;
+    width: 100%;
+    top: 34px;
+}
+
+.evaluations > div:last-child {
+    color: white;
+}
+
+.progress {
+    width: 60%;
+}
+
+.pumpkin::after {
+    z-index: 5;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/pumpkin.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.pumpkin::before {
+    z-index: 10;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #07072B;
+    bottom: -5px;
+    width: 80%;
+    height: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 2px 2px 20px 10px #07072B;
+    border-radius: 20px;
+}
+
+.pumpkin-1::before, .pumpkin-2::before {
+    width: 60%;
+}
+
+.ghost {
+    z-index: 5;
+    pointer-events: auto;
+    position: absolute;
+    background: url("../img/ghost.png");
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: dancing;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: all ease-in-out 0.4s;
+    cursor: url("../img/ban-hammer.gif"), auto;
+}
+
+.pumpkin-1 > .ghost, .pumpkin-2 > .ghost{
+    width: 60%;
+}
+
+.btn > img {
+    width: 6em;
+    height: 5em;
+}
+
+.message {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 97.5vw;
+    height: 97.5vh;
+    background-image: linear-gradient(to right top, #da004c, #d8006e, #c60097, #9a00c3, #1238eb);
+    z-index: 10;
+    color: white;
+}
+
+.message > p {
+    font-size: 3em;
+    color: white;
+}
+
+.over {
+    width: 97.5vw;
+    height: 97.5vh;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    background-image: linear-gradient(to right top, #da004c, #d8006e, #c60097, #9a00c3, #1238eb);
+    gap: 20px;
+}
+
+.over > h1 {
+    color: white;
+}
+
+.over > button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    font-size: 2em;
+    background: #0dcaf0;
+    color: white;
+}
+
+.controls > button > i{
+    font-size: 3em;
+    color: white;
+}
+
+@keyframes dancing {
+    0% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+@media all and (max-width: 450px) and (min-width: 310px){
+    main{
+        width: 95vw;
+    }
+
+    .pumpkin-1 {
+        left: 30px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .pumpkin-2 {
+        right: 30px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .pumpkin-3 {
+        left: 30px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .pumpkin-4 {
+        right: 30px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .pumpkin-5 {
+        width: 110px;
+        height: 110px;
+    }
+
+}

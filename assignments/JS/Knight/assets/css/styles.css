@@ -20,6 +20,7 @@ body {
 }
 
 button {
+    margin: 50px;
     width: 100px;
     height: 50px;
     font-size: 1.5em;
@@ -34,4 +35,8 @@ button {
 
 #btnStop {
     background: #E94F5B;
+}
+
+button:hover {
+    cursor: pointer;
 }
