@@ -78,7 +78,7 @@ $(".ghost").on("mousedown", function () {
     }
 });
 
-shotAudio.addEventListener("canplaythrough", () => {
+// shotAudio.addEventListener("canplaythrough", () => {
     shotAudio.play().catch(e => {
         $(".ghost").on("click", function () {
             if (up) {
@@ -86,16 +86,16 @@ shotAudio.addEventListener("canplaythrough", () => {
             }
         });
     });
-});
+// });
 
-backgroundAudio.addEventListener("canplaythrough", () => {
+// backgroundAudio.addEventListener("canplaythrough", () => {
     backgroundAudio.play().catch(e => {
         $("#btnStart").on("click", function () {
             backgroundAudio.volume = 0.5;
             backgroundAudio.play();
         });
     });
-});
+// });
 
 $("#btnStart").on("click", function () {
     startGame();
