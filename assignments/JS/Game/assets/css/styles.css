@@ -139,7 +139,7 @@ main {
     cursor: url("../img/ban-hammer.gif"), auto;
 }
 
-.pumpkin-1 > .ghost, .pumpkin-2 > .ghost{
+.pumpkin-1 > .ghost, .pumpkin-2 > .ghost {
     width: 60%;
 }
 
@@ -192,7 +192,7 @@ main {
     color: white;
 }
 
-.controls > button > i{
+.controls > button > i {
     font-size: 3em;
     color: white;
 }
@@ -206,8 +206,8 @@ main {
     }
 }
 
-@media all and (max-width: 450px) and (min-width: 310px){
-    main{
+@media all and (max-width: 450px) and (min-width: 310px) {
+    main {
         width: 95vw;
     }
 
@@ -240,4 +240,18 @@ main {
         height: 110px;
     }
 
+}
+
+#main-image {
+    position: absolute;
+    width: 97.5vw;
+    height: 97.5vh;
+    z-index: 10;
+    background: url("../img/main-image.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#btnStart, #btnStop {
+    z-index: 20;
 }
