@@ -192,8 +192,8 @@ main {
     color: white;
 }
 
-.controls > button > i {
-    font-size: 3em;
+.controls > button > img {
+    font-size: 2em;
     color: white;
 }
 

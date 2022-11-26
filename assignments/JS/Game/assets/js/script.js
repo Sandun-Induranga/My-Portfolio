@@ -118,6 +118,7 @@ function timer() {
 }
 
 function startGame() {
+    $("#main-image").css("display","none");
     $("#score").empty();
     $("#score").append(`00/100`);
     backgroundAudio.volume = 0.5;
