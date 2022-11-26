@@ -118,6 +118,8 @@ function timer() {
 }
 
 function startGame() {
+    $("#btnStart").css("display","none");
+    $("#btnStop").css("display","block");
     $("#main-image").css("display","none");
     $("#score").empty();
     $("#score").append(`00/100`);

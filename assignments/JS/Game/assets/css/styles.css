@@ -153,6 +153,10 @@ main {
     height: 5em;
 }
 
+.btn:last-child{
+    display: none;
+}
+
 .message {
     display: none;
     justify-content: center;
