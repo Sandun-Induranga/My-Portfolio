@@ -118,9 +118,12 @@ function timer() {
 }
 
 function startGame() {
+    ariaValue = 100;
     $("#btnStart").css("display","none");
     $("#btnStop").css("display","block");
     $("#main-image").css("display","none");
+    $(".progress-bar").attr("aria-valuenow", 100);
+    $(".progress-bar").css("width", `100%`);
     $("#score").empty();
     $("#score").append(`00/100`);
     backgroundAudio.volume = 0.5;
@@ -167,4 +170,5 @@ $(".over > button").on("click", function () {
 $("#btnStop").on("click", function () {
     clearInterval(timeInterval);
     clearInterval(gameInterval);
+    startGame();
 })
