@@ -148,6 +148,11 @@ main {
     height: 5em;
 }
 
+.btn:last-child > img {
+    width: 5em;
+    height: 5em;
+}
+
 .message {
     display: none;
     justify-content: center;
@@ -250,6 +255,11 @@ main {
     background: url("../img/main-image.jpg");
     background-position: center;
     background-size: cover;
+}
+
+#main-image>p{
+    font-size: 5em;
+    margin: 50px;
 }
 
 #btnStart, #btnStop {
