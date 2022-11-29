@@ -78,24 +78,20 @@ $(".ghost").on("mousedown", function () {
     }
 });
 
-// shotAudio.addEventListener("canplaythrough", () => {
-    shotAudio.play().catch(e => {
-        $(".ghost").on("click", function () {
-            if (up) {
-                shotAudio.play();
-            }
-        });
+shotAudio.play().catch(e => {
+    $(".ghost").on("click", function () {
+        if (up) {
+            shotAudio.play();
+        }
     });
-// });
+});
 
-// backgroundAudio.addEventListener("canplaythrough", () => {
-    backgroundAudio.play().catch(e => {
-        $("#btnStart").on("click", function () {
-            backgroundAudio.volume = 1;
-            backgroundAudio.play();
-        });
+backgroundAudio.play().catch(e => {
+    $("#btnStart").on("click", function () {
+        backgroundAudio.volume = 1;
+        backgroundAudio.play();
     });
-// });
+});
 
 $("#btnStart").on("click", function () {
     startGame();
@@ -119,9 +115,9 @@ function timer() {
 
 function startGame() {
     ariaValue = 100;
-    $("#btnStart").css("display","none");
-    $("#btnStop").css("display","block");
-    $("#main-image").css("display","none");
+    $("#btnStart").css("display", "none");
+    $("#btnStop").css("display", "block");
+    $("#main-image").css("display", "none");
     $(".progress-bar").attr("aria-valuenow", 100);
     $(".progress-bar").css("width", `100%`);
     $("#score").empty();
