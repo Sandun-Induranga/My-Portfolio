@@ -91,7 +91,7 @@ $(".ghost").on("mousedown", function () {
 // backgroundAudio.addEventListener("canplaythrough", () => {
     backgroundAudio.play().catch(e => {
         $("#btnStart").on("click", function () {
-            backgroundAudio.volume = 0.5;
+            backgroundAudio.volume = 1;
             backgroundAudio.play();
         });
     });
@@ -126,7 +126,7 @@ function startGame() {
     $(".progress-bar").css("width", `100%`);
     $("#score").empty();
     $("#score").append(`00/100`);
-    backgroundAudio.volume = 0.5;
+    backgroundAudio.volume = 1;
     $(".over").css("display", "none");
     $("#lblLevel").text("Level " + level);
     clearInterval(gameInterval);
