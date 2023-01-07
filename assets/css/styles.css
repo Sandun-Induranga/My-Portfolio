@@ -1246,7 +1246,7 @@ footer > aside:last-child > p, footer > aside:last-child > p > i {
     left: 325px;
 }
 
-.social-icons-white > img {
+.social-icons-white > a {
     margin-right: 25px;
 }
 
