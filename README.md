@@ -20,7 +20,7 @@
 *Technologies*
 * Html
 * CSS
-* Java Script
+* JavaScript
 * Intellij Idea
 * Fontawesome
 
@@ -39,7 +39,7 @@
 *Technologies*
 * Html
 * CSS
-* Java Script
+* JavaScript
 * Bootstrap
 * jQuery
 * Intellij Idea
