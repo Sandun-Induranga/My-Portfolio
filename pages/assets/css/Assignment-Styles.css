@@ -101,7 +101,7 @@ section {
     width: 300px;
     height: 200px;
     border-radius: 20px;
-    box-shadow: 4px 0 5px 5px rgba(184, 184, 184, 1);
+    box-shadow: 4px 0 5px 2px rgba(184, 184, 184, 1);
 }
 
 a{
