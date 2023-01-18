@@ -69,13 +69,24 @@ h1 {
     text-align: center;
 }
 
+h1:first-letter {
+    background: linear-gradient(to bottom, #8338ec, #6e53f6, #5a67fc, #4778ff, #3a86ff);
+    border-radius: 5px 5px 5px 50%;
+    padding-left: 10px;
+    color: white;
+    padding-right: 5px;
+}
+
 h2 {
     font-size: 2em;
-    margin-left: 20px;
+    margin-left: 10vw;
+    color: #1a1e21;
 }
 
 h3 {
-    margin-left: 40px;
+    margin-left: 20vw;
+    font-size: 1.5em;
+    color: #2B2B2B;
 }
 
 aside {
@@ -88,9 +99,9 @@ section {
     display: inline-block;
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 200px;
     border-radius: 20px;
-    box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+    box-shadow: 4px 0 5px 5px rgba(184, 184, 184, 1);
 }
 
 a{
@@ -113,7 +124,7 @@ section::before {
 h4 {
     padding: 50px;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 10px;
     background-color: #313131;
 }
