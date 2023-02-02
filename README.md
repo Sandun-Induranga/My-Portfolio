@@ -2,9 +2,6 @@
 
 ![Image](assets/images/readme-home.png)
 
-🕸 Website URL : https://sandun-induranga-portfolio.000webhostapp.com/
-<br>
-<br>
 🎯 GitHub Page URL : https://sandun-induranga.github.io/My-Portpolio/
 <br>
 <br>
