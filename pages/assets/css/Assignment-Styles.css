@@ -108,17 +108,22 @@ a{
     margin: 50px;
 }
 
-section::before {
-    content: "";
-    background: black;
-    position: absolute;
-    border-radius: 20px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.5;
-    margin: auto;
+/*section::before {*/
+/*    content: "";*/
+/*    background: black;*/
+/*    position: absolute;*/
+/*    border-radius: 20px;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    opacity: 0.5;*/
+/*    margin: auto;*/
+/*}*/
+
+iframe{
+    width: 100%;
+    height: 100%;
 }
 
 h4 {
@@ -221,4 +226,12 @@ h4 {
     background: url("../images/bootstrap-pos.png");
     background-size: cover;
     background-position: center;
+}
+
+h4{
+    display: none;
+}
+
+aside>section:hover h4{
+    display: block;
 }
