@@ -127,7 +127,7 @@ iframe{
 }
 
 h4 {
-    padding: 50px;
+    padding: 10px;
     color: white;
     font-size: 1.5em;
     border-radius: 10px;
@@ -226,12 +226,4 @@ h4 {
     background: url("../images/bootstrap-pos.png");
     background-size: cover;
     background-position: center;
-}
-
-h4{
-    display: none;
-}
-
-aside>section:hover h4{
-    display: block;
 }
