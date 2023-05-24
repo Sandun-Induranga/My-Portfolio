@@ -2,7 +2,7 @@
 
 ![Image](assets/images/readme-home.png)
 
-🎯 GitHub Page URL : https://sandun-induranga.github.io/My-Portpolio/
+🎯 GitHub Page URL : https://sandun-induranga.github.io/My-Portfolio/
 <br>
 <br>
 🗺 Site Map URL : https://www.gloomaps.com/GHeqezKZHV
@@ -24,7 +24,7 @@
 
 # 💲 POS System 💲
 
-![img_2.png](assets/images/img_2.png)
+![img_2.png](pages/assets/images/bootstrap-pos.png)
 
 🗺 Site Map URL : https://www.gloomaps.com/QQhNQtrYYj
 
