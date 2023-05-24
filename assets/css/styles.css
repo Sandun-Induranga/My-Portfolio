@@ -1150,6 +1150,7 @@ fieldset {
     border-radius: 10px;
     padding-left: 10px;
     background: #ECF3FF;
+    outline: none;
 }
 
 .contact form > fieldset > textarea {
@@ -1160,6 +1161,7 @@ fieldset {
     border-radius: 10px;
     border: none;
     background: #ECF3FF;
+    outline: none;
 }
 
 .contact form > fieldset > button {
